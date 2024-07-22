@@ -1,0 +1,17 @@
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\bin\Debug\net8.0\BookATable.Application.deps.json
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\bin\Debug\net8.0\BookATable.Application.dll
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\bin\Debug\net8.0\BookATable.Application.pdb
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\obj\Debug\net8.0\BookATable.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\obj\Debug\net8.0\BookATable.Application.AssemblyInfoInputs.cache
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\obj\Debug\net8.0\BookATable.Application.AssemblyInfo.cs
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\obj\Debug\net8.0\BookATable.Application.csproj.CoreCompileInputs.cache
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\obj\Debug\net8.0\BookATable.Application.dll
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\obj\Debug\net8.0\refint\BookATable.Application.dll
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\obj\Debug\net8.0\BookATable.Application.pdb
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\obj\Debug\net8.0\ref\BookATable.Application.dll
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\bin\Debug\net8.0\BookATable.DataAccess.dll
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\bin\Debug\net8.0\BookATable.Domain.dll
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\bin\Debug\net8.0\BookATable.DataAccess.pdb
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\bin\Debug\net8.0\BookATable.Domain.pdb
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\obj\Debug\net8.0\BookATable.Application.csproj.AssemblyReference.cache
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\obj\Debug\net8.0\BookATab.231E25F6.Up2Date

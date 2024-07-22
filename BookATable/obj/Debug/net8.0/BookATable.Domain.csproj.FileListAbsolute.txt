@@ -1,0 +1,11 @@
+C:\Users\aleks\Desktop\BookATable\BookATable\bin\Debug\net8.0\BookATable.Domain.deps.json
+C:\Users\aleks\Desktop\BookATable\BookATable\bin\Debug\net8.0\BookATable.Domain.dll
+C:\Users\aleks\Desktop\BookATable\BookATable\bin\Debug\net8.0\BookATable.Domain.pdb
+C:\Users\aleks\Desktop\BookATable\BookATable\obj\Debug\net8.0\BookATable.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleks\Desktop\BookATable\BookATable\obj\Debug\net8.0\BookATable.Domain.AssemblyInfoInputs.cache
+C:\Users\aleks\Desktop\BookATable\BookATable\obj\Debug\net8.0\BookATable.Domain.AssemblyInfo.cs
+C:\Users\aleks\Desktop\BookATable\BookATable\obj\Debug\net8.0\BookATable.Domain.csproj.CoreCompileInputs.cache
+C:\Users\aleks\Desktop\BookATable\BookATable\obj\Debug\net8.0\BookATable.Domain.dll
+C:\Users\aleks\Desktop\BookATable\BookATable\obj\Debug\net8.0\refint\BookATable.Domain.dll
+C:\Users\aleks\Desktop\BookATable\BookATable\obj\Debug\net8.0\BookATable.Domain.pdb
+C:\Users\aleks\Desktop\BookATable\BookATable\obj\Debug\net8.0\ref\BookATable.Domain.dll
