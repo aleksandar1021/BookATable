@@ -8,10 +8,23 @@ namespace BookATable.Implementation.Exceptions
 {
     public class NotFoundException : Exception
     {
-        public NotFoundException() : base() { }
+        public NotFoundException(string entityType, int id) :
+            base($"Entity of type {entityType} with an id of {id} doesn't exist.")
+        {
 
-        public NotFoundException(string message) : base(message) { }
+        }
 
-        public NotFoundException(string message, Exception innerException) : base(message, innerException) { }
+
+    }
+
+    public class NotFoundExceptionStringEntry : Exception
+    {
+        public NotFoundExceptionStringEntry(string entityType, string entry) :
+            base($"Entity of type {entityType} with entry: {entry} doesn't exist.")
+        {
+
+        }
+
+
     }
 }

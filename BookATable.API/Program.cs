@@ -17,7 +17,7 @@ var settings = new AppSettings();
 builder.Configuration.Bind(settings);
 
 builder.Services.AddSingleton(settings.Jwt);
-
+builder.Services.AddAutoMapper(typeof(UseCaseInfo).Assembly);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

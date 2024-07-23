@@ -34,7 +34,7 @@ namespace BookATable.Implementation.UseCases.Commands.Users
 
             if(user == null)
             {
-                throw new NotFoundException();
+                throw new NotFoundException(nameof(User), data);
             }
 
             if (!user.IsActive)

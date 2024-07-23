@@ -82,3 +82,6 @@ C:\Users\aleks\Desktop\BookATable\BookATable.API\bin\Debug\net8.0\Microsoft.AspN
 C:\Users\aleks\Desktop\BookATable\BookATable.API\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\aleks\Desktop\BookATable\BookATable.API\bin\Debug\net8.0\Dapper.dll
 C:\Users\aleks\Desktop\BookATable\BookATable.API\obj\Debug\net8.0\BookATable.API.sourcelink.json
+C:\Users\aleks\Desktop\BookATable\BookATable.API\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\aleks\Desktop\BookATable\BookATable.API\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\aleks\Desktop\BookATable\BookATable.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll

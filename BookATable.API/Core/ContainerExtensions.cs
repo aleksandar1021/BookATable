@@ -7,6 +7,8 @@ using BookATable.Implementation.UseCases.Commands.Users;
 using BookATable.Implementation.Validators;
 using BookATable.Application.Email;
 using BookATable.Implementation.Email;
+using BookATable.Application.UseCases.Queries.Users;
+using BookATable.Implementation.UseCases.Queries.Users;
 
 namespace BookATable.API.Core
 {
@@ -17,6 +19,9 @@ namespace BookATable.API.Core
             services.AddTransient<RegisterUserValidator>();
             services.AddTransient<ActivateAccountValidator>();
             services.AddTransient<UpdateUserValidator>();
+            services.AddTransient<AdminUpdateUserValidator>();
+
+
 
             services.AddTransient<UseCaseHandler>();
             services.AddTransient<IUseCaseLogger, DbUseCaseLogger>();
@@ -26,6 +31,11 @@ namespace BookATable.API.Core
             services.AddTransient<IDeleteUserCommand, EfDeleteUserCommand>();
             services.AddTransient<IAdminDeleteUserCommand, EfAdminDeleteUserCommand>();
             services.AddTransient<IUpdateUserCommand, EfUpdateUserCommand>();
+            services.AddTransient<IAdminUpdateUserCommand, EfAdminUpdateUserCommand>();
+            services.AddTransient<IIsActivateUserQuery, EfIsActivateUserQuery>();
+            services.AddTransient<IGetUserQuery, EfGetUserQuery>();
+            services.AddTransient<IGetUsersQuery, EfGetUsersQuery>();
+
         }
 
         public static Guid? GetTokenId(this HttpRequest request)

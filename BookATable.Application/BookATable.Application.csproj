@@ -10,8 +10,4 @@
     <ProjectReference Include="..\BookATable\BookATable.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UseCases\Queries\" />
-  </ItemGroup>
-
 </Project>

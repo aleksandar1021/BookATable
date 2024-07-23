@@ -464,7 +464,6 @@ namespace BookATable.DataAccess.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Note")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<byte>("NumberOfGuests")
