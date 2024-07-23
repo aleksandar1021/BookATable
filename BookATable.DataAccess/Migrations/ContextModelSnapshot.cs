@@ -575,6 +575,9 @@ namespace BookATable.DataAccess.Migrations
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.Property<byte>("WorkFromHour")
                         .HasColumnType("tinyint");
 
@@ -595,6 +598,8 @@ namespace BookATable.DataAccess.Migrations
                         .IsUnique();
 
                     b.HasIndex("RestaurantTypeId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Restaurants");
                 });
@@ -908,9 +913,17 @@ namespace BookATable.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("BookATable.Domain.Tables.User", "User")
+                        .WithMany("Restaurants")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.Navigation("Address");
 
                     b.Navigation("RestaurantType");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("BookATable.Domain.Tables.RestaurantImage", b =>
@@ -992,6 +1005,8 @@ namespace BookATable.DataAccess.Migrations
                     b.Navigation("Ratings");
 
                     b.Navigation("Reservations");
+
+                    b.Navigation("Restaurants");
 
                     b.Navigation("UserUseCases");
                 });

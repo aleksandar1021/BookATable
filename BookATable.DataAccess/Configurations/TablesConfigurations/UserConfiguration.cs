@@ -42,6 +42,11 @@ namespace BookATable.DataAccess.Configurations.TablesConfigurations
                    .WithOne(x => x.User)
                    .HasForeignKey(x => x.UserId)
                    .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasMany(x => x.Restaurants)
+                   .WithOne(x => x.User)
+                   .HasForeignKey(x => x.UserId)
+                   .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

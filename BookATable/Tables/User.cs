@@ -18,6 +18,7 @@ namespace BookATable.Domain.Tables
         public bool IsActivatedUser { get; set; }
 
         public virtual ICollection<Reservation> Reservations { get; set; } = new HashSet<Reservation>();
+        public virtual ICollection<Restaurant> Restaurants { get; set; } = new HashSet<Restaurant>();
         public virtual ICollection<UserUseCase> UserUseCases { get; set; } = new HashSet<UserUseCase>();
         public virtual ICollection<Rating> Ratings { get; set; } = new HashSet<Rating>();
 

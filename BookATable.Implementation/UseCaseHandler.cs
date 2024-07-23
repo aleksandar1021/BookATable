@@ -62,7 +62,7 @@ namespace BookATable.Implementation
             {
                 UseCaseData = data,
                 UseCaseName = useCase.Name,
-                Username = _actor.Username,
+                Username = _actor.Email,
             };
 
             _logger.Log(log);

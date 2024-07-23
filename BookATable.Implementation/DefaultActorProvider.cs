@@ -14,7 +14,6 @@ namespace BookATable.Implementation
             return new Actor
             {
                 Email = "actor",
-                Username = "actor",
                 Id = 0,
                 FirstName = "Actor",
                 LastName = "Actor"

@@ -17,3 +17,4 @@ C:\Users\aleks\Desktop\BookATable\BookATable.Implementation\bin\Debug\net8.0\Boo
 C:\Users\aleks\Desktop\BookATable\BookATable.Implementation\bin\Debug\net8.0\BookATable.Domain.pdb
 C:\Users\aleks\Desktop\BookATable\BookATable.Implementation\obj\Debug\net8.0\BookATable.Implementation.csproj.AssemblyReference.cache
 C:\Users\aleks\Desktop\BookATable\BookATable.Implementation\obj\Debug\net8.0\BookATab.E9860BD7.Up2Date
+C:\Users\aleks\Desktop\BookATable\BookATable.Implementation\obj\Debug\net8.0\BookATable.Implementation.sourcelink.json

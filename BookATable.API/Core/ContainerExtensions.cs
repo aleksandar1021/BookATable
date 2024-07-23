@@ -15,12 +15,17 @@ namespace BookATable.API.Core
         public static void AddUseCases(this IServiceCollection services)
         {
             services.AddTransient<RegisterUserValidator>();
+            services.AddTransient<ActivateAccountValidator>();
+            services.AddTransient<UpdateUserValidator>();
 
             services.AddTransient<UseCaseHandler>();
             services.AddTransient<IUseCaseLogger, DbUseCaseLogger>();
             services.AddTransient<IRegisterUserCommand, EfRegisterUserCommand>();
             services.AddTransient<IEmailSender, SMTPEmailSender>();
-
+            services.AddTransient<IActivateAccountCommand, EfActivateAccountCommand>();
+            services.AddTransient<IDeleteUserCommand, EfDeleteUserCommand>();
+            services.AddTransient<IAdminDeleteUserCommand, EfAdminDeleteUserCommand>();
+            services.AddTransient<IUpdateUserCommand, EfUpdateUserCommand>();
         }
 
         public static Guid? GetTokenId(this HttpRequest request)

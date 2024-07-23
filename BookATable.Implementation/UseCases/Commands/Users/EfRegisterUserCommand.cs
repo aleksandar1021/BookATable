@@ -29,7 +29,7 @@ namespace BookATable.Implementation.UseCases.Commands.Users
 
         private List<int> allowedCasesForUser = new List<int>
         { 
-            1
+            2, 3, 5
         };
 
         public void Execute(RegisterUserDTO data)

@@ -9,3 +9,4 @@ C:\Users\aleks\Desktop\BookATable\BookATable\obj\Debug\net8.0\BookATable.Domain.
 C:\Users\aleks\Desktop\BookATable\BookATable\obj\Debug\net8.0\refint\BookATable.Domain.dll
 C:\Users\aleks\Desktop\BookATable\BookATable\obj\Debug\net8.0\BookATable.Domain.pdb
 C:\Users\aleks\Desktop\BookATable\BookATable\obj\Debug\net8.0\ref\BookATable.Domain.dll
+C:\Users\aleks\Desktop\BookATable\BookATable\obj\Debug\net8.0\BookATable.Domain.sourcelink.json

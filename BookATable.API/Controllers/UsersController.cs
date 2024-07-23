@@ -1,6 +1,7 @@
 ﻿using BookATable.Application.DTO;
 using BookATable.Application.UseCases.Commands.Users;
 using BookATable.Implementation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -25,7 +26,38 @@ namespace BookATable.API.Controllers
             return StatusCode(201);
         }
 
-        
-        
+        [Authorize]
+        [HttpPatch]
+        public IActionResult ActivateAccount([FromBody] ActivateAccountDTO dto, [FromServices] IActivateAccountCommand cmd)
+        {
+            _commandHandler.HandleCommand(cmd, dto);
+            return NoContent();
+        }
+
+        [Authorize]
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id, [FromServices] IDeleteUserCommand cmd)
+        {
+            _commandHandler.HandleCommand(cmd, id);
+            return NoContent();
+        }
+
+        [Authorize]
+        [HttpDelete("{id}/Admin")]
+        public IActionResult DeleteAdmin(int id, [FromServices] IAdminDeleteUserCommand cmd)
+        {
+            _commandHandler.HandleCommand(cmd, id);
+            return NoContent();
+        }
+
+        [Authorize]
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, [FromBody] UpdateUserDTO dto, [FromServices] IUpdateUserCommand cmd)
+        {
+            dto.Id = id;
+            _commandHandler.HandleCommand(cmd, dto);
+            return NoContent();
+        }
+
     }
 }

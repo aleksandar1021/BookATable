@@ -10,7 +10,6 @@ namespace BookATable.Application
     {
         int Id { get; }
         string Email { get; }
-        string Username { get; }
         string FirstName { get; }
         string LastName { get; }
         IEnumerable<int> AllowedUseCases { get; }

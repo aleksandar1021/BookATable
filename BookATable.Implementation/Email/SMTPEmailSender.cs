@@ -21,7 +21,7 @@ namespace BookATable.Implementation.Email
                 EnableSsl = true,
                 DeliveryMethod = SmtpDeliveryMethod.Network,
                 UseDefaultCredentials = false,
-                Credentials = new NetworkCredential("bookatable12345@gmail.com", "telx aufz yqkc qhkt")
+                Credentials = new NetworkCredential("bookatable12345@gmail.com", "xbem iutk rgzu pkie")
             };
             var message = new MailMessage("bookatable12345@gmail.com", email.SendTo);
             message.Subject = email.Subject;

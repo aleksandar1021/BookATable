@@ -15,3 +15,4 @@ C:\Users\aleks\Desktop\BookATable\BookATable.Application\bin\Debug\net8.0\BookAT
 C:\Users\aleks\Desktop\BookATable\BookATable.Application\bin\Debug\net8.0\BookATable.Domain.pdb
 C:\Users\aleks\Desktop\BookATable\BookATable.Application\obj\Debug\net8.0\BookATable.Application.csproj.AssemblyReference.cache
 C:\Users\aleks\Desktop\BookATable\BookATable.Application\obj\Debug\net8.0\BookATab.231E25F6.Up2Date
+C:\Users\aleks\Desktop\BookATable\BookATable.Application\obj\Debug\net8.0\BookATable.Application.sourcelink.json

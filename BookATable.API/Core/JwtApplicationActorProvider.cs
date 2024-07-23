@@ -34,8 +34,7 @@ namespace BookATable.API.Core
             var actor = new Actor
             {
                 Id = int.Parse(claims.First(x => x.Type == "Id").Value),
-                Email = claims.First(x => x.Type == "Username").Value,
-                Username = claims.First(x => x.Type == "Username").Value,
+                Email = claims.First(x => x.Type == "Email").Value,
                 FirstName = claims.First(x => x.Type == "FirstName").Value,
                 LastName = claims.First(x => x.Type == "LastName").Value,
                 AllowedUseCases = JsonConvert.DeserializeObject<List<int>>(claims.First(x => x.Type == "UseCaseIds").Value)

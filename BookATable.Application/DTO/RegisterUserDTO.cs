@@ -14,4 +14,9 @@ namespace BookATable.Application.DTO
         public string Password { get; set; }
         public string Image { get; set; }
     }
+
+    public class UpdateUserDTO : RegisterUserDTO
+    {
+        public int Id { get; set; }
+    }
 }
