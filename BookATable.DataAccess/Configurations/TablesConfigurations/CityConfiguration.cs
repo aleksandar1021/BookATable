@@ -9,15 +9,16 @@ using System.Threading.Tasks;
 
 namespace BookATable.DataAccess.Configurations.TablesConfigurations
 {
-    public class CityConfiguration : NamedEntityConfiguration<City>
+    public class CityConfiguration : EntityConfiguration<City>
     {
         protected override void ConfigureEntity(EntityTypeBuilder<City> builder)
         {
             builder.Property(x => x.ZipCode)
                    .IsRequired();
-                   
 
 
+            builder.Property(x => x.Name)
+                   .IsRequired();
         }
     }
 }

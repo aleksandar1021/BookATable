@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace BookATable.Domain.Tables
 {
-    public class Restaurant : NamedEntity
+    public class Restaurant : Entity
     {
+        public string Name { get; set; }
         public int WorkFromHour { get; set; }
         public int WorkUntilHour { get; set; }
         public int WorkFromMinute { get; set; }

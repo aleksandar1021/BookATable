@@ -75,12 +75,12 @@ namespace BookATable.API.Controllers
         public IActionResult GetActivate(string email, [FromServices] IIsActivateUserQuery query)
            => Ok(_commandHandler.HandleQuery(query, email));
 
-        [Authorize]
+        
         [HttpGet("{id}")]
         public IActionResult Find(int id, [FromServices] IGetUserQuery query)
             => Ok(_commandHandler.HandleQuery(query, id));
 
-        [Authorize]
+        
         [HttpGet]
         public IActionResult Search([FromQuery] SearchUserDTO search, [FromServices] IGetUsersQuery query)
             => Ok(_commandHandler.HandleQuery(query, search));

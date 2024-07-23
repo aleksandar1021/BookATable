@@ -9,10 +9,15 @@ using System.Threading.Tasks;
 
 namespace BookATable.DataAccess.Configurations.TablesConfigurations
 {
-    public class DishConfiguration : NamedEntityConfiguration<Dish>
+    public class DishConfiguration : EntityConfiguration<Dish>
     {
         protected override void ConfigureEntity(EntityTypeBuilder<Dish> builder)
         {
+            builder.Property(x => x.Name)
+                   .IsRequired()
+                   .HasMaxLength(70);
+
+
             builder.Property(x => x.Description)
                    .IsRequired()
                    .HasMaxLength(150);

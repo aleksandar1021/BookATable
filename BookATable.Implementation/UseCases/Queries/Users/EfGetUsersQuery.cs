@@ -27,7 +27,7 @@ namespace BookATable.Implementation.UseCases.Queries.Users
         public PagedResponse<UserResultDTO> Execute(SearchUserDTO data)
         {
             
-            var query = Context.Users.AsQueryable();
+            var query = Context.Users.Where(x => x.IsActive).AsQueryable();
 
             if (!string.IsNullOrEmpty(data.Email))
             {
@@ -54,29 +54,8 @@ namespace BookATable.Implementation.UseCases.Queries.Users
                             .Include(x => x.Reservations)
                             .ToList();
 
-            
 
-            return Paginate(query, data);
-        }
-
-        protected virtual PagedResponse<UserResultDTO> Paginate(IQueryable<User> query, PagedSearch search)
-        {
-            return query.AsPagedReponse<User, UserResultDTO>(search, _mapper);
-        }
-    }
-
-
-
-    public class AutomapperSearchUserQuery : EfGetUsersQuery
-    {
-        private readonly IMapper mapper;
-        public AutomapperSearchUserQuery(Context context, IMapper mapper) : base(context, mapper)
-        {
-            this.mapper = mapper;
-        }
-        protected override PagedResponse<UserResultDTO> Paginate(IQueryable<User> query, PagedSearch search)
-        {
-            return query.AsPagedReponse<User, UserResultDTO>(search, mapper);
+            return query.AsPagedReponse<User, UserResultDTO>(data, _mapper);
         }
     }
 }

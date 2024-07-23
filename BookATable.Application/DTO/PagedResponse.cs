@@ -20,5 +20,7 @@ namespace BookATable.Application.DTO
             }
         }
         public int CurrentPage { get; set; }
+
+
     }
 }

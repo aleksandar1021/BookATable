@@ -29,7 +29,7 @@ namespace BookATable.Implementation.UseCases
         {
             var item = Context.Set<TEntity>().Find(search);
 
-            if (item == null)
+            if (item == null || !item.IsActive)
             {
                 throw new NotFoundException(nameof(TEntity), search);
             }

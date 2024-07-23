@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookATable.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3363fd89024e0683f0ae6c37e9131396c1f2d23d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90ddd7c53f64e14a5af6375f972f969ecca20ed2")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookATable.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookATable.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

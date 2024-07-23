@@ -9,13 +9,17 @@ using System.Threading.Tasks;
 
 namespace BookATable.DataAccess.Configurations.TablesConfigurations
 {
-    public class RestaurantConfiguration : NamedEntityConfiguration<Restaurant>
+    public class RestaurantConfiguration : EntityConfiguration<Restaurant>
     {
         protected override void ConfigureEntity(EntityTypeBuilder<Restaurant> builder)
         {
             builder.Property(x => x.WorkFromHour)
                    .IsRequired()
                    .HasColumnType("tinyint");
+
+            builder.Property(x => x.Name)
+                   .IsRequired()
+                   .HasMaxLength(70);
 
             builder.Property(x => x.WorkUntilHour)
                    .IsRequired()

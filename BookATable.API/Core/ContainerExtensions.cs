@@ -9,6 +9,10 @@ using BookATable.Application.Email;
 using BookATable.Implementation.Email;
 using BookATable.Application.UseCases.Queries.Users;
 using BookATable.Implementation.UseCases.Queries.Users;
+using BookATable.Application.UseCases.Commands.MealCategories;
+using BookATable.Implementation.UseCases.Commands.MealCategories;
+using BookATable.Application.UseCases.Queries.MealCategories;
+using BookATable.Implementation.UseCases.Queries.MealCategories;
 
 namespace BookATable.API.Core
 {
@@ -20,6 +24,7 @@ namespace BookATable.API.Core
             services.AddTransient<ActivateAccountValidator>();
             services.AddTransient<UpdateUserValidator>();
             services.AddTransient<AdminUpdateUserValidator>();
+            services.AddTransient<NamedEntityValidator>();
 
 
 
@@ -35,6 +40,11 @@ namespace BookATable.API.Core
             services.AddTransient<IIsActivateUserQuery, EfIsActivateUserQuery>();
             services.AddTransient<IGetUserQuery, EfGetUserQuery>();
             services.AddTransient<IGetUsersQuery, EfGetUsersQuery>();
+            services.AddTransient<ICreateMealCategoryCommand, EfCreateMealCategoryCommand>();
+            services.AddTransient<IUpdateMealCategoryCommand, EfUpdateMealCategoryCommand>();
+            services.AddTransient<IDeleteMealCategoryCommand, EfDeleteMealCategoryCommand>();
+            services.AddTransient<IGetMealCategoryQuery, EfGetMealCategoryQuery>();
+            services.AddTransient<IGetMealCategoriesQuery, EfGetMealCategoriesQuery>();
 
         }
 
