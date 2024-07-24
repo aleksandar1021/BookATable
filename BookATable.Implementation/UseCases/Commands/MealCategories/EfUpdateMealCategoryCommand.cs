@@ -37,6 +37,7 @@ namespace BookATable.Implementation.UseCases.Commands.MealCategories
             _validator.ValidateAndThrow(data);
 
             mealCategory.Name = data.Name;
+            mealCategory.UpdatedAt = DateTime.UtcNow;
 
             Context.SaveChanges();
 

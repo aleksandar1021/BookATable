@@ -13,6 +13,10 @@ using BookATable.Application.UseCases.Commands.MealCategories;
 using BookATable.Implementation.UseCases.Commands.MealCategories;
 using BookATable.Application.UseCases.Queries.MealCategories;
 using BookATable.Implementation.UseCases.Queries.MealCategories;
+using BookATable.Application.UseCases.Commands.Cities;
+using BookATable.Implementation.UseCases.Commands.Cities;
+using BookATable.Application.UseCases.Queries.Cities;
+using BookATable.Implementation.UseCases.Queries.Cities;
 
 namespace BookATable.API.Core
 {
@@ -25,6 +29,8 @@ namespace BookATable.API.Core
             services.AddTransient<UpdateUserValidator>();
             services.AddTransient<AdminUpdateUserValidator>();
             services.AddTransient<NamedEntityValidator>();
+            services.AddTransient<CreateCityValidator>();
+            services.AddTransient<UpdateCityValidator>();
 
 
 
@@ -45,6 +51,11 @@ namespace BookATable.API.Core
             services.AddTransient<IDeleteMealCategoryCommand, EfDeleteMealCategoryCommand>();
             services.AddTransient<IGetMealCategoryQuery, EfGetMealCategoryQuery>();
             services.AddTransient<IGetMealCategoriesQuery, EfGetMealCategoriesQuery>();
+            services.AddTransient<ICreateCityCommand, EfCreateCityCommand>();
+            services.AddTransient<IUpdateCityCommand, EfUpdateCityCommand>();
+            services.AddTransient<IGetCityQuery, EfGetCityQuery>();
+            services.AddTransient<IGetCitiesQuery, EfGetCitiesQuery>();
+            services.AddTransient<IDeleteCityCommand, EfDeleteCityCommand>();
 
         }
 

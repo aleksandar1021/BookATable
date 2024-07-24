@@ -20,7 +20,9 @@ namespace BookATable.Implementation.Profiles
                 .ForMember(x => x.LastName, y => y.MapFrom(u => u.LastName))
                 .ForMember(x => x.Image, y => y.MapFrom(u => u.Image))
                 .ForMember(x => x.IsActivatedUser, y => y.MapFrom(u => u.IsActivatedUser))
-                .ForMember(x => x.Restaurants, y => y.MapFrom(p => p.Restaurants.Select(x => new RestaurantsDTO
+                .ForMember(x => x.Restaurants, y => y.MapFrom(p => p.Restaurants
+                                                     .Where(r => r.IsActive)
+                                                     .Select(x => new RestaurantsDTO
                 {
                     Id = x.Id,
                     WorkFromHour = x.WorkFromHour,
@@ -40,14 +42,18 @@ namespace BookATable.Implementation.Profiles
                         Place = x.Address.Place
                     }
                 })))
-                .ForMember(x => x.Ratings, y => y.MapFrom(p => p.Ratings.Select(x => new RatingDTO
+                .ForMember(x => x.Ratings, y => y.MapFrom(p => p.Ratings
+                                                 .Where(r => r.IsActive)
+                                                 .Select(x => new RatingDTO
                 {
                     Id = x.Id,
                     Rate = x.Rate,
                     RestaurantId = x.RestaurantId,
                     UserId = x.UserId
                 })))
-                .ForMember(x => x.Reservations, y => y.MapFrom(p => p.Reservations.Select(x => new ReservationDTO
+                .ForMember(x => x.Reservations, y => y.MapFrom(p => p.Reservations
+                                                      .Where(r => r.IsActive)
+                                                      .Select(x => new ReservationDTO
                 {
                     Id = x.Id,
                     NumberOfGuests = x.NumberOfGuests,

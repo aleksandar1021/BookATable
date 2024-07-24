@@ -24,14 +24,9 @@ namespace BookATable.Implementation.UseCases.Commands.MealCategories
         {
             MealCategory mealCategory = Context.MealCategories.FirstOrDefault(x => x.Id == data);
 
-            if (mealCategory == null) 
+            if (mealCategory == null || !mealCategory.IsActive) 
             {
                 throw new NotFoundException(nameof(MealCategory), data);
-            }
-
-            if (!mealCategory.IsActive)
-            {
-                throw new ConflictException("Meal category is alredy inactive");
             }
 
             mealCategory.IsActive = false;

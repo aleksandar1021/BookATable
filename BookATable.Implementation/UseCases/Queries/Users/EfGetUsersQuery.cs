@@ -46,15 +46,6 @@ namespace BookATable.Implementation.UseCases.Queries.Users
                 query = query.Where(x => x.IsActivatedUser == data.IsActivatedUser.Value);
             }
 
-            var users = query
-                            .Include(x => x.Restaurants)
-                                .ThenInclude(x => x.Address)
-                                .ThenInclude(x => x.City)
-                            .Include(x => x.Ratings)
-                            .Include(x => x.Reservations)
-                            .ToList();
-
-
             return query.AsPagedReponse<User, UserResultDTO>(data, _mapper);
         }
     }

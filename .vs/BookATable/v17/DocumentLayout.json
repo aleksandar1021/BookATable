@@ -3,8 +3,176 @@
   "WorkspaceRootPath": "C:\\Users\\aleks\\Desktop\\BookATable\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213651_UpdateCityConf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookATable.DataAccess\\Migrations\\20240723213651_UpdateCityConf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.api\\core\\containerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|solutionrelative:bookatable.api\\core\\containerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.api\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|solutionrelative:bookatable.api\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\cities\\efdeletecitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\cities\\efdeletecitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\cities\\efupdatecitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\cities\\efupdatecitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.api\\controllers\\mealcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|solutionrelative:bookatable.api\\controllers\\mealcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\unauthorizedactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\unauthorizedactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\queries\\cities\\efgetcitiesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\queries\\cities\\efgetcitiesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\queries\\users\\efgetusersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\queries\\users\\efgetusersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\queries\\mealcategories\\efgetmealcategoriesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\queries\\mealcategories\\efgetmealcategoriesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\dto\\createcitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\dto\\createcitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\queries\\cities\\efgetcityquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\queries\\cities\\efgetcityquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\usecases\\queries\\mealcategories\\igetmealcategoriesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\usecases\\queries\\mealcategories\\igetmealcategoriesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\usecases\\queries\\cities\\igetcitiesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\usecases\\queries\\cities\\igetcitiesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\effindusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\effindusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\bookatable.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\bookatable.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\bookatable.implementation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\bookatable.implementation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\cities\\efcreatecitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\cities\\efcreatecitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\queries\\mealcategories\\efgetmealcategoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\queries\\mealcategories\\efgetmealcategoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\usecases\\queries\\cities\\igetcityquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\usecases\\queries\\cities\\igetcityquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\usecases\\commands\\cities\\ideletecitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\usecases\\commands\\cities\\ideletecitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\usecases\\queries\\mealcategories\\igetmealcategoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\usecases\\queries\\mealcategories\\igetmealcategoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\profiles\\cityprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\profiles\\cityprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\profiles\\mealcategoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\profiles\\mealcategoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\dto\\createnamedentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\dto\\createnamedentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\users\\efdeleteusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\users\\efdeleteusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\mealcategories\\efdeletemealcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\mealcategories\\efdeletemealcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\users\\efadmindeleteusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\users\\efadmindeleteusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\mealcategories\\efupdatemealcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\mealcategories\\efupdatemealcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\users\\efupdateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\users\\efupdateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\users\\efadminupdateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\users\\efadminupdateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\usecases\\commands\\cities\\iupdatecitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\usecases\\commands\\cities\\iupdatecitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B40F34AA-3ED1-4271-84E0-CE7581A08E25}|BookATable\\BookATable.Domain.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable\\bookatable.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B40F34AA-3ED1-4271-84E0-CE7581A08E25}|BookATable\\BookATable.Domain.csproj|solutionrelative:bookatable\\bookatable.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\bookatable.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\bookatable.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.api\\bookatable.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|solutionrelative:bookatable.api\\bookatable.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\validators\\createcityvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\validators\\createcityvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\validators\\basecityvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\validators\\basecityvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\validators\\baseuserupdatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\validators\\baseuserupdatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\validators\\registeruservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\validators\\registeruservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\validators\\updateuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\validators\\updateuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\validators\\namedentityvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\validators\\namedentityvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\usecases\\commands\\cities\\icreatecitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\usecases\\commands\\cities\\icreatecitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\configurations\\tablesconfigurations\\cityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,24 +183,24 @@
       "RelativeMoniker": "D:0:0:{B40F34AA-3ED1-4271-84E0-CE7581A08E25}|BookATable\\BookATable.Domain.csproj|solutionrelative:bookatable\\tables\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213500_UpdateRestaurantConf2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookATable.DataAccess\\Migrations\\20240723213500_UpdateRestaurantConf2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|solutionrelative:bookatable.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\queryableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\queryableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\migrations\\20240723213651_updatecityconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\migrations\\20240723213651_updatecityconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\configurations\\tablesconfigurations\\restaurantconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\configurations\\tablesconfigurations\\restaurantconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213340_UpdateDishConfiguration2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookATable.DataAccess\\Migrations\\20240723213340_UpdateDishConfiguration2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\configurations\\tablesconfigurations\\dishconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\configurations\\tablesconfigurations\\dishconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213229_UpdateDishConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookATable.DataAccess\\Migrations\\20240723213229_UpdateDishConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B40F34AA-3ED1-4271-84E0-CE7581A08E25}|BookATable\\BookATable.Domain.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable\\tables\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,14 +215,6 @@
       "RelativeMoniker": "D:0:0:{B40F34AA-3ED1-4271-84E0-CE7581A08E25}|BookATable\\BookATable.Domain.csproj|solutionrelative:bookatable\\tables\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723212902_UpdateRestaurantConf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookATable.DataAccess\\Migrations\\20240723212902_UpdateRestaurantConf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\bookatable.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\bookatable.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\configurations\\tablesconfigurations\\restaurantimageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\configurations\\tablesconfigurations\\restaurantimageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -67,24 +227,8 @@
       "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\configurations\\namedentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.api\\core\\containerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|solutionrelative:bookatable.api\\core\\containerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.api\\controllers\\mealcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|solutionrelative:bookatable.api\\controllers\\mealcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|solutionrelative:bookatable.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\queries\\mealcategories\\efgetmealcategoriesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\queries\\mealcategories\\efgetmealcategoriesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\queries\\users\\efgetusersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\queries\\users\\efgetusersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -95,28 +239,8 @@
       "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\dto\\pagedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\dto\\createnamedentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\dto\\createnamedentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\effindusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\effindusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecasehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecasehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\unauthorizedactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\unauthorizedactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\profiles\\mealcategoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\profiles\\mealcategoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\queries\\users\\efgetuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -125,10 +249,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\mealcategories\\efcreatemealcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\mealcategories\\efcreatemealcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\mealcategories\\efupdatemealcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\mealcategories\\efupdatemealcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\dto\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -141,10 +261,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\usecases\\queries\\users\\igetuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\usecases\\queries\\users\\igetuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\queryableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\queryableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\queries\\users\\efisactivateuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -167,20 +283,8 @@
       "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\usecases\\commands\\mealcategories\\ideletemealcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\validators\\namedentityvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\validators\\namedentityvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\usecases\\commands\\mealcategories\\iupdatemealcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\usecases\\commands\\mealcategories\\iupdatemealcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\validators\\registeruservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\validators\\registeruservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B40F34AA-3ED1-4271-84E0-CE7581A08E25}|BookATable\\BookATable.Domain.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable\\tables\\mealcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -195,14 +299,6 @@
       "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\configurations\\tablesconfigurations\\reservationconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.api\\bookatable.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|solutionrelative:bookatable.api\\bookatable.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\bookatable.implementation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\bookatable.implementation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B40F34AA-3ED1-4271-84E0-CE7581A08E25}|BookATable\\BookATable.Domain.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable\\tables\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B40F34AA-3ED1-4271-84E0-CE7581A08E25}|BookATable\\BookATable.Domain.csproj|solutionrelative:bookatable\\tables\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -211,28 +307,8 @@
       "RelativeMoniker": "D:0:0:{B40F34AA-3ED1-4271-84E0-CE7581A08E25}|BookATable\\BookATable.Domain.csproj|solutionrelative:bookatable\\tables\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|solutionrelative:bookatable.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\users\\efupdateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\users\\efupdateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\users\\efregisterusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\users\\efregisterusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\users\\efdeleteusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\users\\efdeleteusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\users\\efadminupdateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\users\\efadminupdateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\usecases\\commands\\users\\efadmindeleteusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\usecases\\commands\\users\\efadmindeleteusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -247,10 +323,6 @@
       "RelativeMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|solutionrelative:bookatable.application\\usecases\\queries\\users\\iisactivateuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\validators\\updateuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\validators\\updateuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\validators\\adminupdateuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\validators\\adminupdateuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -261,10 +333,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.api\\core\\dbexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E29C66F0-15A6-4F42-B601-AD3C1FCBA743}|BookATable.API\\BookATable.API.csproj|solutionrelative:bookatable.api\\core\\dbexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.implementation\\validators\\baseuserupdatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A40086-3F12-4F38-A5AE-4631DDB482B3}|BookATable.Implementation\\BookATable.Implementation.csproj|solutionrelative:bookatable.implementation\\validators\\baseuserupdatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6A988D8-F8AA-40C7-8C3F-717A3AC18D4B}|BookATable.Application\\BookATable.Application.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.application\\usecases\\commands\\users\\iupdateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -321,6 +389,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\migrations\\20240723170551_updatereservationconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\migrations\\20240723170551_updatereservationconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\migrations\\20240723213500_updaterestaurantconf2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\migrations\\20240723213500_updaterestaurantconf2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\migrations\\20240723213340_updatedishconfiguration2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\migrations\\20240723213340_updatedishconfiguration2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\migrations\\20240723213229_updatedishconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\migrations\\20240723213229_updatedishconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|c:\\users\\aleks\\desktop\\bookatable\\bookatable.dataaccess\\migrations\\20240723212902_updaterestaurantconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0A0004-4B13-4F0F-A682-D0C421A39ABD}|BookATable.DataAccess\\BookATable.DataAccess.csproj|solutionrelative:bookatable.dataaccess\\migrations\\20240723212902_updaterestaurantconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -330,625 +414,249 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240723213651_UpdateCityConf.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213651_UpdateCityConf.cs",
-              "RelativeDocumentMoniker": "BookATable.DataAccess\\Migrations\\20240723213651_UpdateCityConf.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213651_UpdateCityConf.cs",
-              "RelativeToolTip": "BookATable.DataAccess\\Migrations\\20240723213651_UpdateCityConf.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAzwBYAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:36:51.83Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CityConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\CityConfiguration.cs",
-              "RelativeDocumentMoniker": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\CityConfiguration.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\CityConfiguration.cs",
-              "RelativeToolTip": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\CityConfiguration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:36:12.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20240723213500_UpdateRestaurantConf2.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213500_UpdateRestaurantConf2.cs",
-              "RelativeDocumentMoniker": "BookATable.DataAccess\\Migrations\\20240723213500_UpdateRestaurantConf2.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213500_UpdateRestaurantConf2.cs",
-              "RelativeToolTip": "BookATable.DataAccess\\Migrations\\20240723213500_UpdateRestaurantConf2.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:35:00.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20240723213340_UpdateDishConfiguration2.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213340_UpdateDishConfiguration2.cs",
-              "RelativeDocumentMoniker": "BookATable.DataAccess\\Migrations\\20240723213340_UpdateDishConfiguration2.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213340_UpdateDishConfiguration2.cs",
-              "RelativeToolTip": "BookATable.DataAccess\\Migrations\\20240723213340_UpdateDishConfiguration2.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:33:41.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "City.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\City.cs",
-              "RelativeDocumentMoniker": "BookATable\\Tables\\City.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\City.cs",
-              "RelativeToolTip": "BookATable\\Tables\\City.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:32:48.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20240723213229_UpdateDishConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213229_UpdateDishConfiguration.cs",
-              "RelativeDocumentMoniker": "BookATable.DataAccess\\Migrations\\20240723213229_UpdateDishConfiguration.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213229_UpdateDishConfiguration.cs",
-              "RelativeToolTip": "BookATable.DataAccess\\Migrations\\20240723213229_UpdateDishConfiguration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:32:30.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DishConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\DishConfiguration.cs",
-              "RelativeDocumentMoniker": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\DishConfiguration.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\DishConfiguration.cs",
-              "RelativeToolTip": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\DishConfiguration.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:31:26.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Dish.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\Dish.cs",
-              "RelativeDocumentMoniker": "BookATable\\Tables\\Dish.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\Dish.cs",
-              "RelativeToolTip": "BookATable\\Tables\\Dish.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:30:26.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RestaurantType.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\RestaurantType.cs",
-              "RelativeDocumentMoniker": "BookATable\\Tables\\RestaurantType.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\RestaurantType.cs",
-              "RelativeToolTip": "BookATable\\Tables\\RestaurantType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:30:19.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\Contact.cs",
-              "RelativeDocumentMoniker": "BookATable\\Tables\\Contact.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\Contact.cs",
-              "RelativeToolTip": "BookATable\\Tables\\Contact.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:30:11.783Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20240723212902_UpdateRestaurantConf.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723212902_UpdateRestaurantConf.cs",
-              "RelativeDocumentMoniker": "BookATable.DataAccess\\Migrations\\20240723212902_UpdateRestaurantConf.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723212902_UpdateRestaurantConf.cs",
-              "RelativeToolTip": "BookATable.DataAccess\\Migrations\\20240723212902_UpdateRestaurantConf.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:29:02.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RestaurantConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantConfiguration.cs",
-              "RelativeDocumentMoniker": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantConfiguration.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantConfiguration.cs",
-              "RelativeToolTip": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantConfiguration.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:26:11.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RestaurantImageConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantImageConfiguration.cs",
-              "RelativeDocumentMoniker": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantImageConfiguration.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantImageConfiguration.cs",
-              "RelativeToolTip": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantImageConfiguration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:26:05.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "NamedEntityConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\NamedEntityConfiguration.cs",
-              "RelativeDocumentMoniker": "BookATable.DataAccess\\Configurations\\NamedEntityConfiguration.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\NamedEntityConfiguration.cs",
-              "RelativeToolTip": "BookATable.DataAccess\\Configurations\\NamedEntityConfiguration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:25:00.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ContainerExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Core\\ContainerExtensions.cs",
-              "RelativeDocumentMoniker": "BookATable.API\\Core\\ContainerExtensions.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Core\\ContainerExtensions.cs",
-              "RelativeToolTip": "BookATable.API\\Core\\ContainerExtensions.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwC4AAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T15:22:23.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 5,
               "Title": "UnauthorizedActor.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UnauthorizedActor.cs",
               "RelativeDocumentMoniker": "BookATable.Implementation\\UnauthorizedActor.cs",
               "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UnauthorizedActor.cs",
               "RelativeToolTip": "BookATable.Implementation\\UnauthorizedActor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T10:38:19.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BookATable.DataAccess.csproj",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\BookATable.DataAccess.csproj",
-              "RelativeDocumentMoniker": "BookATable.DataAccess\\BookATable.DataAccess.csproj",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\BookATable.DataAccess.csproj",
-              "RelativeToolTip": "BookATable.DataAccess\\BookATable.DataAccess.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-23T16:57:08.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "EfCreateMealCategoryCommand.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfCreateMealCategoryCommand.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfCreateMealCategoryCommand.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfCreateMealCategoryCommand.cs",
-              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfCreateMealCategoryCommand.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAABYAAAAbAAAA",
+              "DocumentIndex": 1,
+              "Title": "CitiesController.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Controllers\\CitiesController.cs",
+              "RelativeDocumentMoniker": "BookATable.API\\Controllers\\CitiesController.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Controllers\\CitiesController.cs",
+              "RelativeToolTip": "BookATable.API\\Controllers\\CitiesController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAmwDkAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T19:21:55.435Z",
+              "WhenOpened": "2024-07-24T09:38:35.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CreateNamedEntity.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\CreateNamedEntity.cs",
-              "RelativeDocumentMoniker": "BookATable.Application\\DTO\\CreateNamedEntity.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\CreateNamedEntity.cs",
-              "RelativeToolTip": "BookATable.Application\\DTO\\CreateNamedEntity.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAIAwwBcAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T19:19:02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\UserDTO.cs",
-              "RelativeDocumentMoniker": "BookATable.Application\\DTO\\UserDTO.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\UserDTO.cs",
-              "RelativeToolTip": "BookATable.Application\\DTO\\UserDTO.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAuwA0AAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T15:39:24.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "PagedResponse.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\PagedResponse.cs",
-              "RelativeDocumentMoniker": "BookATable.Application\\DTO\\PagedResponse.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\PagedResponse.cs",
-              "RelativeToolTip": "BookATable.Application\\DTO\\PagedResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T17:36:41.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "BookATable.API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "BookATable.API\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAADgv1MAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:07:54.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Restaurant.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\Restaurant.cs",
-              "RelativeDocumentMoniker": "BookATable\\Tables\\Restaurant.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\Restaurant.cs",
-              "RelativeToolTip": "BookATable\\Tables\\Restaurant.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:56:19.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "EfGetMealCategoriesQuery.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\MealCategories\\EfGetMealCategoriesQuery.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Queries\\MealCategories\\EfGetMealCategoriesQuery.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\MealCategories\\EfGetMealCategoriesQuery.cs",
-              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Queries\\MealCategories\\EfGetMealCategoriesQuery.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAcwCkAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T20:56:39.377Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 4,
               "Title": "MealCategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Controllers\\MealCategoriesController.cs",
               "RelativeDocumentMoniker": "BookATable.API\\Controllers\\MealCategoriesController.cs",
               "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Controllers\\MealCategoriesController.cs",
               "RelativeToolTip": "BookATable.API\\Controllers\\MealCategoriesController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAIwBoAAAA+AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T19:17:31.603Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "EfGetUsersQuery.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUsersQuery.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUsersQuery.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUsersQuery.cs",
-              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUsersQuery.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAewDkAAABMAAAA",
+              "DocumentIndex": 0,
+              "Title": "ContainerExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Core\\ContainerExtensions.cs",
+              "RelativeDocumentMoniker": "BookATable.API\\Core\\ContainerExtensions.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Core\\ContainerExtensions.cs",
+              "RelativeToolTip": "BookATable.API\\Core\\ContainerExtensions.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAQwDkAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T17:14:33.877Z",
+              "WhenOpened": "2024-07-22T15:22:23.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "EfUpdateMealCategoryCommand.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfUpdateMealCategoryCommand.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfUpdateMealCategoryCommand.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfUpdateMealCategoryCommand.cs",
-              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfUpdateMealCategoryCommand.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAIAwwBEAAAAkAAAA",
+              "DocumentIndex": 9,
+              "Title": "CreateCityDTO.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\CreateCityDTO.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\DTO\\CreateCityDTO.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\CreateCityDTO.cs",
+              "RelativeToolTip": "BookATable.Application\\DTO\\CreateCityDTO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAnwBMAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T19:35:05.01Z",
+              "WhenOpened": "2024-07-24T09:38:55.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UseCaseHandler.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCaseHandler.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCaseHandler.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCaseHandler.cs",
-              "RelativeToolTip": "BookATable.Implementation\\UseCaseHandler.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAjwDcAAAAUAAAA",
+              "DocumentIndex": 8,
+              "Title": "EfGetMealCategoriesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\MealCategories\\EfGetMealCategoriesQuery.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Queries\\MealCategories\\EfGetMealCategoriesQuery.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\MealCategories\\EfGetMealCategoriesQuery.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Queries\\MealCategories\\EfGetMealCategoriesQuery.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAiwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T11:13:16.678Z",
+              "WhenOpened": "2024-07-23T20:56:39.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "EfFindUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\EfFindUseCase.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\EfFindUseCase.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\EfFindUseCase.cs",
-              "RelativeToolTip": "BookATable.Implementation\\UseCases\\EfFindUseCase.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAIAwwCIAAAANAAAA",
+              "DocumentIndex": 2,
+              "Title": "EfDeleteCityCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Cities\\EfDeleteCityCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Cities\\EfDeleteCityCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Cities\\EfDeleteCityCommand.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\Cities\\EfDeleteCityCommand.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAIwCIAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T15:30:56.138Z",
+              "WhenOpened": "2024-07-24T10:29:35.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UserProfile.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Profiles\\UserProfile.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\Profiles\\UserProfile.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Profiles\\UserProfile.cs",
-              "RelativeToolTip": "BookATable.Implementation\\Profiles\\UserProfile.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAqwBEAAABGAAAA",
+              "DocumentIndex": 11,
+              "Title": "IGetMealCategoriesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Queries\\MealCategories\\IGetMealCategoriesQuery.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Queries\\MealCategories\\IGetMealCategoriesQuery.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Queries\\MealCategories\\IGetMealCategoriesQuery.cs",
+              "RelativeToolTip": "BookATable.Application\\UseCases\\Queries\\MealCategories\\IGetMealCategoriesQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T15:45:32.161Z",
+              "WhenOpened": "2024-07-24T09:34:22.059Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "MealCategoryProfile.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Profiles\\MealCategoryProfile.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\Profiles\\MealCategoryProfile.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Profiles\\MealCategoryProfile.cs",
-              "RelativeToolTip": "BookATable.Implementation\\Profiles\\MealCategoryProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T20:46:38.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ActivateAccountDTO.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\ActivateAccountDTO.cs",
-              "RelativeDocumentMoniker": "BookATable.Application\\DTO\\ActivateAccountDTO.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\ActivateAccountDTO.cs",
-              "RelativeToolTip": "BookATable.Application\\DTO\\ActivateAccountDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:10:25.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "IGetUserQuery.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Queries\\Users\\IGetUserQuery.cs",
-              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Queries\\Users\\IGetUserQuery.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Queries\\Users\\IGetUserQuery.cs",
-              "RelativeToolTip": "BookATable.Application\\UseCases\\Queries\\Users\\IGetUserQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T15:28:02.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "EfGetUserQuery.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUserQuery.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUserQuery.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUserQuery.cs",
-              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUserQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T15:42:17.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "QueryableExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\QueryableExtensions.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\QueryableExtensions.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\QueryableExtensions.cs",
-              "RelativeToolTip": "BookATable.Implementation\\QueryableExtensions.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAnwBYAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T17:49:00.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "EfIsActivateUserQuery.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Users\\EfIsActivateUserQuery.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Queries\\Users\\EfIsActivateUserQuery.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Users\\EfIsActivateUserQuery.cs",
-              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Queries\\Users\\EfIsActivateUserQuery.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAmwB0AAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T15:15:58.397Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "EmailDTO.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\EmailDTO.cs",
-              "RelativeDocumentMoniker": "BookATable.Application\\DTO\\EmailDTO.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\EmailDTO.cs",
-              "RelativeToolTip": "BookATable.Application\\DTO\\EmailDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T15:14:34.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "ICreateMealCategoryCommand.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\MealCategories\\ICreateMealCategoryCommand.cs",
-              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\MealCategories\\ICreateMealCategoryCommand.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\MealCategories\\ICreateMealCategoryCommand.cs",
-              "RelativeToolTip": "BookATable.Application\\UseCases\\Commands\\MealCategories\\ICreateMealCategoryCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T19:18:39.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "ActivateAccountValidator.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\ActivateAccountValidator.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\Validators\\ActivateAccountValidator.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\ActivateAccountValidator.cs",
-              "RelativeToolTip": "BookATable.Implementation\\Validators\\ActivateAccountValidator.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBsAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:13:40.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "EfActivateAccountCommand.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfActivateAccountCommand.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfActivateAccountCommand.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfActivateAccountCommand.cs",
-              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfActivateAccountCommand.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAwBwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:12:12.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "IDeleteMealCategoryCommand.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\MealCategories\\IDeleteMealCategoryCommand.cs",
-              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\MealCategories\\IDeleteMealCategoryCommand.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\MealCategories\\IDeleteMealCategoryCommand.cs",
-              "RelativeToolTip": "BookATable.Application\\UseCases\\Commands\\MealCategories\\IDeleteMealCategoryCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T19:53:18.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "NamedEntityValidator.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\NamedEntityValidator.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\Validators\\NamedEntityValidator.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\NamedEntityValidator.cs",
-              "RelativeToolTip": "BookATable.Implementation\\Validators\\NamedEntityValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBMAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T19:24:43.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "RegisterUserValidator.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\RegisterUserValidator.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\Validators\\RegisterUserValidator.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\RegisterUserValidator.cs",
-              "RelativeToolTip": "BookATable.Implementation\\Validators\\RegisterUserValidator.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAACHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:14:06.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 16,
               "Title": "Context.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Context.cs",
               "RelativeDocumentMoniker": "BookATable.DataAccess\\Context.cs",
               "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Context.cs",
               "RelativeToolTip": "BookATable.DataAccess\\Context.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAWwEEAAAAMAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAnwCYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T16:57:16.802Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "IUpdateMealCategoryCommand.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\MealCategories\\IUpdateMealCategoryCommand.cs",
-              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\MealCategories\\IUpdateMealCategoryCommand.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\MealCategories\\IUpdateMealCategoryCommand.cs",
-              "RelativeToolTip": "BookATable.Application\\UseCases\\Commands\\MealCategories\\IUpdateMealCategoryCommand.cs",
+              "DocumentIndex": 13,
+              "Title": "EfFindUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\EfFindUseCase.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\EfFindUseCase.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\EfFindUseCase.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\EfFindUseCase.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAD4vyMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T15:30:56.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EfUpdateCityCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Cities\\EfUpdateCityCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Cities\\EfUpdateCityCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Cities\\EfUpdateCityCommand.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\Cities\\EfUpdateCityCommand.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T10:18:47.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EfCreateCityCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Cities\\EfCreateCityCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Cities\\EfCreateCityCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Cities\\EfCreateCityCommand.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\Cities\\EfCreateCityCommand.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T09:44:38.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EfGetUsersQuery.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUsersQuery.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUsersQuery.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUsersQuery.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUsersQuery.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAtwC4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T17:14:33.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EfGetCityQuery.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Cities\\EfGetCityQuery.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Queries\\Cities\\EfGetCityQuery.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Cities\\EfGetCityQuery.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Queries\\Cities\\EfGetCityQuery.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T12:16:32.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IGetCitiesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Queries\\Cities\\IGetCitiesQuery.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Queries\\Cities\\IGetCitiesQuery.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Queries\\Cities\\IGetCitiesQuery.cs",
+              "RelativeToolTip": "BookATable.Application\\UseCases\\Queries\\Cities\\IGetCitiesQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T12:29:11.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EfGetCitiesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Cities\\EfGetCitiesQuery.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Queries\\Cities\\EfGetCitiesQuery.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Cities\\EfGetCitiesQuery.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Queries\\Cities\\EfGetCitiesQuery.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAACwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T12:30:21.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BookATable.DataAccess.csproj",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\BookATable.DataAccess.csproj",
+              "RelativeDocumentMoniker": "BookATable.DataAccess\\BookATable.DataAccess.csproj",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\BookATable.DataAccess.csproj",
+              "RelativeToolTip": "BookATable.DataAccess\\BookATable.DataAccess.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T19:34:14.854Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-23T16:57:08.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "MealCategory.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\MealCategory.cs",
-              "RelativeDocumentMoniker": "BookATable\\Tables\\MealCategory.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\MealCategory.cs",
-              "RelativeToolTip": "BookATable\\Tables\\MealCategory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 14,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Profiles\\UserProfile.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\Profiles\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Profiles\\UserProfile.cs",
+              "RelativeToolTip": "BookATable.Implementation\\Profiles\\UserProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T19:19:11.254Z",
+              "WhenOpened": "2024-07-23T15:45:32.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "PagedSearch.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\PagedSearch.cs",
-              "RelativeDocumentMoniker": "BookATable.Application\\DTO\\PagedSearch.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\PagedSearch.cs",
-              "RelativeToolTip": "BookATable.Application\\DTO\\PagedSearch.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T17:47:23.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 17,
               "Title": "BookATable.Implementation.csproj",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\BookATable.Implementation.csproj",
               "RelativeDocumentMoniker": "BookATable.Implementation\\BookATable.Implementation.csproj",
@@ -961,7 +669,241 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 19,
+              "Title": "EfGetMealCategoryQuery.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\MealCategories\\EfGetMealCategoryQuery.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Queries\\MealCategories\\EfGetMealCategoryQuery.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\MealCategories\\EfGetMealCategoryQuery.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Queries\\MealCategories\\EfGetMealCategoryQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T09:35:27.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IGetCityQuery.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Queries\\Cities\\IGetCityQuery.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Queries\\Cities\\IGetCityQuery.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Queries\\Cities\\IGetCityQuery.cs",
+              "RelativeToolTip": "BookATable.Application\\UseCases\\Queries\\Cities\\IGetCityQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T12:14:55.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IDeleteCityCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\Cities\\IDeleteCityCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\Cities\\IDeleteCityCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\Cities\\IDeleteCityCommand.cs",
+              "RelativeToolTip": "BookATable.Application\\UseCases\\Commands\\Cities\\IDeleteCityCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T10:28:24.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IGetMealCategoryQuery.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Queries\\MealCategories\\IGetMealCategoryQuery.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Queries\\MealCategories\\IGetMealCategoryQuery.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Queries\\MealCategories\\IGetMealCategoryQuery.cs",
+              "RelativeToolTip": "BookATable.Application\\UseCases\\Queries\\MealCategories\\IGetMealCategoryQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T09:34:26.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CityProfile.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Profiles\\CityProfile.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\Profiles\\CityProfile.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Profiles\\CityProfile.cs",
+              "RelativeToolTip": "BookATable.Implementation\\Profiles\\CityProfile.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T12:11:46.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CreateNamedEntity.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\CreateNamedEntity.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\DTO\\CreateNamedEntity.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\CreateNamedEntity.cs",
+              "RelativeToolTip": "BookATable.Application\\DTO\\CreateNamedEntity.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAcwBcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T19:19:02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EfDeleteMealCategoryCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfDeleteMealCategoryCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfDeleteMealCategoryCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfDeleteMealCategoryCommand.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfDeleteMealCategoryCommand.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T10:35:08.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MealCategoryProfile.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Profiles\\MealCategoryProfile.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\Profiles\\MealCategoryProfile.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Profiles\\MealCategoryProfile.cs",
+              "RelativeToolTip": "BookATable.Implementation\\Profiles\\MealCategoryProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T20:46:38.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EfUpdateMealCategoryCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfUpdateMealCategoryCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfUpdateMealCategoryCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfUpdateMealCategoryCommand.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfUpdateMealCategoryCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAASwBEAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T19:35:05.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EfDeleteUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfDeleteUserCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfDeleteUserCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfDeleteUserCommand.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfDeleteUserCommand.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwDAAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:45:12.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "EfAdminDeleteUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminDeleteUserCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminDeleteUserCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminDeleteUserCommand.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminDeleteUserCommand.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAzwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:23:43.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EfUpdateUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfUpdateUserCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfUpdateUserCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfUpdateUserCommand.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfUpdateUserCommand.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAwCQAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:53:05.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EfAdminUpdateUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminUpdateUserCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminUpdateUserCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminUpdateUserCommand.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminUpdateUserCommand.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA+wCIAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T15:02:24.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IUpdateCityCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\Cities\\IUpdateCityCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\Cities\\IUpdateCityCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\Cities\\IUpdateCityCommand.cs",
+              "RelativeToolTip": "BookATable.Application\\UseCases\\Commands\\Cities\\IUpdateCityCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T10:17:04.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "BookATable.Application",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\BookATable.Application.csproj",
+              "RelativeDocumentMoniker": "BookATable.Application\\BookATable.Application.csproj",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\BookATable.Application.csproj",
+              "RelativeToolTip": "BookATable.Application\\BookATable.Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-24T10:10:06.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "BookATable.Domain",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\BookATable.Domain.csproj",
+              "RelativeDocumentMoniker": "BookATable\\BookATable.Domain.csproj",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\BookATable.Domain.csproj",
+              "RelativeToolTip": "BookATable\\BookATable.Domain.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-24T10:10:23.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UpdateUserValidator.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\UpdateUserValidator.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\Validators\\UpdateUserValidator.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\UpdateUserValidator.cs",
+              "RelativeToolTip": "BookATable.Implementation\\Validators\\UpdateUserValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T12:04:31.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "RegisterUserValidator.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\RegisterUserValidator.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\Validators\\RegisterUserValidator.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\RegisterUserValidator.cs",
+              "RelativeToolTip": "BookATable.Implementation\\Validators\\RegisterUserValidator.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAACHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:14:06.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "BookATable.API.csproj",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\BookATable.API.csproj",
               "RelativeDocumentMoniker": "BookATable.API\\BookATable.API.csproj",
@@ -974,7 +916,485 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "BaseUserUpdateValidator.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\BaseUserUpdateValidator.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\Validators\\BaseUserUpdateValidator.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\BaseUserUpdateValidator.cs",
+              "RelativeToolTip": "BookATable.Implementation\\Validators\\BaseUserUpdateValidator.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwCoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:58:27.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "BaseCityValidator.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\BaseCityValidator.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\Validators\\BaseCityValidator.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\BaseCityValidator.cs",
+              "RelativeToolTip": "BookATable.Implementation\\Validators\\BaseCityValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T09:50:01.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CreateCityValidator.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\CreateCityValidator.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\Validators\\CreateCityValidator.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\CreateCityValidator.cs",
+              "RelativeToolTip": "BookATable.Implementation\\Validators\\CreateCityValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T09:57:29.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ICreateCityCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\Cities\\ICreateCityCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\Cities\\ICreateCityCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\Cities\\ICreateCityCommand.cs",
+              "RelativeToolTip": "BookATable.Application\\UseCases\\Commands\\Cities\\ICreateCityCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T09:43:36.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "NamedEntityValidator.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\NamedEntityValidator.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\Validators\\NamedEntityValidator.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\NamedEntityValidator.cs",
+              "RelativeToolTip": "BookATable.Implementation\\Validators\\NamedEntityValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBQAAACIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T19:24:43.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "QueryableExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\QueryableExtensions.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\QueryableExtensions.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\QueryableExtensions.cs",
+              "RelativeToolTip": "BookATable.Implementation\\QueryableExtensions.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAvwA0AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T17:49:00.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "CityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\CityConfiguration.cs",
+              "RelativeDocumentMoniker": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\CityConfiguration.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\CityConfiguration.cs",
+              "RelativeToolTip": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\CityConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:36:12.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "City.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\City.cs",
+              "RelativeDocumentMoniker": "BookATable\\Tables\\City.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\City.cs",
+              "RelativeToolTip": "BookATable\\Tables\\City.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:32:48.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 47,
+              "Title": "20240723213651_UpdateCityConf.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213651_UpdateCityConf.cs",
+              "RelativeDocumentMoniker": "BookATable.DataAccess\\Migrations\\20240723213651_UpdateCityConf.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213651_UpdateCityConf.cs",
+              "RelativeToolTip": "BookATable.DataAccess\\Migrations\\20240723213651_UpdateCityConf.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:36:51.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\Contact.cs",
+              "RelativeDocumentMoniker": "BookATable\\Tables\\Contact.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\Contact.cs",
+              "RelativeToolTip": "BookATable\\Tables\\Contact.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:30:11.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Program.cs",
+              "RelativeDocumentMoniker": "BookATable.API\\Program.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Program.cs",
+              "RelativeToolTip": "BookATable.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:31:59.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "RestaurantType.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\RestaurantType.cs",
+              "RelativeDocumentMoniker": "BookATable\\Tables\\RestaurantType.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\RestaurantType.cs",
+              "RelativeToolTip": "BookATable\\Tables\\RestaurantType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:30:19.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Dish.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\Dish.cs",
+              "RelativeDocumentMoniker": "BookATable\\Tables\\Dish.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\Dish.cs",
+              "RelativeToolTip": "BookATable\\Tables\\Dish.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:30:26.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "DishConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\DishConfiguration.cs",
+              "RelativeDocumentMoniker": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\DishConfiguration.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\DishConfiguration.cs",
+              "RelativeToolTip": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\DishConfiguration.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:31:26.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "20240723213229_UpdateDishConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213229_UpdateDishConfiguration.cs",
+              "RelativeDocumentMoniker": "BookATable.DataAccess\\Migrations\\20240723213229_UpdateDishConfiguration.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213229_UpdateDishConfiguration.cs",
+              "RelativeToolTip": "BookATable.DataAccess\\Migrations\\20240723213229_UpdateDishConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:32:30.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "20240723213340_UpdateDishConfiguration2.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213340_UpdateDishConfiguration2.cs",
+              "RelativeDocumentMoniker": "BookATable.DataAccess\\Migrations\\20240723213340_UpdateDishConfiguration2.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213340_UpdateDishConfiguration2.cs",
+              "RelativeToolTip": "BookATable.DataAccess\\Migrations\\20240723213340_UpdateDishConfiguration2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:33:41.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "20240723213500_UpdateRestaurantConf2.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213500_UpdateRestaurantConf2.cs",
+              "RelativeDocumentMoniker": "BookATable.DataAccess\\Migrations\\20240723213500_UpdateRestaurantConf2.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723213500_UpdateRestaurantConf2.cs",
+              "RelativeToolTip": "BookATable.DataAccess\\Migrations\\20240723213500_UpdateRestaurantConf2.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:35:00.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "20240723212902_UpdateRestaurantConf.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723212902_UpdateRestaurantConf.cs",
+              "RelativeDocumentMoniker": "BookATable.DataAccess\\Migrations\\20240723212902_UpdateRestaurantConf.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723212902_UpdateRestaurantConf.cs",
+              "RelativeToolTip": "BookATable.DataAccess\\Migrations\\20240723212902_UpdateRestaurantConf.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:29:02.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "RestaurantConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantConfiguration.cs",
+              "RelativeDocumentMoniker": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantConfiguration.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantConfiguration.cs",
+              "RelativeToolTip": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantConfiguration.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:26:11.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "RestaurantImageConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantImageConfiguration.cs",
+              "RelativeDocumentMoniker": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantImageConfiguration.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantImageConfiguration.cs",
+              "RelativeToolTip": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\RestaurantImageConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:26:05.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "NamedEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\NamedEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "BookATable.DataAccess\\Configurations\\NamedEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\NamedEntityConfiguration.cs",
+              "RelativeToolTip": "BookATable.DataAccess\\Configurations\\NamedEntityConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:25:00.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "EfCreateMealCategoryCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfCreateMealCategoryCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfCreateMealCategoryCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfCreateMealCategoryCommand.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\MealCategories\\EfCreateMealCategoryCommand.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T19:21:55.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\DTO\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "BookATable.Application\\DTO\\UserDTO.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwA0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T15:39:24.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "PagedResponse.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\PagedResponse.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\DTO\\PagedResponse.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\PagedResponse.cs",
+              "RelativeToolTip": "BookATable.Application\\DTO\\PagedResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T17:36:41.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "BookATable.API\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "BookATable.API\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAADgv1MAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:07:54.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Restaurant.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\Restaurant.cs",
+              "RelativeDocumentMoniker": "BookATable\\Tables\\Restaurant.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\Restaurant.cs",
+              "RelativeToolTip": "BookATable\\Tables\\Restaurant.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:56:19.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "UseCaseHandler.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCaseHandler.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCaseHandler.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCaseHandler.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCaseHandler.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAjwDcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:13:16.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "ActivateAccountDTO.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\ActivateAccountDTO.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\DTO\\ActivateAccountDTO.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\ActivateAccountDTO.cs",
+              "RelativeToolTip": "BookATable.Application\\DTO\\ActivateAccountDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:10:25.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "IGetUserQuery.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Queries\\Users\\IGetUserQuery.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Queries\\Users\\IGetUserQuery.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Queries\\Users\\IGetUserQuery.cs",
+              "RelativeToolTip": "BookATable.Application\\UseCases\\Queries\\Users\\IGetUserQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T15:28:02.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "EfGetUserQuery.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUserQuery.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUserQuery.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUserQuery.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Queries\\Users\\EfGetUserQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T15:42:17.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "EfIsActivateUserQuery.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Users\\EfIsActivateUserQuery.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Queries\\Users\\EfIsActivateUserQuery.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Queries\\Users\\EfIsActivateUserQuery.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Queries\\Users\\EfIsActivateUserQuery.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAmwB0AAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T15:15:58.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "EmailDTO.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\EmailDTO.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\DTO\\EmailDTO.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\EmailDTO.cs",
+              "RelativeToolTip": "BookATable.Application\\DTO\\EmailDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T15:14:34.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "ICreateMealCategoryCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\MealCategories\\ICreateMealCategoryCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\MealCategories\\ICreateMealCategoryCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\MealCategories\\ICreateMealCategoryCommand.cs",
+              "RelativeToolTip": "BookATable.Application\\UseCases\\Commands\\MealCategories\\ICreateMealCategoryCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T19:18:39.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ActivateAccountValidator.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\ActivateAccountValidator.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\Validators\\ActivateAccountValidator.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\ActivateAccountValidator.cs",
+              "RelativeToolTip": "BookATable.Implementation\\Validators\\ActivateAccountValidator.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBsAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:13:40.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "EfActivateAccountCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfActivateAccountCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfActivateAccountCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfActivateAccountCommand.cs",
+              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfActivateAccountCommand.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAwBwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:12:12.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "IDeleteMealCategoryCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\MealCategories\\IDeleteMealCategoryCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\MealCategories\\IDeleteMealCategoryCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\MealCategories\\IDeleteMealCategoryCommand.cs",
+              "RelativeToolTip": "BookATable.Application\\UseCases\\Commands\\MealCategories\\IDeleteMealCategoryCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T19:53:18.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "IUpdateMealCategoryCommand.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\MealCategories\\IUpdateMealCategoryCommand.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\MealCategories\\IUpdateMealCategoryCommand.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\MealCategories\\IUpdateMealCategoryCommand.cs",
+              "RelativeToolTip": "BookATable.Application\\UseCases\\Commands\\MealCategories\\IUpdateMealCategoryCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T19:34:14.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "MealCategory.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\MealCategory.cs",
+              "RelativeDocumentMoniker": "BookATable\\Tables\\MealCategory.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\MealCategory.cs",
+              "RelativeToolTip": "BookATable\\Tables\\MealCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T19:19:11.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "PagedSearch.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\PagedSearch.cs",
+              "RelativeDocumentMoniker": "BookATable.Application\\DTO\\PagedSearch.cs",
+              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\PagedSearch.cs",
+              "RelativeToolTip": "BookATable.Application\\DTO\\PagedSearch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T17:47:23.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
               "Title": "ReservationConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\ReservationConfiguration.cs",
               "RelativeDocumentMoniker": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\ReservationConfiguration.cs",
@@ -986,7 +1406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 96,
               "Title": "20240723170551_UpdateReservationConf.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Migrations\\20240723170551_UpdateReservationConf.cs",
               "RelativeDocumentMoniker": "BookATable.DataAccess\\Migrations\\20240723170551_UpdateReservationConf.cs",
@@ -998,7 +1418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 75,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\User.cs",
               "RelativeDocumentMoniker": "BookATable\\Tables\\User.cs",
@@ -1010,19 +1430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "EfUpdateUserCommand.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfUpdateUserCommand.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfUpdateUserCommand.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfUpdateUserCommand.cs",
-              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfUpdateUserCommand.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAmwCQAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T11:53:05.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 74,
               "Title": "Reservation.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable\\Tables\\Reservation.cs",
               "RelativeDocumentMoniker": "BookATable\\Tables\\Reservation.cs",
@@ -1034,19 +1442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "EfAdminUpdateUserCommand.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminUpdateUserCommand.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminUpdateUserCommand.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminUpdateUserCommand.cs",
-              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminUpdateUserCommand.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAmwCIAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T15:02:24.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 76,
               "Title": "EfRegisterUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfRegisterUserCommand.cs",
               "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfRegisterUserCommand.cs",
@@ -1058,19 +1454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Program.cs",
-              "RelativeDocumentMoniker": "BookATable.API\\Program.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Program.cs",
-              "RelativeToolTip": "BookATable.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:31:59.202Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 77,
               "Title": "NotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Exceptions\\NotFoundException.cs",
               "RelativeDocumentMoniker": "BookATable.Implementation\\Exceptions\\NotFoundException.cs",
@@ -1082,31 +1466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "EfDeleteUserCommand.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfDeleteUserCommand.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfDeleteUserCommand.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfDeleteUserCommand.cs",
-              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfDeleteUserCommand.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAQwCQAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:45:12.716Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "EfAdminDeleteUserCommand.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminDeleteUserCommand.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminDeleteUserCommand.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminDeleteUserCommand.cs",
-              "RelativeToolTip": "BookATable.Implementation\\UseCases\\Commands\\Users\\EfAdminDeleteUserCommand.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T11:23:43.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 78,
               "Title": "GlobalExcenpionMiddlewareHandling.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Core\\GlobalExcenpionMiddlewareHandling.cs",
               "RelativeDocumentMoniker": "BookATable.API\\Core\\GlobalExcenpionMiddlewareHandling.cs",
@@ -1118,19 +1478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "UpdateUserValidator.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\UpdateUserValidator.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\Validators\\UpdateUserValidator.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\UpdateUserValidator.cs",
-              "RelativeToolTip": "BookATable.Implementation\\Validators\\UpdateUserValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBAAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T12:04:31.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 79,
               "Title": "IIsActivateUserQuery.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Queries\\Users\\IIsActivateUserQuery.cs",
               "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Queries\\Users\\IIsActivateUserQuery.cs",
@@ -1142,7 +1490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 80,
               "Title": "AdminUpdateUserValidator.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\AdminUpdateUserValidator.cs",
               "RelativeDocumentMoniker": "BookATable.Implementation\\Validators\\AdminUpdateUserValidator.cs",
@@ -1154,7 +1502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 81,
               "Title": "IAdminUpdateUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\Users\\IAdminUpdateUserCommand.cs",
               "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\Users\\IAdminUpdateUserCommand.cs",
@@ -1166,7 +1514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 83,
               "Title": "IUpdateUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\Users\\IUpdateUserCommand.cs",
               "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\Users\\IUpdateUserCommand.cs",
@@ -1178,19 +1526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "BaseUserUpdateValidator.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\BaseUserUpdateValidator.cs",
-              "RelativeDocumentMoniker": "BookATable.Implementation\\Validators\\BaseUserUpdateValidator.cs",
-              "ToolTip": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Validators\\BaseUserUpdateValidator.cs",
-              "RelativeToolTip": "BookATable.Implementation\\Validators\\BaseUserUpdateValidator.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAuwCoAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T11:58:27.775Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 82,
               "Title": "DbExceptionHandler.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Core\\DbExceptionHandler.cs",
               "RelativeDocumentMoniker": "BookATable.API\\Core\\DbExceptionHandler.cs",
@@ -1202,7 +1538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 84,
               "Title": "RegisterUserDTO.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\DTO\\RegisterUserDTO.cs",
               "RelativeDocumentMoniker": "BookATable.Application\\DTO\\RegisterUserDTO.cs",
@@ -1214,7 +1550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 85,
               "Title": "IAdminDeleteUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\Users\\IAdminDeleteUserCommand.cs",
               "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\Users\\IAdminDeleteUserCommand.cs",
@@ -1226,7 +1562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 89,
               "Title": "DefaultActorProvider.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\DefaultActorProvider.cs",
               "RelativeDocumentMoniker": "BookATable.Implementation\\DefaultActorProvider.cs",
@@ -1238,7 +1574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 88,
               "Title": "JwtApplicationActorProvider.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\Core\\JwtApplicationActorProvider.cs",
               "RelativeDocumentMoniker": "BookATable.API\\Core\\JwtApplicationActorProvider.cs",
@@ -1250,7 +1586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 87,
               "Title": "Actor.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Actor.cs",
               "RelativeDocumentMoniker": "BookATable.Implementation\\Actor.cs",
@@ -1262,7 +1598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 86,
               "Title": "IApplicationActor.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\IApplicationActor.cs",
               "RelativeDocumentMoniker": "BookATable.Application\\IApplicationActor.cs",
@@ -1274,7 +1610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 91,
               "Title": "IDeleteUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\Users\\IDeleteUserCommand.cs",
               "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\Users\\IDeleteUserCommand.cs",
@@ -1286,7 +1622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 92,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\Configurations\\TablesConfigurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "BookATable.DataAccess\\Configurations\\TablesConfigurations\\UserConfiguration.cs",
@@ -1298,7 +1634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 90,
               "Title": "IRegisterUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\Users\\IRegisterUserCommand.cs",
               "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\Users\\IRegisterUserCommand.cs",
@@ -1310,7 +1646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 93,
               "Title": "IActivateAccountCommand.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\UseCases\\Commands\\Users\\IActivateAccountCommand.cs",
               "RelativeDocumentMoniker": "BookATable.Application\\UseCases\\Commands\\Users\\IActivateAccountCommand.cs",
@@ -1322,7 +1658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 94,
               "Title": "SMTPEmailSender.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Implementation\\Email\\SMTPEmailSender.cs",
               "RelativeDocumentMoniker": "BookATable.Implementation\\Email\\SMTPEmailSender.cs",
@@ -1334,7 +1670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 95,
               "Title": "IEmailSender.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.Application\\Email\\IEmailSender.cs",
               "RelativeDocumentMoniker": "BookATable.Application\\Email\\IEmailSender.cs",

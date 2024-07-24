@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BookATable.Implementation.Profiles
 {
-    internal class MealCategoryProfile : Profile
+    public class MealCategoryProfile : Profile
     {
         public MealCategoryProfile()
         {

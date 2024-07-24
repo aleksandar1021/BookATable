@@ -39,8 +39,6 @@ namespace BookATable.Implementation.UseCases.Queries.MealCategories
                 query = query.Where(x => x.Name.Contains(data.Name));
             }
 
-            var mealCategories = query.ToList();
-
             return query.AsPagedReponse<MealCategory, ResponseNamedEntityDTO>(data, _mapper);
         }
     }

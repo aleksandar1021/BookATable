@@ -32,15 +32,11 @@ namespace BookATable.Implementation.UseCases.Commands.Users
                                      .FirstOrDefault(x => x.Id == data);
                                      
 
-            if(user == null)
+            if(user == null || !user.IsActive)
             {
                 throw new NotFoundException(nameof(User), data);
             }
 
-            if (!user.IsActive)
-            {
-                throw new ConflictException("User is alredy deleted.");
-            }
 
             if (_actor.Id != data)
             {

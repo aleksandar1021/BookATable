@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nXQmBhwFO/2LTQR3yOh3YIGwrKKfXA8ZWa+PxCT0U60CPfQbqNUiHh8PjWRRCWJd756ePIhmGdPSethA8XK7rA==",
+  "dgSpecHash": "gNKdHG4QeXOWPl4FYWFyQ300HkQFnhshTXJFfnwUiWvQiEQvp0CfY4JhPijNzQrgBXjE3JCq7r84M2JQhY5cOQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.DataAccess\\BookATable.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,7 @@
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.7\\microsoft.entityframeworkcore.design.8.0.7.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.entityframeworkcore.proxies\\8.0.7\\microsoft.entityframeworkcore.proxies.8.0.7.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.7\\microsoft.entityframeworkcore.relational.8.0.7.nupkg.sha512",
-    "C:\\Users\\aleks\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.4\\microsoft.entityframeworkcore.sqlserver.8.0.4.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.7\\microsoft.entityframeworkcore.sqlserver.8.0.7.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.7\\microsoft.entityframeworkcore.tools.8.0.7.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
