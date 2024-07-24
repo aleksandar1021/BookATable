@@ -17,6 +17,14 @@ using BookATable.Application.UseCases.Commands.Cities;
 using BookATable.Implementation.UseCases.Commands.Cities;
 using BookATable.Application.UseCases.Queries.Cities;
 using BookATable.Implementation.UseCases.Queries.Cities;
+using BookATable.Application.UseCases.Commands.Addresses;
+using BookATable.Implementation.UseCases.Commands.Addresses;
+using BookATable.Application.UseCases.Queries.Addresses;
+using BookATable.Implementation.UseCases.Queries.Addresses;
+using BookATable.Application.UseCases.Commands.RestaurantTypes;
+using BookATable.Implementation.UseCases.Commands.RestaurantTypes;
+using BookATable.Application.UseCases.Queries.RestaurantTypes;
+using BookATable.Implementation.UseCases.Queries.RestaurantTypes;
 
 namespace BookATable.API.Core
 {
@@ -28,9 +36,12 @@ namespace BookATable.API.Core
             services.AddTransient<ActivateAccountValidator>();
             services.AddTransient<UpdateUserValidator>();
             services.AddTransient<AdminUpdateUserValidator>();
-            services.AddTransient<NamedEntityValidator>();
+            services.AddTransient<MealCategoryValidator>();
             services.AddTransient<CreateCityValidator>();
             services.AddTransient<UpdateCityValidator>();
+            services.AddTransient<CreateAddressValidator>();
+            services.AddTransient<UpdateAddressValidator>();
+            services.AddTransient<RestaurantTypeValidator>();
 
 
 
@@ -56,6 +67,17 @@ namespace BookATable.API.Core
             services.AddTransient<IGetCityQuery, EfGetCityQuery>();
             services.AddTransient<IGetCitiesQuery, EfGetCitiesQuery>();
             services.AddTransient<IDeleteCityCommand, EfDeleteCityCommand>();
+            services.AddTransient<ICreateAddressCommand, EfCreateAddressCommand>();
+            services.AddTransient<IUpdateAddressCommand, EfUpdateAddressCommand>();
+            services.AddTransient<IDeleteAddressCommand, EfDeleteAddressCommand>();
+            services.AddTransient<IGetAddressQuery, EfGetAddressQuery>();
+            services.AddTransient<IGetAddressesQuery, EfGetAddresesQuery>();
+            services.AddTransient<ICreateRestaurantTypeCommand, EfCreateRestaurantTypesCommand>();
+            services.AddTransient<IUpdateRestaurantTypeCommand, EfUpdateRestaurantTypeCommand>();
+            services.AddTransient<IDeleteRestaurantTypeCommand, EfDeleteRestaurantTypeCommand>();
+            services.AddTransient<IGetRestaurantTypeQuery, EfGetRestaurantTypeQuery>();
+            services.AddTransient<IGetRestaurantTypesQuery, EfGetRestaurantTypesQuery>();
+
 
         }
 

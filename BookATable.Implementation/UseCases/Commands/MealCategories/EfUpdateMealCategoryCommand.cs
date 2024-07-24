@@ -15,8 +15,8 @@ namespace BookATable.Implementation.UseCases.Commands.MealCategories
 {
     public class EfUpdateMealCategoryCommand : EfUseCase, IUpdateMealCategoryCommand
     {
-        private NamedEntityValidator _validator;
-        public EfUpdateMealCategoryCommand(Context context, NamedEntityValidator validator) : base(context)
+        private MealCategoryValidator _validator;
+        public EfUpdateMealCategoryCommand(Context context, MealCategoryValidator validator) : base(context)
         {
             _validator = validator;
         }

@@ -63,7 +63,7 @@ namespace BookATable.Application.DTO
         public int Id { get; set; }
         public string City { get; set; }
         public string Place { get; set; }
-        public int? Number { get; set; }
+        public string Number { get; set; }
         public int? Floor { get; set; }
     }
 

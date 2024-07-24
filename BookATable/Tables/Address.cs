@@ -12,7 +12,7 @@ namespace BookATable.Domain.Tables
         public int CityId { get; set; }
         public string Place { get; set; }
         public string AddressOfPlace { get; set; }
-        public int? Number { get; set; }
+        public string Number { get; set; }
         public int? Floor { get; set; }
         public string Description { get; set; }
         public decimal? Latitude { get; set; }

@@ -63,8 +63,8 @@ namespace BookATable.DataAccess.Migrations
                     b.Property<decimal?>("Longitude")
                         .HasColumnType("decimal(9, 6)");
 
-                    b.Property<byte?>("Number")
-                        .HasColumnType("tinyint");
+                    b.Property<string>("Number")
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("Place")
                         .HasMaxLength(70)

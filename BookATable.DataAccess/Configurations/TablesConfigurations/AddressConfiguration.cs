@@ -21,7 +21,7 @@ namespace BookATable.DataAccess.Configurations.TablesConfigurations
                    .HasMaxLength(70);
 
             builder.Property(x => x.Number)
-                   .HasColumnType("tinyint");
+                   .HasColumnType("nvarchar(10)");
 
             builder.Property(x => x.Floor)
                    .HasColumnType("tinyint");

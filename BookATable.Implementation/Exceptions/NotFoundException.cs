@@ -14,17 +14,10 @@ namespace BookATable.Implementation.Exceptions
 
         }
 
-
-    }
-
-    public class NotFoundExceptionStringEntry : Exception
-    {
-        public NotFoundExceptionStringEntry(string entityType, string entry) :
+        public NotFoundException(string entityType, string entry) :
             base($"Entity of type {entityType} with entry: {entry} doesn't exist.")
         {
 
         }
-
-
     }
 }

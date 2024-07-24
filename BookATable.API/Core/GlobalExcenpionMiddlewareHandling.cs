@@ -46,11 +46,6 @@ namespace BookATable.API.Core
                     httpContext.Response.StatusCode = 404;
                     return;
                 }
-                if (exception is NotFoundExceptionStringEntry)
-                {
-                    httpContext.Response.StatusCode = 404;
-                    return;
-                }
                 if (exception is ConflictException)
                 {
                     httpContext.Response.StatusCode = 409;

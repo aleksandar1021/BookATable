@@ -31,7 +31,7 @@ namespace BookATable.Implementation.UseCases.Commands.Users
 
             if(user == null)
             {
-                throw new NotFoundExceptionStringEntry(nameof(User), data.Email);
+                throw new NotFoundException(nameof(User), data.Email);
             }
             if (user.IsActivatedUser)
             {

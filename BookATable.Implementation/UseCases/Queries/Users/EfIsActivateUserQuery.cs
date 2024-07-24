@@ -27,7 +27,7 @@ namespace BookATable.Implementation.UseCases.Queries.Users
 
             if(user == null)
             {
-                throw new NotFoundExceptionStringEntry(nameof(User),data);
+                throw new NotFoundException(nameof(User),data);
             }
 
             string isActivate = "false";
