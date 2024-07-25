@@ -9,13 +9,7 @@ using System.Threading.Tasks;
 
 namespace BookATable.Implementation.Profiles
 {
-    public class MealCategoryProfile : Profile
+    public class MealCategoryProfile : BaseNamedProfile<Appendice, ResponseNamedEntityDTO>
     {
-        public MealCategoryProfile()
-        {
-            CreateMap<MealCategory, ResponseNamedEntityDTO>()
-               .ForMember(x => x.Id, y => y.MapFrom(u => u.Id))
-               .ForMember(x => x.Name, y => y.MapFrom(u => u.Name));
-        }
     }
 }

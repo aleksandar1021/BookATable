@@ -16,8 +16,8 @@ namespace BookATable.Implementation.UseCases.Commands.RestaurantTypes
 {
     public class EfUpdateRestaurantTypeCommand : EfUseCase, IUpdateRestaurantTypeCommand
     {
-        private RestaurantTypeValidator _validator;
-        public EfUpdateRestaurantTypeCommand(Context context, RestaurantTypeValidator validator) : base(context)
+        private UpdateRestaurantTypeValidator _validator;
+        public EfUpdateRestaurantTypeCommand(Context context, UpdateRestaurantTypeValidator validator) : base(context)
         {
             _validator = validator;
         }

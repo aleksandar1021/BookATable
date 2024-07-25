@@ -25,6 +25,13 @@ using BookATable.Application.UseCases.Commands.RestaurantTypes;
 using BookATable.Implementation.UseCases.Commands.RestaurantTypes;
 using BookATable.Application.UseCases.Queries.RestaurantTypes;
 using BookATable.Implementation.UseCases.Queries.RestaurantTypes;
+using BookATable.Application.UseCases.Commands.Appendices;
+using BookATable.Implementation.UseCases.Commands.Appendices;
+using BookATable.DataAccess;
+using BookATable.Domain.Tables;
+using Microsoft.EntityFrameworkCore;
+using BookATable.Application.UseCases.Queries.Appendices;
+using BookATable.Implementation.UseCases.Queries.Appendices;
 
 namespace BookATable.API.Core
 {
@@ -42,6 +49,10 @@ namespace BookATable.API.Core
             services.AddTransient<CreateAddressValidator>();
             services.AddTransient<UpdateAddressValidator>();
             services.AddTransient<RestaurantTypeValidator>();
+            services.AddTransient<UpdateMealCategoryValidator>();
+            services.AddTransient<UpdateRestaurantTypeValidator>();
+            services.AddTransient<CreateAppendiceValidator>();
+            services.AddTransient<UpdateAppendiceValidator>();
 
 
 
@@ -77,7 +88,25 @@ namespace BookATable.API.Core
             services.AddTransient<IDeleteRestaurantTypeCommand, EfDeleteRestaurantTypeCommand>();
             services.AddTransient<IGetRestaurantTypeQuery, EfGetRestaurantTypeQuery>();
             services.AddTransient<IGetRestaurantTypesQuery, EfGetRestaurantTypesQuery>();
+            services.AddTransient<ICreateAppendiceCommand, EfCreateAppendiceCommand>();
+            services.AddTransient<IUpdateAppendiceCommand, EfUpdateAppendiceCommand>();
 
+
+            services.AddTransient<Func<Context, DbSet<Appendice>>>(provider => context => context.Set<Appendice>());
+            services.AddTransient<Func<Context, DbSet<MealCategory>>>(provider => context => context.Set<MealCategory>());
+            services.AddTransient<Func<Context, DbSet<RestaurantType>>>(provider => context => context.Set<RestaurantType>());
+
+            services.AddTransient<Func<Appendice, string>>(provider => entity => entity.Name);
+            services.AddTransient<Func<MealCategory, string>>(provider => entity => entity.Name);
+            services.AddTransient<Func<RestaurantType, string>>(provider => entity => entity.Name);
+
+            services.AddTransient<Func<Appendice, int>>(provider => entity => entity.Id);
+            services.AddTransient<Func<MealCategory, int>>(provider => entity => entity.Id);
+            services.AddTransient<Func<RestaurantType, int>>(provider => entity => entity.Id);
+
+            services.AddTransient<IDeleteAppendiceCommand, EfDeleteAppendiceCommand>();
+            services.AddTransient<IGetAppendiceQuery, EfGetAppendiceQuery>();
+            services.AddTransient<IGetAppendicesQuery, EfGetAppendicesQuery>();
 
         }
 
