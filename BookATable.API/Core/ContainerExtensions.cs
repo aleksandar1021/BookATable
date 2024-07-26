@@ -36,6 +36,10 @@ using BookATable.Application.UseCases.Commands.Restaurants;
 using BookATable.Implementation.UseCases.Commands.Restaurants;
 using BookATable.Application.UseCases.Queries.Restaurants;
 using BookATable.Implementation.UseCases.Queries.Restaurants;
+using BookATable.Application.UseCases.Commands.MealCategoryRestaurants;
+using BookATable.Implementation.UseCases.Commands.MealCategoryRestaurants;
+using BookATable.Implementation.UseCases.Queries.MealCategoryRestaurants;
+using BookATable.Application.UseCases.Queries.MealCategoryRestaurants;
 
 namespace BookATable.API.Core
 {
@@ -60,6 +64,7 @@ namespace BookATable.API.Core
             services.AddTransient<CreateRestaurantValidator>();
             services.AddTransient<UpdateRestaurantValidator>();
             services.AddTransient<AdminUpdateRestourantValidator>();
+            services.AddTransient<MealCategoryRestaurantValidator>();
 
 
 
@@ -121,6 +126,11 @@ namespace BookATable.API.Core
             services.AddTransient<IAdminDeleteRestaurantCommand, EfAdminDeleteRestaurantCommand>();
             services.AddTransient<IGetRestaurantQuery, EfGetRestaurantQuery>();
             services.AddTransient<IGetRestaurantsQuery, EfGetRestaurantsQuery>();
+            services.AddTransient<ICreateMealCategoryRestaurantCommand, EfCreateMealCategoryRestaurantCommand>();
+            services.AddTransient<IUpdateMealCategoryRestaurantCommand, EfUpdateMealCategoryRestaurantCommand>();
+            services.AddTransient<IDeleteMealCategoryRestaurantCommand, EfDeleteMealCategoryRestaurantCommand>();
+            services.AddTransient<IGetMealCategoryRestaurantQuery, EfGetMealCategoryRestaurantQuery>();
+            services.AddTransient<IGetMealCategoryRestaurantsQuery, EfGetMealCategoryRestaurantsQuery>();
 
         }
 
