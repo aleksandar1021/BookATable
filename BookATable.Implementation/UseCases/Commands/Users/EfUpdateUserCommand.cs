@@ -39,10 +39,8 @@ namespace BookATable.Implementation.UseCases.Commands.Users
 
             if (_actor.Id != data.Id)
             {
-                throw new ConflictException("You can only edit your account.");
+                throw new UnauthorizedAccessException();
             }
-
-            
 
             _validator.ValidateAndThrow(data);
 

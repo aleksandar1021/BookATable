@@ -19,6 +19,7 @@ namespace BookATable.Domain.Tables
         public string Description { get; set; }
         public int MaxNumberOfGuests { get; set; }
         public int TimeInterval { get; set; }
+        public bool IsActivated { get; set; }
 
         public virtual Address Address { get; set; }
         public virtual User User { get; set; }

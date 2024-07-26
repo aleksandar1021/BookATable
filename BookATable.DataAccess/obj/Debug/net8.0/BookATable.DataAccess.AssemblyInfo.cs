@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookATable.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66b5dbfef63618cd3adc6c70e9223a61a0180b1b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eaee8a6269d69e346adafb1a5351028a172a35d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookATable.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookATable.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

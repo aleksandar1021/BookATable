@@ -12,17 +12,16 @@ using System.Threading.Tasks;
 
 namespace BookATable.Implementation.UseCases.Queries.Users
 {
-    public class EfGetUsersQuery : EfFindUseCase<UserResultDTO, User>, IGetUsersQuery
+    public class EfGetUsersQuery : EfUseCase, IGetUsersQuery
     {
         private readonly IMapper _mapper;
-        public EfGetUsersQuery(Context context, IMapper mapper) : base(context, mapper)
+        public EfGetUsersQuery(Context context, IMapper mapper) : base(context)
         {
             _mapper = mapper;
         }
 
-        public override int Id => 8;
-
-        public override string Name => "Search users";
+        public  int Id => 8;
+        public string Name => "Search users";
 
         public PagedResponse<UserResultDTO> Execute(SearchUserDTO data)
         {

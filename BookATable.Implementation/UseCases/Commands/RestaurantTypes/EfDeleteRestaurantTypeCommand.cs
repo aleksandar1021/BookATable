@@ -31,6 +31,11 @@ namespace BookATable.Implementation.UseCases.Commands.RestaurantTypes
                 throw new NotFoundException(nameof(RestaurantType), data);
             }
 
+            if (rt.Restaurants.Any())
+            {
+                throw new ConflictException("Restaurant type does not can be deleted.");
+            }
+
             rt.IsActive = false;
             Context.SaveChanges();
         }

@@ -545,8 +545,12 @@ namespace BookATable.DataAccess.Migrations
                         .HasDefaultValueSql("GETDATE()");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActivated")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
 
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
@@ -565,7 +569,9 @@ namespace BookATable.DataAccess.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("TimeInterval")
-                        .HasColumnType("int");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(10);
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");

@@ -2,6 +2,7 @@
 using BookATable.DataAccess;
 using BookATable.Domain.Tables;
 using BookATable.Implementation.Exceptions;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,11 +23,16 @@ namespace BookATable.Implementation.UseCases.Commands.MealCategories
 
         public void Execute(int data)
         {
-            MealCategory mealCategory = Context.MealCategories.FirstOrDefault(x => x.Id == data);
+            MealCategory mealCategory = Context.MealCategories.Include(x => x.MealCategoryRestaurants).FirstOrDefault(x => x.Id == data);
 
             if (mealCategory == null || !mealCategory.IsActive) 
             {
                 throw new NotFoundException(nameof(MealCategory), data);
+            }
+
+            if (mealCategory.MealCategoryRestaurants.Any())
+            {
+                throw new ConflictException("Meal does not can be deleted.");
             }
 
             mealCategory.IsActive = false;

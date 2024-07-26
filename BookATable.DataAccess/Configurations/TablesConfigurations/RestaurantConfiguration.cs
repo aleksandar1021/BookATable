@@ -29,18 +29,18 @@ namespace BookATable.DataAccess.Configurations.TablesConfigurations
                    .IsRequired()
                    .HasColumnType("tinyint");
 
+            builder.Property(x => x.IsActivated)
+                  .HasDefaultValue(false);
+
             builder.Property(x => x.WorkUntilMinute)
                    .IsRequired()
                    .HasColumnType("tinyint");
-
-            builder.Property(x => x.Description)
-                   .IsRequired();
 
             builder.Property(x => x.MaxNumberOfGuests)
                    .IsRequired();
 
             builder.Property(x => x.TimeInterval)
-                   .IsRequired();
+                   .HasDefaultValue(10);
 
             builder.HasOne(x => x.Address)
                    .WithMany(x => x.Restaurants)

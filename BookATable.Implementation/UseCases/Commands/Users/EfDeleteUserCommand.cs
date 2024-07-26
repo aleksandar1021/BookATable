@@ -40,7 +40,7 @@ namespace BookATable.Implementation.UseCases.Commands.Users
 
             if (_actor.Id != data)
             {
-                throw new ConflictException("You cannot delete other users, you can only delete your account.");
+                throw new UnauthorizedAccessException();
             }
 
 

@@ -30,9 +30,12 @@ namespace BookATable.Implementation.UseCases.Commands.Cities
                 throw new NotFoundException(nameof(City), data);
             }
 
-            city.IsActive = false;
+            if (city.Addresses.Any())
+            {
+                throw new ConflictException("City does not can be deleted.");
+            }
 
-            city.Addresses.ToList().ForEach(r => r.IsActive = false);
+            city.IsActive = false;
 
             Context.SaveChanges();
 
