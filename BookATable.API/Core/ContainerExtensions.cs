@@ -44,6 +44,14 @@ using BookATable.Application.UseCases.Commands.AppendiceRestaurants;
 using BookATable.Implementation.UseCases.Commands.AppendiceRestaurants;
 using BookATable.Application.UseCases.Queries.AppendiceRestaurants;
 using BookATable.Implementation.UseCases.Queries.AppendiceRestaurants;
+using BookATable.Application.UseCases.Commands.Dish;
+using BookATable.Implementation.UseCases.Commands.Dish;
+using BookATable.Application.UseCases.Queries.Dish;
+using BookATable.Implementation.UseCases.Queries.Dish;
+using BookATable.Application.UseCases.Commands.Ratings;
+using BookATable.Implementation.UseCases.Commands.Ratings;
+using BookATable.Application.UseCases.Queries.Ratings;
+using BookATable.Implementation.UseCases.Queries.Ratings;
 
 namespace BookATable.API.Core
 {
@@ -70,6 +78,8 @@ namespace BookATable.API.Core
             services.AddTransient<AdminUpdateRestourantValidator>();
             services.AddTransient<MealCategoryRestaurantValidator>();
             services.AddTransient<AppendiceRestaurantValidator>();
+            services.AddTransient<CreateDishValidator>();
+            services.AddTransient<CreateRatingValidator>();
 
 
 
@@ -141,6 +151,16 @@ namespace BookATable.API.Core
             services.AddTransient<IDeleteAppendiceRestaurantCommand, EfDeleteAppendiceRestaurantCommand>();
             services.AddTransient<IGetAppendiceRestaurantQuery, EfGetAppendiceRestaurantQuery>();
             services.AddTransient<IGetAppendiceRestaurantsQuery, EfGetAppendiceRestaurantsQuery>();
+            services.AddTransient<ICreateDishCommand, EfCreateDishCommand>();
+            services.AddTransient<IUpdateDishCommand, EfUpdateDishCommand>();
+            services.AddTransient<IDeleteDishCommand, EfDeleteDishCommand>();
+            services.AddTransient<IGetDishQuery, EfGetDishQuery>();
+            services.AddTransient<IGetDishesQuery, EfGetDishesQuery>();
+            services.AddTransient<ICreateRatingCommand, EfCreateRatingCommand>();
+            services.AddTransient<IUpdateRatingCommand, EfUpdateRatingCommand>();
+            services.AddTransient<IDeleteRatingCommand, EfDeleteRatingCommand>();
+            services.AddTransient<IGetRatingQuery, EfGetRatingQuery>();
+            services.AddTransient<IGetRatingsQuery, EfGetRatingsQuery>();
 
         }
 

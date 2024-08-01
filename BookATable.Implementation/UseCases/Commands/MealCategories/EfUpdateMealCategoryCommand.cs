@@ -29,7 +29,7 @@ namespace BookATable.Implementation.UseCases.Commands.MealCategories
         {
             MealCategory mealCategory = Context.MealCategories.FirstOrDefault(x => x.Id == data.Id);
 
-            if(mealCategory == null)
+            if(mealCategory == null || !mealCategory.IsActive)
             {
                 throw new NotFoundException(nameof(MealCategory), data.Id);
             }
