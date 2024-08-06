@@ -27,6 +27,6 @@ namespace BookATable.Application.DTO
     public class ResponseAppendiceRestaurantDTO : UpdateAppendiceRestaurantDTO
     {
         public ResponseNamedEntityDTO Appendice { get; set; }
-        public ResponseRestaurantForMealCategoryRestaurantDTO Restaurant { get; set; }
+        public BaseResponseRestaurantDTO Restaurant { get; set; }
     }
 }

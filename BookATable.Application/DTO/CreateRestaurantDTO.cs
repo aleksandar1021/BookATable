@@ -19,6 +19,8 @@ namespace BookATable.Application.DTO
         public string Description { get; set; }
         public int MaxNumberOfGuests { get; set; }
         public int TimeInterval { get; set; }
+        public virtual IEnumerable<string> Images { get; set; }
+        public string PrimaryImagePath { get; set; }
     }
 
     public class UpdateRestaurantDTO : CreateRestaurantDTO
@@ -37,6 +39,8 @@ namespace BookATable.Application.DTO
         public IEnumerable<ResponseAppendiceRestaurantForRestaurant> AppendiceRestaurants { get; set; }
 
     }
+
+ 
 
     public class ResponseAppendiceRestaurantForRestaurant
     {
@@ -57,6 +61,7 @@ namespace BookATable.Application.DTO
         public int Id { get; set; }
         public int RestaurantId { get; set; }
         public string Path { get; set; }
+        public bool? IsPrimary { get; set; }
     }
     public class ResponseMealCategoryForRestaurant
     {

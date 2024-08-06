@@ -85,3 +85,4 @@ C:\Users\aleks\Desktop\BookATable\BookATable.API\obj\Debug\net8.0\BookATable.API
 C:\Users\aleks\Desktop\BookATable\BookATable.API\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\aleks\Desktop\BookATable\BookATable.API\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\aleks\Desktop\BookATable\BookATable.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\aleks\Desktop\BookATable\BookATable.API\bin\Debug\net8.0\BookATable.API.staticwebassets.runtime.json

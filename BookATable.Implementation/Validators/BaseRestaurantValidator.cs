@@ -67,6 +67,20 @@ namespace BookATable.Implementation.Validators
             RuleFor(x => x.TimeInterval)
                 .InclusiveBetween(0, 60)
                 .WithMessage("Time interval must be between 0 and 60.");
+
+            RuleFor(x => x.Images).NotEmpty()
+                    .WithMessage("Minimum one image is required.")
+                    .DependentRules(() =>
+                    {
+                        RuleForEach(x => x.Images).Must((x, fileName) =>
+                        {
+                            var path = Path.Combine("wwwroot", "temp", fileName);
+
+                            var exists = Path.Exists(path);
+
+                            return exists;
+                        }).WithMessage("File not exist.");
+                    });
         }
     }
 }

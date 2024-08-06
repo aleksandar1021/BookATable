@@ -247,6 +247,9 @@ namespace BookATable.DataAccess.Migrations
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
 
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
@@ -271,36 +274,6 @@ namespace BookATable.DataAccess.Migrations
                     b.HasIndex("RestaurantId");
 
                     b.ToTable("Dishs");
-                });
-
-            modelBuilder.Entity("BookATable.Domain.Tables.DishImage", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("DishId")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Path")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("DishId");
-
-                    b.ToTable("DishImages");
                 });
 
             modelBuilder.Entity("BookATable.Domain.Tables.ErrorLog", b =>
@@ -469,9 +442,6 @@ namespace BookATable.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ReservationNumber")
-                        .HasColumnType("int");
-
                     b.Property<int>("RestaurantId")
                         .HasColumnType("int");
 
@@ -619,6 +589,9 @@ namespace BookATable.DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
                         .HasDefaultValue(true);
+
+                    b.Property<bool?>("IsPrimary")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Path")
                         .IsRequired()
@@ -810,17 +783,6 @@ namespace BookATable.DataAccess.Migrations
                     b.Navigation("Restaurant");
                 });
 
-            modelBuilder.Entity("BookATable.Domain.Tables.DishImage", b =>
-                {
-                    b.HasOne("BookATable.Domain.Tables.Dish", "Dish")
-                        .WithMany("DishImages")
-                        .HasForeignKey("DishId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Dish");
-                });
-
             modelBuilder.Entity("BookATable.Domain.Tables.MealCategoryRestaurant", b =>
                 {
                     b.HasOne("BookATable.Domain.Tables.MealCategory", "MealCategory")
@@ -961,11 +923,6 @@ namespace BookATable.DataAccess.Migrations
             modelBuilder.Entity("BookATable.Domain.Tables.City", b =>
                 {
                     b.Navigation("Addresses");
-                });
-
-            modelBuilder.Entity("BookATable.Domain.Tables.Dish", b =>
-                {
-                    b.Navigation("DishImages");
                 });
 
             modelBuilder.Entity("BookATable.Domain.Tables.MealCategory", b =>

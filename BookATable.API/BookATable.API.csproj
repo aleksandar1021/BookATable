@@ -20,4 +20,11 @@
     <ProjectReference Include="..\BookATable\BookATable.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\dishPhotos\" />
+    <Folder Include="wwwroot\userPhotos\" />
+    <Folder Include="wwwroot\restaurantPhotos\" />
+    <Folder Include="wwwroot\temp\" />
+  </ItemGroup>
+
 </Project>

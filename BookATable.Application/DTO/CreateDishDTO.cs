@@ -12,6 +12,7 @@ namespace BookATable.Application.DTO
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int RestaurantId { get; set; }
+        public string Image { get; set; }
     }
     public class UpdateDishDTO : CreateDishDTO
     {
@@ -27,6 +28,7 @@ namespace BookATable.Application.DTO
 
         public decimal? Price { get; set; }
         public int? RestaurantId { get; set; }
+
     }
 
     public class ResponseDishDTO 
@@ -36,6 +38,8 @@ namespace BookATable.Application.DTO
         public string Description { get; set; }
         public decimal? Price { get; set; }
         public int? RestaurantId { get; set; }
+        public string Image { get; set; }
+
     }
 
 }

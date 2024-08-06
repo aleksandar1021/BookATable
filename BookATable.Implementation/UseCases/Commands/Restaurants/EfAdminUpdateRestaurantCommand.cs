@@ -49,6 +49,53 @@ namespace BookATable.Implementation.UseCases.Commands.Restaurants
             restaurant.UserId = data.UserId;
             restaurant.UpdatedAt = DateTime.UtcNow;
 
+            var oldImages = restaurant.RestaurantImages.Select(i => i.Path).ToList();
+
+
+            Context.RestaurantImages.RemoveRange(restaurant.RestaurantImages);
+
+
+
+            restaurant.RestaurantImages = data.Images.Select(i => new RestaurantImage
+            {
+                Restaurant = restaurant,
+                Path = i
+            }).ToList();
+
+
+            foreach (var image in data.Images)
+            {
+                var tempImageName = Path.Combine("wwwroot", "temp", image);
+                var destinationFileName = Path.Combine("wwwroot", "restaurantPhotos", image);
+                System.IO.File.Move(tempImageName, destinationFileName);
+            }
+
+
+
+
+            foreach (var oldImage in oldImages)
+            {
+                var oldImagePath = Path.Combine("wwwroot", "restaurantPhotos", oldImage);
+                if (System.IO.File.Exists(oldImagePath))
+                {
+                    System.IO.File.Delete(oldImagePath);
+                }
+            }
+
+            restaurant.RestaurantImages = data.Images.Select(i => new RestaurantImage
+            {
+                Restaurant = restaurant,
+                Path = i
+            }).ToList();
+
+            foreach (var image in restaurant.RestaurantImages)
+            {
+                if (image.Path == data.PrimaryImagePath)
+                {
+                    image.IsPrimary = true;
+                }
+            }
+
             Context.SaveChanges();
         }
     }

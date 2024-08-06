@@ -15,7 +15,6 @@ namespace BookATable.Domain.Tables
         public int TimeMinute { get; set; }
         public string Note { get; set; }
         public DateOnly Date { get; set; }
-        public int ReservationNumber { get; set; }
         public string ReservationCode { get; set; }
         public bool IsRealised { get; set; }
 

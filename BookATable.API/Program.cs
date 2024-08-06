@@ -8,6 +8,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Data;
 using System.Text;
 using BookATable.DataAccess;
+using BookATable.Implementation.Profiles;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -60,6 +62,7 @@ builder.Services.AddTransient<IApplicationActor>(x =>
 
     return x.GetService<IApplicationActorProvider>().GetActor();
 });
+
 
 
 

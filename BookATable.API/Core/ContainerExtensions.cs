@@ -52,6 +52,15 @@ using BookATable.Application.UseCases.Commands.Ratings;
 using BookATable.Implementation.UseCases.Commands.Ratings;
 using BookATable.Application.UseCases.Queries.Ratings;
 using BookATable.Implementation.UseCases.Queries.Ratings;
+using BookATable.Application.UseCases.Commands.Reservations;
+using BookATable.Implementation.UseCases.Commands.Reservations;
+using BookATable.Application.UseCases.Queries.Reservations;
+using BookATable.Implementation.UseCases.Queries.Reservations;
+using BookATable.Application.UseCases.Commands.ReservationAppendices;
+using BookATable.Implementation.UseCases.Commands.ReservationAppendices;
+using BookATable.Application.UseCases.Queries.ReservationAppendices;
+using BookATable.Implementation.UseCases.Queries.ReservationAppendices;
+using BookATable.Implementation.Profiles;
 
 namespace BookATable.API.Core
 {
@@ -80,6 +89,8 @@ namespace BookATable.API.Core
             services.AddTransient<AppendiceRestaurantValidator>();
             services.AddTransient<CreateDishValidator>();
             services.AddTransient<CreateRatingValidator>();
+            services.AddTransient<CreateReservationValidator>();
+            services.AddTransient<CreateReservationAppendiceValidator>();
 
 
 
@@ -161,6 +172,17 @@ namespace BookATable.API.Core
             services.AddTransient<IDeleteRatingCommand, EfDeleteRatingCommand>();
             services.AddTransient<IGetRatingQuery, EfGetRatingQuery>();
             services.AddTransient<IGetRatingsQuery, EfGetRatingsQuery>();
+            services.AddTransient<ICreateReservationCommand, EfCreateReservationCommand>();
+            services.AddTransient<IUpdateReservationCommand, EfUpdateReservationCommand>();
+            services.AddTransient<IDeleteReservationCommand, EfDeleteReservationCommand>();
+            services.AddTransient<IGetReservationQuery, EfGetReservationQuery>();
+            services.AddTransient<IGetReservationsQuery, EfGetReservationsQuery>();
+            services.AddTransient<ICreateReservationAppendiceCommand, EfCreateReservationAppendiceCommand>();
+            services.AddTransient<IUpdateReservationAppendiceCommand, EfUpdateReservationAppendiceCommand>();
+            services.AddTransient<IGetReservationAppendiceQuery, EfGetReservationAppendiceQuery>();
+            services.AddTransient<IGetReservationAppendicesQuery, EfGetReservationAppendicesQuery>();
+
+
 
         }
 

@@ -12,8 +12,8 @@ namespace BookATable.Domain.Tables
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int RestaurantId { get; set; }
-
+        public string Image { get; set; }
         public virtual Restaurant Restaurant { get; set; }
-        public virtual ICollection<DishImage> DishImages { get; set; } = new HashSet<DishImage>();
+        //public virtual ICollection<DishImage> DishImages { get; set; } = new HashSet<DishImage>();
     }
 }

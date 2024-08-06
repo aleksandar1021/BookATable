@@ -22,7 +22,7 @@ namespace BookATable.Application.DTO
     public class ResponseRatingDTO : UpdateRatingDTO
     {
         public ResponseBaseUser User { get; set; }
-        public ResponseRestaurantForMealCategoryRestaurantDTO Restaurant { get; set; }
+        public BaseResponseRestaurantDTO Restaurant { get; set; }
     }
 
     public class ResponseBaseUser

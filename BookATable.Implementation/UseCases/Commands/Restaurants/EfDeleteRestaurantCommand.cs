@@ -30,7 +30,6 @@ namespace BookATable.Implementation.UseCases.Commands.Restaurants
                                                        .Include(x => x.Reservations)
                                                        .Include(x => x.AppendiceRestaurants)
                                                        .Include(x => x.Dishs)
-                                                       .ThenInclude(x => x.DishImages)
                                                        .Include(x => x.MealCategoryRestaurants)
                                                        .Include(x => x.Ratings)
                                                        .FirstOrDefault(x => x.Id == data);
@@ -54,11 +53,14 @@ namespace BookATable.Implementation.UseCases.Commands.Restaurants
             restaurant.MealCategoryRestaurants.ToList().ForEach(r => r.IsActive = false);
             restaurant.Ratings.ToList().ForEach(r => r.IsActive = false);
 
-            foreach(var dish in restaurant.Dishs)
+ 
+
+            foreach (var oldImage in restaurant.RestaurantImages)
             {
-                foreach(var image in dish.DishImages)
+                var oldImagePath = Path.Combine("wwwroot", "restaurantPhotos", oldImage.Path);
+                if (System.IO.File.Exists(oldImagePath))
                 {
-                    image.IsActive = false;
+                    System.IO.File.Delete(oldImagePath);
                 }
             }
 

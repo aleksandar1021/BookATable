@@ -75,7 +75,6 @@ namespace BookATable.DataAccess
         public DbSet<MealCategoryRestaurant> MealCategoryRestaurants { get; set; }
         public DbSet<RestaurantImage> RestaurantImages { get; set; }
         public DbSet<Dish> Dishs { get; set; }
-        public DbSet<DishImage> DishImages { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Appendice> Appendices { get; set; }
         public DbSet<AppendiceRestaurant> AppendiceRestaurants { get; set; }

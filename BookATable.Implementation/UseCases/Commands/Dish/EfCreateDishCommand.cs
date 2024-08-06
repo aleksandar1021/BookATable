@@ -33,8 +33,16 @@ namespace BookATable.Implementation.UseCases.Commands.Dish
                 Name = data.Name,
                 Description = data.Description,
                 Price = data.Price,
-                RestaurantId = data.RestaurantId
+                RestaurantId = data.RestaurantId,
+                Image = data.Image
             };
+
+            if (data.Image != null)
+            {
+                var tempImageName = Path.Combine("wwwroot", "temp", data.Image);
+                var destinationFileName = Path.Combine("wwwroot", "dishPhotos", data.Image);
+                System.IO.File.Move(tempImageName, destinationFileName);
+            }
 
             Context.Dishs.Add(dish);
             Context.SaveChanges();

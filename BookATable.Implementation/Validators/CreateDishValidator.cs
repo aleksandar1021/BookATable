@@ -18,6 +18,9 @@ namespace BookATable.Implementation.Validators
                                 .MaximumLength(70)
                                 .WithMessage("Maximum length for name is 70 charatcers.");
 
+            RuleFor(x => x.Image).NotEmpty()
+                                .WithMessage("Dish image is required.");
+
             RuleFor(x => x.Description).NotEmpty()
                                 .WithMessage("Dish description is required.")
                                 .MaximumLength(150)
@@ -38,6 +41,19 @@ namespace BookATable.Implementation.Validators
                                .WithMessage("Restaurant is required.")
                                .Must(x => ctx.Restaurants.Any(a => a.Id == x))
                                .WithMessage("Restaurant does not exists.");
+
+            RuleFor(x => x.Image).Must((x, fileName) =>
+            {
+                if (fileName == null)
+                {
+                    return true;
+                }
+                var path = Path.Combine("wwwroot", "temp", fileName);
+
+                var exists = Path.Exists(path);
+
+                return exists;
+            }).WithMessage("File doesn't exist.");
         }
     }
 }

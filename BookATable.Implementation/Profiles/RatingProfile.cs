@@ -26,7 +26,7 @@ namespace BookATable.Implementation.Profiles
                     Lastname = u.User.LastName,
                     Email = u.User.Email
                 }))
-                .ForMember(x => x.Restaurant, y => y.MapFrom(u => new ResponseRestaurantForMealCategoryRestaurantDTO
+                .ForMember(x => x.Restaurant, y => y.MapFrom(u => new BaseResponseRestaurantDTO
                 {
                     Id = u.Restaurant.Id,
                     Name = u.Restaurant.Name,

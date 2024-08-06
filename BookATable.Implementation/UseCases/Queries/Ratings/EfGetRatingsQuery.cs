@@ -49,7 +49,7 @@ namespace BookATable.Implementation.UseCases.Queries.Ratings
 
             if (!string.IsNullOrEmpty(data.Message))
             {
-                query = query.Where(x => x.Message.Contains(data.Message));
+                query = query.Where(x => x.Message.ToLower().Contains(data.Message.ToLower()));
             }
 
             if (!string.IsNullOrEmpty(data.RestaurantName))

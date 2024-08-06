@@ -17,7 +17,7 @@ namespace BookATable.Implementation.Profiles
                .ForMember(x => x.Id, y => y.MapFrom(u => u.Id))
                .ForMember(x => x.RestaurantId, y => y.MapFrom(u => u.RestaurantId))
                .ForMember(x => x.Appendice, y => y.MapFrom(u => u.AppendiceId))
-               .ForMember(x => x.Restaurant, y => y.MapFrom(u => new ResponseRestaurantForMealCategoryRestaurantDTO
+               .ForMember(x => x.Restaurant, y => y.MapFrom(u => new BaseResponseRestaurantDTO
                {
                    Id = u.Id,
                    Name = u.Restaurant.Name,

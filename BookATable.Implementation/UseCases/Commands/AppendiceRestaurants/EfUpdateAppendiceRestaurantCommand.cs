@@ -4,6 +4,7 @@ using BookATable.DataAccess;
 using BookATable.Domain.Tables;
 using BookATable.Implementation.Exceptions;
 using BookATable.Implementation.Validators;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,8 @@ namespace BookATable.Implementation.UseCases.Commands.AppendiceRestaurants
             {
                 throw new NotFoundException(nameof(AppendiceRestaurant), data.Id);
             }
+
+            _validator.ValidateAndThrow(data);
 
             ar.RestaurantId = data.RestaurantId;
             ar.AppendiceId = data.AppendiceId;

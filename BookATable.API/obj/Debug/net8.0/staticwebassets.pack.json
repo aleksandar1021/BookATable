@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\wwwroot\\dishPhotos\\febf4ec1-bfa6-4c78-8be9-b25cedaaf909.png",
+      "PackagePath": "staticwebassets\\dishPhotos\\febf4ec1-bfa6-4c78-8be9-b25cedaaf909.png"
+    },
+    {
+      "Id": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\wwwroot\\restaurantPhotos\\8a540e82-e66a-4198-bc77-d08812600c5a.png",
+      "PackagePath": "staticwebassets\\restaurantPhotos\\8a540e82-e66a-4198-bc77-d08812600c5a.png"
+    },
+    {
+      "Id": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\wwwroot\\restaurantPhotos\\a543eed3-6be5-4300-b415-9c9087923d7d.png",
+      "PackagePath": "staticwebassets\\restaurantPhotos\\a543eed3-6be5-4300-b415-9c9087923d7d.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BookATable.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BookATable.API.props",
+      "PackagePath": "build\\BookATable.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BookATable.API.props",
+      "PackagePath": "buildMultiTargeting\\BookATable.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BookATable.API.props",
+      "PackagePath": "buildTransitive\\BookATable.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

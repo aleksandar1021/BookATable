@@ -1,11 +1,77 @@
 {
   "Version": 1,
-  "Hash": "3I9RmGAS+ky4aAhASzrZ2+JiruAC5IY+wZWuKWR7isI=",
+  "Hash": "WOKJ3ORTRKh+9M1BYUpuJOADeUt+nQ2bDFq4OyMdUpI=",
   "Source": "BookATable.API",
   "BasePath": "_content/BookATable.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "BookATable.API\\wwwroot",
+      "Source": "BookATable.API",
+      "ContentRoot": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\wwwroot\\",
+      "BasePath": "_content/BookATable.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\wwwroot\\dishPhotos\\febf4ec1-bfa6-4c78-8be9-b25cedaaf909.png",
+      "SourceId": "BookATable.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\wwwroot\\",
+      "BasePath": "_content/BookATable.API",
+      "RelativePath": "dishPhotos/febf4ec1-bfa6-4c78-8be9-b25cedaaf909.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\dishPhotos\\febf4ec1-bfa6-4c78-8be9-b25cedaaf909.png"
+    },
+    {
+      "Identity": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\wwwroot\\restaurantPhotos\\8a540e82-e66a-4198-bc77-d08812600c5a.png",
+      "SourceId": "BookATable.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\wwwroot\\",
+      "BasePath": "_content/BookATable.API",
+      "RelativePath": "restaurantPhotos/8a540e82-e66a-4198-bc77-d08812600c5a.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\restaurantPhotos\\8a540e82-e66a-4198-bc77-d08812600c5a.png"
+    },
+    {
+      "Identity": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\wwwroot\\restaurantPhotos\\a543eed3-6be5-4300-b415-9c9087923d7d.png",
+      "SourceId": "BookATable.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aleks\\Desktop\\BookATable\\BookATable.API\\wwwroot\\",
+      "BasePath": "_content/BookATable.API",
+      "RelativePath": "restaurantPhotos/a543eed3-6be5-4300-b415-9c9087923d7d.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\restaurantPhotos\\a543eed3-6be5-4300-b415-9c9087923d7d.png"
+    }
+  ]
 }

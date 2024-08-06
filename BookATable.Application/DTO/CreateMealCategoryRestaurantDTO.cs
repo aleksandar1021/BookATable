@@ -31,10 +31,10 @@ namespace BookATable.Application.DTO
         public int MealCategoryId { get; set; }
         public int RestaurantId { get; set; }
         public ResponseNamedEntityDTO MealCategory { get; set; }
-        public ResponseRestaurantForMealCategoryRestaurantDTO Restaurant { get; set; }
+        public BaseResponseRestaurantDTO Restaurant { get; set; }
 
     }
-    public class ResponseRestaurantForMealCategoryRestaurantDTO
+    public class BaseResponseRestaurantDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }

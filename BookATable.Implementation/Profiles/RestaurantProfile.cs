@@ -47,7 +47,6 @@ namespace BookATable.Implementation.Profiles
                                                           Date = x.Date,
                                                           Note = x.Note,
                                                           ReservationCode = x.ReservationCode,
-                                                          ReservationNumber = x.ReservationNumber,
                                                           RestaurantId = x.RestaurantId,
                                                           TimeHour = x.TimeHour,
                                                           TimeMinute = x.TimeMinute,
@@ -66,7 +65,8 @@ namespace BookATable.Implementation.Profiles
                                                  {
                                                      Id = x.Id,
                                                      Path = x.Path,
-                                                     RestaurantId = x.RestaurantId
+                                                     RestaurantId = x.RestaurantId,
+                                                     IsPrimary = x.IsPrimary
                                                  })))
                 .ForMember(x => x.Dishes, y => y.MapFrom(p => p.Dishs
                                                  .Where(r => r.IsActive)

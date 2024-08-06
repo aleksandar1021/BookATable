@@ -10,6 +10,7 @@ namespace BookATable.Domain.Tables
     {
         public int RestaurantId { get; set; }
         public string Path { get; set; }
+        public bool? IsPrimary { get; set; }
 
         public virtual Restaurant Restaurant { get; set; }
     }
