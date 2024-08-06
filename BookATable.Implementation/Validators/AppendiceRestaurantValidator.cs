@@ -16,13 +16,13 @@ namespace BookATable.Implementation.Validators
             RuleFor(x => x.RestaurantId)
                    .NotEmpty()
                    .WithMessage("Restaurant is required.")
-                   .Must(x => ctx.Restaurants.Any(a => a.Id == x))
+                   .Must(x => ctx.Restaurants.Any(a => a.Id == x && a.IsActive))
                    .WithMessage("Restaurant does not exists.");
 
             RuleFor(x => x.AppendiceId)
                    .NotEmpty()
                    .WithMessage("Appendice is required.")
-                   .Must(x => ctx.Appendices.Any(a => a.Id == x))
+                   .Must(x => ctx.Appendices.Any(a => a.Id == x && a.IsActive))
                    .WithMessage("Appendice does not exists.");
         }
     }

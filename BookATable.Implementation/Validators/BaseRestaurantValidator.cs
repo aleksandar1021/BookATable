@@ -38,20 +38,20 @@ namespace BookATable.Implementation.Validators
             RuleFor(x => x.AddressId)
                    .NotEmpty()
                    .WithMessage("Address is required.")
-                   .Must(x => ctx.Addresses.Any(a => a.Id == x))
+                   .Must(x => ctx.Addresses.Any(a => a.Id == x && a.IsActive))
                    .WithMessage("Address does not exists.");
 
 
             RuleFor(x => x.UserId)
                    .NotEmpty()
                    .WithMessage("User is required.")
-                   .Must(x => ctx.Users.Any(a => a.Id == x))
+                   .Must(x => ctx.Users.Any(a => a.Id == x && a.IsActive))
                    .WithMessage("User does not exists.");
 
             RuleFor(x => x.RestaurantTypeId)
                    .NotEmpty()
                    .WithMessage("Restaurant type is required.")
-                   .Must(x => ctx.RestaurantTypes.Any(a => a.Id == x))
+                   .Must(x => ctx.RestaurantTypes.Any(a => a.Id == x && a.IsActive))
                    .WithMessage("Restaurant type does not exists.");
 
             RuleFor(x => x.Description)

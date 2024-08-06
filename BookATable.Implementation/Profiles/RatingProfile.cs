@@ -23,7 +23,7 @@ namespace BookATable.Implementation.Profiles
                 {
                     Id = u.User.Id,
                     FirstName = u.User.FirstName,
-                    Lastname = u.User.LastName,
+                    LastName = u.User.LastName,
                     Email = u.User.Email
                 }))
                 .ForMember(x => x.Restaurant, y => y.MapFrom(u => new BaseResponseRestaurantDTO

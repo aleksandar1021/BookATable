@@ -24,7 +24,7 @@ namespace BookATable.Implementation.Validators
 
             RuleFor(x => x.Email).NotEmpty()
                                  .WithMessage("Email is required.")
-                                 .Must(x => ctx.Users.Any(e => e.Email == x))
+                                 .Must(x => ctx.Users.Any(e => e.Email == x && e.IsActive))
                                  .WithMessage("The user does not exist.");
         }
     }

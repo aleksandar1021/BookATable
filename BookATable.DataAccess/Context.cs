@@ -85,6 +85,7 @@ namespace BookATable.DataAccess
         public DbSet<UseCaseLog> UseCaseLogs { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Rating> Ratings { get; set; }
+        public DbSet<Saved> Saved { get; set; }
 
 
     }

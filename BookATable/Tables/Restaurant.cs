@@ -30,6 +30,7 @@ namespace BookATable.Domain.Tables
         public virtual ICollection<AppendiceRestaurant> AppendiceRestaurants { get; set; } = new HashSet<AppendiceRestaurant>();
         public virtual ICollection<Reservation> Reservations { get; set; } = new HashSet<Reservation>();
         public virtual ICollection<Rating> Ratings { get; set; } = new HashSet<Rating>();
+        public virtual ICollection<Saved> Saved { get; set; } = new HashSet<Saved>();
 
 
     }

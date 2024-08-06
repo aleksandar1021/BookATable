@@ -17,7 +17,7 @@ namespace BookATable.Implementation.Validators
             RuleFor(x => x.Email)
                   .EmailAddress()
                   .WithMessage("Email address must be in format (user@gmail.com).")
-                  .Must(x => !ctx.Users.Any(u => _actor.Id != u.Id && u.Email == x))
+                  .Must(x => !ctx.Users.Any(u => _actor.Id != u.Id && u.Email == x && u.IsActive))
                   .WithMessage("Email is already in use.");
         }
     }

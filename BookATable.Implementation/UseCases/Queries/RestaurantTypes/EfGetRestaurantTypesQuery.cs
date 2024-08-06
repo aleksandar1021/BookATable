@@ -35,7 +35,7 @@ namespace BookATable.Implementation.UseCases.Queries.RestaurantTypes
 
             if (!string.IsNullOrEmpty(data.Name))
             {
-                query = query.Where(x => x.Name.Contains(data.Name));
+                query = query.Where(x => x.Name.ToLower().Contains(data.Name.ToLower()));
             }
 
             

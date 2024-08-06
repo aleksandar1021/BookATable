@@ -21,6 +21,7 @@ namespace BookATable.Domain.Tables
         public virtual ICollection<Restaurant> Restaurants { get; set; } = new HashSet<Restaurant>();
         public virtual ICollection<UserUseCase> UserUseCases { get; set; } = new HashSet<UserUseCase>();
         public virtual ICollection<Rating> Ratings { get; set; } = new HashSet<Rating>();
+        public virtual ICollection<Saved> Saved { get; set; } = new HashSet<Saved>();
 
     }
 }

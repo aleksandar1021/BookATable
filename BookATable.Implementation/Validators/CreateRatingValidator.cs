@@ -15,7 +15,7 @@ namespace BookATable.Implementation.Validators
         {
             RuleFor(x => x.RestaurantId).NotEmpty()
                                         .WithMessage("Restaurant is required.")
-                                        .Must(x => ctx.Restaurants.Any(a => a.Id == x))
+                                        .Must(x => ctx.Restaurants.Any(a => a.Id == x && a.IsActive))
                                         .WithMessage("Restaurant does not exists.");
 
             RuleFor(x => x.Rate).NotEmpty()
@@ -27,7 +27,7 @@ namespace BookATable.Implementation.Validators
 
             RuleFor(x => x.UserId).NotEmpty()
                                         .WithMessage("User is required.")
-                                        .Must(x => ctx.Users.Any(a => a.Id == x))
+                                        .Must(x => ctx.Users.Any(a => a.Id == x && a.IsActive))
                                         .WithMessage("User does not exists.");
         }
     }

@@ -16,7 +16,7 @@ namespace BookATable.Implementation.Validators
             RuleFor(x => x.CityId)
                    .NotEmpty()
                    .WithMessage("City Id is required.")
-                   .Must(x => !ctx.Addresses.Any(a => a.Id == x))
+                   .Must(x => !ctx.Addresses.Any(a => a.Id == x && a.IsActive))
                    .WithMessage("City does not exists.");
 
             RuleFor(x => x.Place)

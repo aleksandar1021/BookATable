@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookATable.Implementation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e236008e3f5707ef0a903c4756ac7c3fd46334d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7c5c54335b0688f7866bfafe221b87f2530b286")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookATable.Implementation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookATable.Implementation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

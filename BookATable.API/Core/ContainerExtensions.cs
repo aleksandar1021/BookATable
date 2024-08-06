@@ -61,6 +61,10 @@ using BookATable.Implementation.UseCases.Commands.ReservationAppendices;
 using BookATable.Application.UseCases.Queries.ReservationAppendices;
 using BookATable.Implementation.UseCases.Queries.ReservationAppendices;
 using BookATable.Implementation.Profiles;
+using BookATable.Application.UseCases.Commands.Saved;
+using BookATable.Implementation.UseCases.Commands.Saved;
+using BookATable.Implementation.UseCases.Queries.Saved;
+using BookATable.Application.UseCases.Queries.Saved;
 
 namespace BookATable.API.Core
 {
@@ -91,6 +95,7 @@ namespace BookATable.API.Core
             services.AddTransient<CreateRatingValidator>();
             services.AddTransient<CreateReservationValidator>();
             services.AddTransient<CreateReservationAppendiceValidator>();
+            services.AddTransient<SavedValidator>();
 
 
 
@@ -181,6 +186,9 @@ namespace BookATable.API.Core
             services.AddTransient<IUpdateReservationAppendiceCommand, EfUpdateReservationAppendiceCommand>();
             services.AddTransient<IGetReservationAppendiceQuery, EfGetReservationAppendiceQuery>();
             services.AddTransient<IGetReservationAppendicesQuery, EfGetReservationAppendicesQuery>();
+            services.AddTransient<ICreateDeleteSavedCommand, EfCreateDeleteSavedCommand>();
+            services.AddTransient<IGetSavedQuery, EfGetSavedQuery>();
+            services.AddTransient<IGetSavedsQuery, EfGetSavedsQuery>();
 
 
 

@@ -39,7 +39,7 @@ namespace BookATable.Implementation.Validators
             RuleFor(x => x.RestaurantId)
                                .NotEmpty()
                                .WithMessage("Restaurant is required.")
-                               .Must(x => ctx.Restaurants.Any(a => a.Id == x))
+                               .Must(x => ctx.Restaurants.Any(a => a.Id == x && a.IsActive))
                                .WithMessage("Restaurant does not exists.");
 
             RuleFor(x => x.Image).Must((x, fileName) =>

@@ -644,6 +644,42 @@ namespace BookATable.DataAccess.Migrations
                     b.ToTable("RestaurantTypes");
                 });
 
+            modelBuilder.Entity("BookATable.Domain.Tables.Saved", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
+                    b.Property<int>("RestaurantId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RestaurantId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Saved");
+                });
+
             modelBuilder.Entity("BookATable.Domain.Tables.UseCaseLog", b =>
                 {
                     b.Property<int>("Id")
@@ -897,6 +933,25 @@ namespace BookATable.DataAccess.Migrations
                     b.Navigation("Restaurant");
                 });
 
+            modelBuilder.Entity("BookATable.Domain.Tables.Saved", b =>
+                {
+                    b.HasOne("BookATable.Domain.Tables.Restaurant", "Restaurant")
+                        .WithMany("Saved")
+                        .HasForeignKey("RestaurantId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("BookATable.Domain.Tables.User", "User")
+                        .WithMany("Saved")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Restaurant");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("BookATable.Domain.Tables.UserUseCase", b =>
                 {
                     b.HasOne("BookATable.Domain.Tables.User", "User")
@@ -948,6 +1003,8 @@ namespace BookATable.DataAccess.Migrations
                     b.Navigation("Reservations");
 
                     b.Navigation("RestaurantImages");
+
+                    b.Navigation("Saved");
                 });
 
             modelBuilder.Entity("BookATable.Domain.Tables.RestaurantType", b =>
@@ -962,6 +1019,8 @@ namespace BookATable.DataAccess.Migrations
                     b.Navigation("Reservations");
 
                     b.Navigation("Restaurants");
+
+                    b.Navigation("Saved");
 
                     b.Navigation("UserUseCases");
                 });

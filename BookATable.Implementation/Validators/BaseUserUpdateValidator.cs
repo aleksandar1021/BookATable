@@ -22,7 +22,7 @@ namespace BookATable.Implementation.Validators
 
             RuleFor(x => x.Id).NotEmpty()
                                   .WithMessage("User Id is required.")
-                                  .Must(x => ctx.Users.Any(u => u.Id == x))
+                                  .Must(x => ctx.Users.Any(u => u.Id == x && u.IsActive))
                                   .WithMessage("User not exist.");
 
             RuleFor(x => x.FirstName)
