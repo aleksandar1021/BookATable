@@ -86,7 +86,8 @@ namespace BookATable.DataAccess
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Rating> Ratings { get; set; }
         public DbSet<Saved> Saved { get; set; }
+        public DbSet<RegularClosedDays> RegularClosedDays { get; set; }
 
-
+        public DbSet<SpecificClosedDays> SpecificClosedDays { get; set; }
     }
 }

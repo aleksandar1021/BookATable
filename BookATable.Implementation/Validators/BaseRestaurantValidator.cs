@@ -13,6 +13,8 @@ namespace BookATable.Implementation.Validators
     {
         public BaseRestaurantValidator(Context ctx)
         {
+            CascadeMode = CascadeMode.StopOnFirstFailure;
+
             RuleFor(x => x.Name)
             .NotEmpty()
             .Matches("^[A-Z][a-zA-Z1-9\\s]{2,69}$")

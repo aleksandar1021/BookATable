@@ -17,6 +17,7 @@ namespace BookATable.Domain.Tables
         public DateOnly Date { get; set; }
         public string ReservationCode { get; set; }
         public bool IsRealised { get; set; }
+        public bool? IsAccepted { get; set; }
 
 
         public virtual User User { get; set; }

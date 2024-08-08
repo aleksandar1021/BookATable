@@ -37,7 +37,23 @@ namespace BookATable.Application.DTO
         public IEnumerable<ResponseRestaurantImageForRestaurant> RestaurantImages { get; set; }
         public IEnumerable<ResponseDishForRestaurant> Dishes { get; set; }
         public IEnumerable<ResponseAppendiceRestaurantForRestaurant> AppendiceRestaurants { get; set; }
+        public IEnumerable<string> RegularColsedDays { get; set; }
+        public IEnumerable<SpeceificClosedDays> SpecificColsedDays { get; set; }
 
+
+    }
+
+    public class SpeceificClosedDays
+    {
+        public DateOnly ClosedFrom { get; set; }
+        public DateOnly ClosedTo { get; set; }
+    }
+
+    public class ResponseRestaurantForUserDTO : ResponseRestaurantDTO
+    {
+        public bool IsSaved { get; set; }
+        public decimal Rate { get; set; }
+        public int NumberOfRates { get; set; }
     }
 
  

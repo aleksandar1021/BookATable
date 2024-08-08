@@ -38,6 +38,13 @@ namespace BookATable.Implementation.UseCases.Commands.Reservations
 
             _validator.ValidateAndThrow(data);
 
+            Restaurant targetRestaurant = Context.Restaurants.FirstOrDefault(x => x.Id == data.RestaurantId);
+
+            if (data.TimeHour < targetRestaurant.WorkFromHour || data.TimeHour >= targetRestaurant.WorkUntilHour)
+            {
+                throw new ConflictException("The restaurant is not open at that time.");
+            }
+
             reservation.UserId = data.UserId;
             reservation.RestaurantId = data.RestaurantId;
             reservation.NumberOfGuests = data.NumberOfGuests;

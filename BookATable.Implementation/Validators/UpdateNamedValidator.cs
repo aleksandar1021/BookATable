@@ -14,6 +14,8 @@ namespace BookATable.Implementation.Validators
     {
         public UpdateNamedValidator(Context ctx, Func<Context, DbSet<T>> dbSetFunc, Func<T, string> getNameFunc, Func<T, int> getIdFunc)
         {
+            CascadeMode = CascadeMode.StopOnFirstFailure;
+
             RuleFor(x => x.Name)
                 .NotEmpty()
                 .WithMessage("Name is required.")

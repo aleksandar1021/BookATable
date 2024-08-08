@@ -13,6 +13,12 @@ namespace BookATable.Implementation.Profiles
     {
         public RestaurantProfile()
         {
+            CreateMap<System.DayOfWeek, string>().ConvertUsing(d => d.ToString());
+
+            CreateMap<SpecificClosedDays, SpeceificClosedDays>()
+                .ForMember(dest => dest.ClosedFrom, opt => opt.MapFrom(src => src.ClosedFrom))
+                .ForMember(dest => dest.ClosedTo, opt => opt.MapFrom(src => src.ClosedTo));
+
             CreateMap<Restaurant, ResponseRestaurantDTO>()
                 .ForMember(x => x.Id, y => y.MapFrom(u => u.Id))
                 .ForMember(x => x.Name, y => y.MapFrom(u => u.Name))
@@ -27,6 +33,19 @@ namespace BookATable.Implementation.Profiles
                 .ForMember(x => x.MaxNumberOfGuests, y => y.MapFrom(u => u.MaxNumberOfGuests))
                 .ForMember(x => x.TimeInterval, y => y.MapFrom(u => u.TimeInterval))
                 .ForMember(x => x.IsActivated, y => y.MapFrom(u => u.IsActivated))
+                .ForMember(x => x.RegularColsedDays, y => y.MapFrom(u => u.RegularClosedDays.Select(rcd => rcd.DayOfWeek.ToString())))
+                .ForMember(x => x.SpecificColsedDays,
+                            y => y.MapFrom(u => u.SpecificClosedDays
+                            .Where(sc => sc.ClosedFrom > DateOnly.FromDateTime(DateTime.Now) && sc.IsActive)
+                            .Select(sc => new SpecificClosedDays
+                            {
+                                ClosedFrom = sc.ClosedFrom,
+                                ClosedTo = sc.ClosedTo
+                            })
+                    )
+                )
+
+
 
                 .ForMember(x => x.Ratings, y => y.MapFrom(p => p.Ratings
                                                  .Where(r => r.IsActive)

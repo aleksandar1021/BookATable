@@ -52,6 +52,15 @@ namespace BookATable.DataAccess.Configurations.TablesConfigurations
                    .HasForeignKey(x => x.RestaurantTypeId)
                    .OnDelete(DeleteBehavior.Restrict);
 
+            builder.HasMany(x => x.RegularClosedDays)
+                   .WithOne(x => x.Restaurant)
+                   .HasForeignKey(x => x.RestaurantId)
+                   .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasMany(x => x.SpecificClosedDays)
+                   .WithOne(x => x.Restaurant)
+                   .HasForeignKey(x => x.RestaurantId)
+                   .OnDelete(DeleteBehavior.Restrict);
 
         }
     }

@@ -1,9 +1,11 @@
-﻿using BookATable.Application.DTO;
+﻿using BookATable.Application;
+using BookATable.Application.DTO;
 using BookATable.DataAccess;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,8 +13,12 @@ namespace BookATable.Implementation.Validators
 {
     public class CreateDishValidator : AbstractValidator<CreateDishDTO>
     {
-        public CreateDishValidator(Context ctx)
+        private IApplicationActor actor;
+        public CreateDishValidator(Context ctx, IApplicationActor actor)
         {
+            CascadeMode = CascadeMode.StopOnFirstFailure;
+
+            this.actor = actor;
             RuleFor(x => x.Name).NotEmpty()
                                 .WithMessage("Dish name is required.")
                                 .MaximumLength(70)
@@ -40,7 +46,10 @@ namespace BookATable.Implementation.Validators
                                .NotEmpty()
                                .WithMessage("Restaurant is required.")
                                .Must(x => ctx.Restaurants.Any(a => a.Id == x && a.IsActive))
-                               .WithMessage("Restaurant does not exists.");
+                               .WithMessage("Restaurant does not exists.")
+                               .Must((dto, x) => ctx.Restaurants.Where(r => r.Id == x).Select(x => x.UserId).FirstOrDefault() == actor.Id)
+                               .WithMessage("You do not have the right to perform this action.");
+
 
             RuleFor(x => x.Image).Must((x, fileName) =>
             {
@@ -54,6 +63,7 @@ namespace BookATable.Implementation.Validators
 
                 return exists;
             }).WithMessage("File doesn't exist.");
+            this.actor = actor;
         }
     }
 }

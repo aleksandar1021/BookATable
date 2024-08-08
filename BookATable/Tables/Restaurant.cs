@@ -31,6 +31,8 @@ namespace BookATable.Domain.Tables
         public virtual ICollection<Reservation> Reservations { get; set; } = new HashSet<Reservation>();
         public virtual ICollection<Rating> Ratings { get; set; } = new HashSet<Rating>();
         public virtual ICollection<Saved> Saved { get; set; } = new HashSet<Saved>();
+        public virtual ICollection<RegularClosedDays> RegularClosedDays { get; set; } = new HashSet<RegularClosedDays>();
+        public virtual ICollection<SpecificClosedDays> SpecificClosedDays { get; set; } = new HashSet<SpecificClosedDays>();
 
 
     }

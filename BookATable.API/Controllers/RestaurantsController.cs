@@ -23,13 +23,22 @@ namespace BookATable.API.Controllers
 
 
         // GET: api/<RestaurantsController>
-        [HttpGet]
-        public IActionResult Search([FromQuery] SearchRestaurantDTO search, [FromServices] IGetRestaurantsQuery query)
+        [HttpGet("Admin")]
+        public IActionResult SearchAdmin([FromQuery] SearchRestaurantDTO search, [FromServices] IGetRestaurantsQuery query)
             => Ok(_commandHandler.HandleQuery(query, search));
 
+        [HttpGet]
+        public IActionResult Search([FromQuery] SearchRestaurantDTO search, [FromServices] IGetRestaurantsForUserQuery query)
+            => Ok(_commandHandler.HandleQuery(query, search));
+
+
         // GET api/<RestaurantsController>/5
+        [HttpGet("{id}/Admin")]
+        public IActionResult FindAdmin(int id, [FromServices] IGetRestaurantQuery query)
+            => Ok(_commandHandler.HandleQuery(query, id));
+
         [HttpGet("{id}")]
-        public IActionResult Find(int id, [FromServices] IGetRestaurantQuery query)
+        public IActionResult Find(int id, [FromServices] IGetRestaurantForUserQuery query)
             => Ok(_commandHandler.HandleQuery(query, id));
 
         // POST api/<RestaurantsController>

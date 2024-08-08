@@ -408,6 +408,36 @@ namespace BookATable.DataAccess.Migrations
                     b.ToTable("Ratings");
                 });
 
+            modelBuilder.Entity("BookATable.Domain.Tables.RegularClosedDays", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DayOfWeek")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("RestaurantId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RestaurantId");
+
+                    b.ToTable("RegularClosedDays");
+                });
+
             modelBuilder.Entity("BookATable.Domain.Tables.Reservation", b =>
                 {
                     b.Property<int>("Id")
@@ -423,6 +453,11 @@ namespace BookATable.DataAccess.Migrations
 
                     b.Property<DateOnly>("Date")
                         .HasColumnType("date");
+
+                    b.Property<bool?>("IsAccepted")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
 
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
@@ -680,6 +715,39 @@ namespace BookATable.DataAccess.Migrations
                     b.ToTable("Saved");
                 });
 
+            modelBuilder.Entity("BookATable.Domain.Tables.SpecificClosedDays", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateOnly>("ClosedFrom")
+                        .HasColumnType("date");
+
+                    b.Property<DateOnly>("ClosedTo")
+                        .HasColumnType("date");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("RestaurantId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RestaurantId");
+
+                    b.ToTable("SpecificClosedDays");
+                });
+
             modelBuilder.Entity("BookATable.Domain.Tables.UseCaseLog", b =>
                 {
                     b.Property<int>("Id")
@@ -857,6 +925,17 @@ namespace BookATable.DataAccess.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("BookATable.Domain.Tables.RegularClosedDays", b =>
+                {
+                    b.HasOne("BookATable.Domain.Tables.Restaurant", "Restaurant")
+                        .WithMany("RegularClosedDays")
+                        .HasForeignKey("RestaurantId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Restaurant");
+                });
+
             modelBuilder.Entity("BookATable.Domain.Tables.Reservation", b =>
                 {
                     b.HasOne("BookATable.Domain.Tables.Restaurant", "Restaurant")
@@ -952,6 +1031,17 @@ namespace BookATable.DataAccess.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("BookATable.Domain.Tables.SpecificClosedDays", b =>
+                {
+                    b.HasOne("BookATable.Domain.Tables.Restaurant", "Restaurant")
+                        .WithMany("SpecificClosedDays")
+                        .HasForeignKey("RestaurantId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Restaurant");
+                });
+
             modelBuilder.Entity("BookATable.Domain.Tables.UserUseCase", b =>
                 {
                     b.HasOne("BookATable.Domain.Tables.User", "User")
@@ -1000,11 +1090,15 @@ namespace BookATable.DataAccess.Migrations
 
                     b.Navigation("Ratings");
 
+                    b.Navigation("RegularClosedDays");
+
                     b.Navigation("Reservations");
 
                     b.Navigation("RestaurantImages");
 
                     b.Navigation("Saved");
+
+                    b.Navigation("SpecificClosedDays");
                 });
 
             modelBuilder.Entity("BookATable.Domain.Tables.RestaurantType", b =>

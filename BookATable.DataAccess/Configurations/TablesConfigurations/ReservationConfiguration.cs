@@ -25,6 +25,8 @@ namespace BookATable.DataAccess.Configurations.TablesConfigurations
                    .IsRequired()
                    .HasColumnType("tinyint");
 
+            builder.Property(x => x.IsAccepted)
+                   .HasDefaultValue(false);
 
             builder.Property(x => x.ReservationCode)
                    .IsRequired();

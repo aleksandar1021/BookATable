@@ -65,6 +65,12 @@ using BookATable.Application.UseCases.Commands.Saved;
 using BookATable.Implementation.UseCases.Commands.Saved;
 using BookATable.Implementation.UseCases.Queries.Saved;
 using BookATable.Application.UseCases.Queries.Saved;
+using BookATable.Application.UseCases.Commands.RegularClosedDays;
+using BookATable.Implementation.UseCases.Commands.RegularClosedDays;
+using BookATable.Application.UseCases.Queries.RegularClosedDays;
+using BookATable.Implementation.UseCases.Queries.RegularClosedDays;
+using BookATable.Application.UseCases.Commands.SpecificClosedDays;
+using BookATable.Implementation.UseCases.Commands.SpecificClosedDays;
 
 namespace BookATable.API.Core
 {
@@ -96,6 +102,8 @@ namespace BookATable.API.Core
             services.AddTransient<CreateReservationValidator>();
             services.AddTransient<CreateReservationAppendiceValidator>();
             services.AddTransient<SavedValidator>();
+            services.AddTransient<RegularDaysValidator>();
+            services.AddTransient<CreateSpecificClosedDaysValidator>();
 
 
 
@@ -189,6 +197,16 @@ namespace BookATable.API.Core
             services.AddTransient<ICreateDeleteSavedCommand, EfCreateDeleteSavedCommand>();
             services.AddTransient<IGetSavedQuery, EfGetSavedQuery>();
             services.AddTransient<IGetSavedsQuery, EfGetSavedsQuery>();
+            services.AddTransient<IGetRestaurantsForUserQuery, EfGetRestaurantsForUserQuery>();
+            services.AddTransient<IGetRestaurantForUserQuery, EfGetRestuarantForUserQuery>();
+            services.AddTransient<ICreateRegularClosedDaysCommand, EfCreateRegularClosedDaysCommand>();
+            services.AddTransient<IUpdateRegularClosedDaysCommand, EfUpdateRegularClosedDaysCommand>();
+            services.AddTransient<IDeleteRegularClosedDaysCommand, EfDeleteRegularClosedDaysCommand>();
+            services.AddTransient<IGetRegularClosedDayQuery, EfGetRegularClosedDayQuery>();
+            services.AddTransient<IGetRegularClosedDaysQuery, EfGetRegularClosedDaysQuery>();
+            services.AddTransient<ICreateSpecificClosedDaysCommand, EfCreateSpecificClosedDaysCommand>();
+            services.AddTransient<IUpdateSpecificClosedDaysCommand, EfUpdateSpecificClosedDaysCommand>();
+            services.AddTransient<IDeleteSpecificClosedDaysCommand, EfDeleteSpecificClosedDaysCommand>();
 
 
 

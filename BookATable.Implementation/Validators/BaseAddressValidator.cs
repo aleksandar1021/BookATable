@@ -13,6 +13,8 @@ namespace BookATable.Implementation.Validators
     {
         public BaseAddressValidator(Context ctx)
         {
+            CascadeMode = CascadeMode.StopOnFirstFailure;
+
             RuleFor(x => x.CityId)
                    .NotEmpty()
                    .WithMessage("City Id is required.")

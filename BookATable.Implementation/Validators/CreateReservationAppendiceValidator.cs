@@ -13,6 +13,8 @@ namespace BookATable.Implementation.Validators
     {
         public CreateReservationAppendiceValidator(Context ctx)
         {
+            CascadeMode = CascadeMode.StopOnFirstFailure;
+
             RuleFor(x => x.ReservationId)
                    .NotEmpty()
                    .WithMessage("Reservation is required.")

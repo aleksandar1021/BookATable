@@ -13,6 +13,8 @@ namespace BookATable.Implementation.Validators
     {
         public CreateRatingValidator(Context ctx)
         {
+            CascadeMode = CascadeMode.StopOnFirstFailure;
+
             RuleFor(x => x.RestaurantId).NotEmpty()
                                         .WithMessage("Restaurant is required.")
                                         .Must(x => ctx.Restaurants.Any(a => a.Id == x && a.IsActive))

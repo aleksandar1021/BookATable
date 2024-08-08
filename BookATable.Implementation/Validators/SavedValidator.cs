@@ -1,4 +1,5 @@
-﻿using BookATable.Application.DTO;
+﻿using BookATable.Application;
+using BookATable.Application.DTO;
 using BookATable.DataAccess;
 using FluentValidation;
 using System;
@@ -11,8 +12,13 @@ namespace BookATable.Implementation.Validators
 {
     public class SavedValidator : AbstractValidator<CreateSavedDTO>
     {
-        public SavedValidator(Context ctx)
+        private IApplicationActor _actor;
+        public SavedValidator(Context ctx, IApplicationActor actor)
         {
+            CascadeMode = CascadeMode.StopOnFirstFailure;
+
+            _actor = actor;
+
             RuleFor(x => x.RestaurantId)
                                .NotEmpty()
                                .WithMessage("Restaurant is required.")
@@ -23,7 +29,10 @@ namespace BookATable.Implementation.Validators
                                .NotEmpty()
                                .WithMessage("User is required.")
                                .Must(x => ctx.Users.Any(a => a.Id == x && a.IsActive))
-                               .WithMessage("User does not exists.");
+                               .WithMessage("User does not exists.")
+                               .Must(x => _actor.Id == x)
+                               .WithMessage("You do not have the right to perform this action."); ;
+            
         }
     }
 }

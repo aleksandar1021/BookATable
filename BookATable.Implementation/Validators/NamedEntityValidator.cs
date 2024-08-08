@@ -14,6 +14,8 @@ namespace BookATable.Implementation.Validators
     {
         public NamedEntityValidator(Context ctx, Func<Context, DbSet<T>> dbSetFunc, Func<T, string> getNameFunc)
         {
+            CascadeMode = CascadeMode.StopOnFirstFailure;
+
             RuleFor(x => x.Name)
                    .NotEmpty()
                    .Must(name => !dbSetFunc(ctx).AsEnumerable().Any(entity => getNameFunc(entity) == name))

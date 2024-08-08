@@ -13,6 +13,8 @@ namespace BookATable.Implementation.Validators
     {
         public CreateReservationValidator(Context ctx)
         {
+            CascadeMode = CascadeMode.StopOnFirstFailure;
+
             RuleFor(x => x.TimeHour)
                 .InclusiveBetween(0, 23)
                 .WithMessage("Time hour must be between 0 and 23.");

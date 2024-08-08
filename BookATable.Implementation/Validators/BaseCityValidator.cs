@@ -12,6 +12,8 @@ namespace BookATable.Implementation.Validators
     {
         public BaseCityValidator()
         {
+            CascadeMode = CascadeMode.StopOnFirstFailure;
+
             RuleFor(x => x.Name).NotEmpty()
                                 .WithMessage("City name is required.")
                                 .Matches("^[A-Z][a-zA-Z1-9\\s]{2,49}$")
