@@ -220,6 +220,8 @@ namespace BookATable.API.Core
             services.AddTransient<IGetSpecificClosedDayQuery, EfGetSpecificClosedDayQuery>();
             services.AddTransient<IGetSpecificClosedDaysQuery, EfGetSpecificClosedDaysQuery>();
             services.AddTransient<IDeleteContactCommand, EfDeleteContactCommand>();
+            services.AddTransient<IAccepteReservationCommand, EfAccepteReservationCommand>();
+            services.AddTransient<IRealiseReservationCommand, EfRealiseReservationCommand>();
 
 
 

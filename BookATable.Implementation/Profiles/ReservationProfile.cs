@@ -22,6 +22,9 @@ namespace BookATable.Implementation.Profiles
                 .ForMember(x => x.TimeMinute, y => y.MapFrom(u => u.TimeMinute))
                 .ForMember(x => x.Note, y => y.MapFrom(u => u.Note))
                 .ForMember(x => x.Date, y => y.MapFrom(u => u.Date))
+                .ForMember(x => x.IsAccepted, y => y.MapFrom(u => u.IsAccepted))
+                .ForMember(x => x.IsRealised, y => y.MapFrom(u => u.IsRealised))
+
                 .ForMember(x => x.User, y => y.MapFrom(u => new ResponseBaseUser
                 {
                     Id = u.User.Id,

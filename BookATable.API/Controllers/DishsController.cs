@@ -4,6 +4,7 @@ using BookATable.Application.UseCases.Queries.Cities;
 using BookATable.Application.UseCases.Queries.Dish;
 using BookATable.Application.UseCases.Queries.MealCategories;
 using BookATable.Implementation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -31,6 +32,7 @@ namespace BookATable.API.Controllers
             => Ok(_commandHandler.HandleQuery(query, id));
 
         // POST api/<DishsController>
+        [Authorize]
         [HttpPost]
         public IActionResult Post([FromBody] CreateDishDTO dto, [FromServices] ICreateDishCommand cmd)
         {
@@ -39,6 +41,7 @@ namespace BookATable.API.Controllers
         }
 
         // PUT api/<DishsController>/5
+        [Authorize]
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] UpdateDishDTO dto, [FromServices] IUpdateDishCommand cmd)
         {
@@ -48,6 +51,7 @@ namespace BookATable.API.Controllers
         }
 
         // DELETE api/<DishsController>/5
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id, [FromServices] IDeleteDishCommand cmd)
         {

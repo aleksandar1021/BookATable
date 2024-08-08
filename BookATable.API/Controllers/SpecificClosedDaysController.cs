@@ -4,6 +4,7 @@ using BookATable.Application.UseCases.Queries.RestaurantTypes;
 using BookATable.Application.UseCases.Queries.SpecificClosedDays;
 using BookATable.Implementation;
 using BookATable.Implementation.UseCases.Queries.Saved;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -32,6 +33,7 @@ namespace BookATable.API.Controllers
             => Ok(_commandHandler.HandleQuery(query, id));
 
         // POST api/<SpecificClosedDaysController>
+        [Authorize]
         [HttpPost]
         public IActionResult Post([FromBody] CreateSpecificClosedDaysDTO dto, [FromServices] ICreateSpecificClosedDaysCommand cmd)
         {
@@ -40,6 +42,7 @@ namespace BookATable.API.Controllers
         }
 
         // PUT api/<SpecificClosedDaysController>/5
+        [Authorize]
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] UpdateSpecificClosedDaysDTO dto, [FromServices] IUpdateSpecificClosedDaysCommand cmd)
         {
@@ -49,6 +52,7 @@ namespace BookATable.API.Controllers
         }
 
         // DELETE api/<SpecificClosedDaysController>/5
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id, [FromServices] IDeleteSpecificClosedDaysCommand cmd)
         {

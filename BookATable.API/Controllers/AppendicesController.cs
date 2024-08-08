@@ -50,6 +50,7 @@ namespace BookATable.API.Controllers
         }
 
         // DELETE api/<AppendicesController>/5
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id, [FromServices] IDeleteAppendiceCommand cmd)
         {

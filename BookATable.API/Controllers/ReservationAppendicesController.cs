@@ -4,6 +4,7 @@ using BookATable.Application.UseCases.Queries.AppendiceRestaurants;
 using BookATable.Application.UseCases.Queries.Ratings;
 using BookATable.Application.UseCases.Queries.ReservationAppendices;
 using BookATable.Implementation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -32,6 +33,7 @@ namespace BookATable.API.Controllers
             => Ok(_commandHandler.HandleQuery(query, id));
 
         // POST api/<ReservationAppendicesController>
+        [Authorize]
         [HttpPost]
         public IActionResult Post([FromBody] CreateReservationAppendiceDTO dto, [FromServices] ICreateReservationAppendiceCommand cmd)
         {
@@ -40,6 +42,7 @@ namespace BookATable.API.Controllers
         }
 
         // PUT api/<ReservationAppendicesController>/5
+        [Authorize]
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] UpdateReservationAppendiceDTO dto, [FromServices] IUpdateReservationAppendiceCommand cmd)
         {

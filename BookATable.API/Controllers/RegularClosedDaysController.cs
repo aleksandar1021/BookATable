@@ -4,6 +4,7 @@ using BookATable.Application.UseCases.Queries.Cities;
 using BookATable.Application.UseCases.Queries.Ratings;
 using BookATable.Application.UseCases.Queries.RegularClosedDays;
 using BookATable.Implementation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -33,6 +34,7 @@ namespace BookATable.API.Controllers
             => Ok(_commandHandler.HandleQuery(query, id));
 
         // POST api/<RegularClosedDaysController>
+        [Authorize]
         [HttpPost]
         public IActionResult Post([FromBody] CreateRegularClosedDaysDTO dto, [FromServices] ICreateRegularClosedDaysCommand cmd)
         {
@@ -41,6 +43,7 @@ namespace BookATable.API.Controllers
         }
 
         // PUT api/<RegularClosedDaysController>/5
+        [Authorize]
         [HttpPut("{id}")]
         public IActionResult Put(int restaurantId, [FromBody] CreateRegularClosedDaysDTO dto, [FromServices] IUpdateRegularClosedDaysCommand cmd)
         {
@@ -50,6 +53,7 @@ namespace BookATable.API.Controllers
         }
 
         // DELETE api/<RegularClosedDaysController>/5
+        [Authorize]
         [HttpDelete("{restaurantId}")]
         public IActionResult Delete(int restaurantId, [FromServices] IDeleteRegularClosedDaysCommand cmd)
         {

@@ -3,6 +3,7 @@ using BookATable.Application.UseCases.Commands.Contact;
 using BookATable.Application.UseCases.Queries.Contact;
 using BookATable.Application.UseCases.Queries.Dish;
 using BookATable.Implementation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -21,6 +22,7 @@ namespace BookATable.API.Controllers
 
 
         // GET: api/<ContactsController>
+        [Authorize]
         [HttpGet]
         public IActionResult Search([FromQuery] SearchContactDTO search, [FromServices] IGetContactsQuery query)
             => Ok(_commandHandler.HandleQuery(query, search));
@@ -34,9 +36,10 @@ namespace BookATable.API.Controllers
             return StatusCode(201);
         }
 
-       
+
 
         // DELETE api/<ContactsController>/5
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id, [FromServices] IDeleteContactCommand cmd)
         {

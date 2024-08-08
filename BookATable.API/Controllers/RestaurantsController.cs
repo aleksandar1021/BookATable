@@ -23,6 +23,7 @@ namespace BookATable.API.Controllers
 
 
         // GET: api/<RestaurantsController>
+        [Authorize]
         [HttpGet("Admin")]
         public IActionResult SearchAdmin([FromQuery] SearchRestaurantDTO search, [FromServices] IGetRestaurantsQuery query)
             => Ok(_commandHandler.HandleQuery(query, search));
@@ -33,6 +34,7 @@ namespace BookATable.API.Controllers
 
 
         // GET api/<RestaurantsController>/5
+        [Authorize]
         [HttpGet("{id}/Admin")]
         public IActionResult FindAdmin(int id, [FromServices] IGetRestaurantQuery query)
             => Ok(_commandHandler.HandleQuery(query, id));

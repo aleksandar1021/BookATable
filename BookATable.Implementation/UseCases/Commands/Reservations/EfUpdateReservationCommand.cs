@@ -54,6 +54,7 @@ namespace BookATable.Implementation.UseCases.Commands.Reservations
             reservation.Date = data.Date;
             reservation.IsRealised = data.IsRealised;
             reservation.UpdatedAt = DateTime.UtcNow;
+            reservation.IsAccepted = data.IsAccepted;
 
             Context.SaveChanges();
         }

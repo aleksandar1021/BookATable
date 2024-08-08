@@ -22,11 +22,13 @@ namespace BookATable.API.Controllers
 
 
         // GET: api/<CitiesContoller>
+        [Authorize]
         [HttpGet]
         public IActionResult Find([FromQuery] SearchCityDTO dto, [FromServices] IGetCitiesQuery query)
             => Ok(_commandHandler.HandleQuery(query, dto));
 
         // GET api/<CitiesContoller>/5
+        [Authorize]
         [HttpGet("{id}")]
         public IActionResult Find(int id, [FromServices] IGetCityQuery query)
             => Ok(_commandHandler.HandleQuery(query, id));

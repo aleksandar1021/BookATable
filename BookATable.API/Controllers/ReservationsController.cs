@@ -23,11 +23,13 @@ namespace BookATable.API.Controllers
 
 
         // GET: api/<ReservationsController>
+        [Authorize]
         [HttpGet]
         public IActionResult Find([FromQuery] SearchReservationDTO dto, [FromServices] IGetReservationsQuery query)
             => Ok(_commandHandler.HandleQuery(query, dto));
 
         // GET api/<ReservationsController>/5
+        [Authorize]
         [HttpGet("{id}")]
         public IActionResult Find(int id, [FromServices] IGetReservationQuery query)
             => Ok(_commandHandler.HandleQuery(query, id));
@@ -38,6 +40,22 @@ namespace BookATable.API.Controllers
         public IActionResult Post([FromBody] CreateReservationDTO dto, [FromServices] ICreateReservationCommand cmd)
         {
             _commandHandler.HandleCommand(cmd, dto);
+            return StatusCode(201);
+        }
+
+        [Authorize]
+        [HttpPut("{id}/Accept")]
+        public IActionResult Accept(int id, [FromServices] IAccepteReservationCommand cmd)
+        {
+            _commandHandler.HandleCommand(cmd, id);
+            return StatusCode(201);
+        }
+
+        [Authorize]
+        [HttpPut("{id}/Realise")]
+        public IActionResult Realise(int id, [FromServices] IRealiseReservationCommand cmd)
+        {
+            _commandHandler.HandleCommand(cmd, id);
             return StatusCode(201);
         }
 

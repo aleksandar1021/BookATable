@@ -21,6 +21,8 @@ namespace BookATable.Application.DTO
     {
         public int Id { get; set; }
         public bool IsRealised { get; set; }
+        public bool IsAccepted { get; set; }
+
     }
 
     public class SearchReservationDTO : PagedSearch
@@ -50,6 +52,8 @@ namespace BookATable.Application.DTO
         public int TimeMinute { get; set; }
         public string Note { get; set; }
         public DateOnly Date { get; set; }
+        public bool IsAccepted { get; set; }
+        public bool IsRealised { get; set; }
         public ResponseBaseUser User { get; set; }
         public BaseResponseRestaurantDTO Restaurant { get; set; }
     }
