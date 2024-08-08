@@ -11,7 +11,7 @@ namespace BookATable.Implementation.UseCases.Commands.SpecificClosedDays
 {
     public class EfDeleteSpecificClosedDaysCommand : EfUseCase, IDeleteSpecificClosedDaysCommand
     {
-        protected EfDeleteSpecificClosedDaysCommand(Context context) : base(context)
+        public EfDeleteSpecificClosedDaysCommand(Context context) : base(context)
         {
         }
 

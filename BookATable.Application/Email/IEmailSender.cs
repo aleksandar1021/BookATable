@@ -11,4 +11,9 @@ namespace BookATable.Application.Email
     {
         void SendEmail(EmailDTO email);
     }
+
+    public interface IUserEmailSender
+    {
+        void SendUserEmail(UserEmailDTO email);
+    }
 }

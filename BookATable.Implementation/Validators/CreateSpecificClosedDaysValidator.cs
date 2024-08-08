@@ -31,11 +31,13 @@ namespace BookATable.Implementation.Validators
 
             RuleFor(x => x.ClosedFrom)
             .LessThan(x => x.ClosedTo)
-            .WithMessage("'ClosedFrom' must be earlier than closed to date.");
+            .WithMessage("'ClosedFrom' must be earlier than closed to date."); ;
 
             RuleFor(x => x.ClosedTo)
                 .GreaterThan(x => x.ClosedFrom)
-                .WithMessage("'ClosedTo' must be later than closed from date.");
+                .WithMessage("'ClosedTo' must be later than closed from date.")
+                .Must(x => x > DateOnly.FromDateTime(DateTime.Now))
+                .WithMessage("Date to must be in future."); ;
         }
     }
 }

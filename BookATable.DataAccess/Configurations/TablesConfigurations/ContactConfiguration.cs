@@ -28,7 +28,7 @@ namespace BookATable.DataAccess.Configurations.TablesConfigurations
             builder.Property(x => x.Name)
                    .IsRequired();
 
-            builder.HasIndex(x => new { x.Email, x.Name });
+            //builder.HasIndex(x => new { x.Email, x.Name });
         }
     }
 }

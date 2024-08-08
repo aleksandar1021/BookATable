@@ -1,4 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BookATable.Application.DTO;
+using BookATable.Application.UseCases.Commands.Contact;
+using BookATable.Application.UseCases.Queries.Contact;
+using BookATable.Application.UseCases.Queries.Dish;
+using BookATable.Implementation;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +13,35 @@ namespace BookATable.API.Controllers
     [ApiController]
     public class ContactsController : ControllerBase
     {
-        // GET: api/<ContactsController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private UseCaseHandler _commandHandler;
+        public ContactsController(UseCaseHandler commandHandler)
         {
-            return new string[] { "value1", "value2" };
+            _commandHandler = commandHandler;
         }
 
-        // GET api/<ContactsController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+
+        // GET: api/<ContactsController>
+        [HttpGet]
+        public IActionResult Search([FromQuery] SearchContactDTO search, [FromServices] IGetContactsQuery query)
+            => Ok(_commandHandler.HandleQuery(query, search));
+
 
         // POST api/<ContactsController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post([FromBody] CreateContactDTO dto, [FromServices] ICreateContactCommand cmd)
         {
+            _commandHandler.HandleCommand(cmd, dto);
+            return StatusCode(201);
         }
 
-        // PUT api/<ContactsController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+       
 
         // DELETE api/<ContactsController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id, [FromServices] IDeleteContactCommand cmd)
         {
+            _commandHandler.HandleCommand(cmd, id);
+            return NoContent();
         }
     }
 }

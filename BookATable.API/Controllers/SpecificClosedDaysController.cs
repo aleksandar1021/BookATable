@@ -1,6 +1,9 @@
 ﻿using BookATable.Application.DTO;
 using BookATable.Application.UseCases.Commands.SpecificClosedDays;
+using BookATable.Application.UseCases.Queries.RestaurantTypes;
+using BookATable.Application.UseCases.Queries.SpecificClosedDays;
 using BookATable.Implementation;
+using BookATable.Implementation.UseCases.Queries.Saved;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -20,17 +23,13 @@ namespace BookATable.API.Controllers
 
         // GET: api/<SpecificClosedDaysController>
         [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        public IActionResult Search([FromQuery] SearchSpecificClosedDays search, [FromServices] IGetSpecificClosedDaysQuery query)
+            => Ok(_commandHandler.HandleQuery(query, search));
 
         // GET api/<SpecificClosedDaysController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        public IActionResult Find(int id, [FromServices] IGetSpecificClosedDayQuery query)
+            => Ok(_commandHandler.HandleQuery(query, id));
 
         // POST api/<SpecificClosedDaysController>
         [HttpPost]

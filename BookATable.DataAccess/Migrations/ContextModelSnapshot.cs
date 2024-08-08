@@ -224,8 +224,6 @@ namespace BookATable.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Email", "Name");
-
                     b.ToTable("Contacts");
                 });
 

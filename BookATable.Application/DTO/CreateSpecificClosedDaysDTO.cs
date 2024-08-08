@@ -23,7 +23,7 @@ namespace BookATable.Application.DTO
         public BaseResponseRestaurantDTO Restaurant { get; set; }
     }
 
-    public class SearchSpecificClosedDays
+    public class SearchSpecificClosedDays : PagedSearch
     {
         public int? Id { get; set; }
         public int? RestaurantId { get; set; }

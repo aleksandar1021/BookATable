@@ -71,6 +71,12 @@ using BookATable.Application.UseCases.Queries.RegularClosedDays;
 using BookATable.Implementation.UseCases.Queries.RegularClosedDays;
 using BookATable.Application.UseCases.Commands.SpecificClosedDays;
 using BookATable.Implementation.UseCases.Commands.SpecificClosedDays;
+using BookATable.Application.UseCases.Commands.Contact;
+using BookATable.Implementation.UseCases.Commands.Contact;
+using BookATable.Application.UseCases.Queries.Contact;
+using BookATable.Implementation.UseCases.Queries.Contact;
+using BookATable.Application.UseCases.Queries.SpecificClosedDays;
+using BookATable.Implementation.UseCases.Queries.SpecificClosedDays;
 
 namespace BookATable.API.Core
 {
@@ -104,6 +110,7 @@ namespace BookATable.API.Core
             services.AddTransient<SavedValidator>();
             services.AddTransient<RegularDaysValidator>();
             services.AddTransient<CreateSpecificClosedDaysValidator>();
+            services.AddTransient<ContactValidator>();
 
 
 
@@ -207,6 +214,12 @@ namespace BookATable.API.Core
             services.AddTransient<ICreateSpecificClosedDaysCommand, EfCreateSpecificClosedDaysCommand>();
             services.AddTransient<IUpdateSpecificClosedDaysCommand, EfUpdateSpecificClosedDaysCommand>();
             services.AddTransient<IDeleteSpecificClosedDaysCommand, EfDeleteSpecificClosedDaysCommand>();
+            services.AddTransient<ICreateContactCommand, EfCreateContactCommand>();
+            services.AddTransient<IUserEmailSender, SMTPUserEmailSender>();
+            services.AddTransient<IGetContactsQuery, EfGetContactsQuery>();
+            services.AddTransient<IGetSpecificClosedDayQuery, EfGetSpecificClosedDayQuery>();
+            services.AddTransient<IGetSpecificClosedDaysQuery, EfGetSpecificClosedDaysQuery>();
+            services.AddTransient<IDeleteContactCommand, EfDeleteContactCommand>();
 
 
 
