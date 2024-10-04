@@ -17,13 +17,8 @@ namespace BookATable.DataAccess.Configurations.TablesConfigurations
                    .IsRequired()
                    .HasColumnType("tinyint");
 
-            builder.Property(x => x.TimeHour)
-                   .IsRequired()
-                   .HasColumnType("tinyint");
-
-            builder.Property(x => x.TimeMinute)
-                   .IsRequired()
-                   .HasColumnType("tinyint");
+            builder.Property(x => x.Time)
+                   .IsRequired();
 
             builder.Property(x => x.IsAccepted)
                    .HasDefaultValue(false);

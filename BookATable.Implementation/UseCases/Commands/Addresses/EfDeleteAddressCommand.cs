@@ -19,7 +19,7 @@ namespace BookATable.Implementation.UseCases.Commands.Addresses
 
         public int Id => 21;
 
-        public string Name => "Update address";
+        public string Name => "Delete address";
 
         public void Execute(int data)
         {

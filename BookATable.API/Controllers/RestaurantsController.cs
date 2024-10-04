@@ -21,11 +21,19 @@ namespace BookATable.API.Controllers
             _commandHandler = commandHandler;
         }
 
+        [HttpGet("Top")]
+        public IActionResult SearcUser([FromQuery] SearchRestaurantDTO search, [FromServices] IGetTop3Restaurants query)
+            => Ok(_commandHandler.HandleQuery(query, search));
+
 
         // GET: api/<RestaurantsController>
         [Authorize]
         [HttpGet("Admin")]
         public IActionResult SearchAdmin([FromQuery] SearchRestaurantDTO search, [FromServices] IGetRestaurantsQuery query)
+            => Ok(_commandHandler.HandleQuery(query, search));
+
+        [HttpGet("User")]
+        public IActionResult SearcUser([FromQuery] SearchRestaurantDTO search, [FromServices] IUserGetRestourants query)
             => Ok(_commandHandler.HandleQuery(query, search));
 
         [HttpGet]
@@ -34,7 +42,7 @@ namespace BookATable.API.Controllers
 
 
         // GET api/<RestaurantsController>/5
-        [Authorize]
+        
         [HttpGet("{id}/Admin")]
         public IActionResult FindAdmin(int id, [FromServices] IGetRestaurantQuery query)
             => Ok(_commandHandler.HandleQuery(query, id));
@@ -87,6 +95,15 @@ namespace BookATable.API.Controllers
         {
             _commandHandler.HandleCommand(cmd, id);
             return NoContent();
+        }
+
+        [Authorize]
+        [HttpPatch("{id}")]
+        public IActionResult Patch(int id, [FromBody] AcceptRestaurantDTO dto, [FromServices] IAcceptRestaurantCommand cmd)
+        {
+            dto.RestaurantId = id;
+            _commandHandler.HandleCommand(cmd, dto);
+            return StatusCode(204);
         }
     }
 }

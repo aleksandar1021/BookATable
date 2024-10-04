@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookATable.Application.UseCases.Commands.MealCategories
 {
-    public interface ICreateMealCategoryCommand : ICommand<CreateNamedEntity>
+    public interface ICreateMealCategoryCommand : ICommand<CreateMealCategoryDTO>
     {
     }
 }

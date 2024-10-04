@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BookATable.Implementation.UseCases.Queries.RestaurantTypes
 {
-    public class EfGetRestaurantTypeQuery : EfFindUseCase<ResponseNamedEntityDTO, RestaurantType>, IGetRestaurantTypeQuery
+    public class EfGetRestaurantTypeQuery : EfFindUseCase<ResponseRestaurantTypesDTO, RestaurantType>, IGetRestaurantTypeQuery
     {
         public EfGetRestaurantTypeQuery(Context context, IMapper mapper) : base(context, mapper)
         {

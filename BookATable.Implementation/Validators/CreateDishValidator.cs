@@ -24,8 +24,7 @@ namespace BookATable.Implementation.Validators
                                 .MaximumLength(70)
                                 .WithMessage("Maximum length for name is 70 charatcers.");
 
-            RuleFor(x => x.Image).NotEmpty()
-                                .WithMessage("Dish image is required.");
+        
 
             RuleFor(x => x.Description).NotEmpty()
                                 .WithMessage("Dish description is required.")
@@ -66,4 +65,6 @@ namespace BookATable.Implementation.Validators
             this.actor = actor;
         }
     }
+
+
 }

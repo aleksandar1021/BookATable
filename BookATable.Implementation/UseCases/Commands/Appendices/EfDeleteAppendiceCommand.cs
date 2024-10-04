@@ -36,6 +36,7 @@ namespace BookATable.Implementation.UseCases.Commands.Appendices
             }
 
             appendice.IsActive = false;
+            Context.Appendices.Remove(appendice);
             Context.SaveChanges();
         }
     }

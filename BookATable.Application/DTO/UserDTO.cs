@@ -27,6 +27,8 @@ namespace BookATable.Application.DTO
         public int Rate { get; set; }
         public int UserId { get; set; }
         public int RestaurantId { get; set; }
+        public ResponseBaseUser User { get; set; }
+        public string Message { get; set; }
     }
 
     public class ReservationDTO
@@ -35,8 +37,7 @@ namespace BookATable.Application.DTO
         public int UserId { get; set; }
         public int RestaurantId { get; set; }
         public int NumberOfGuests { get; set; }
-        public int TimeHour { get; set; }
-        public int TimeMinute { get; set; }
+        public string Time {  get; set; }
         public string Note { get; set; }
         public DateOnly Date { get; set; }
         public int ReservationNumber { get; set; }
@@ -76,5 +77,6 @@ namespace BookATable.Application.DTO
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public bool? IsActivatedUser { get; set; }
+        public string Keyword { get; set; }
     }
 }

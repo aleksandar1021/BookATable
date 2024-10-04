@@ -48,6 +48,7 @@ namespace BookATable.Implementation.UseCases.Commands.Restaurants
 
             restaurant.RestaurantImages.ToList().ForEach(r => r.IsActive = false);
             restaurant.Reservations.ToList().ForEach(r => r.IsActive = false);
+            restaurant.Saved.ToList().ForEach(r => r.IsActive = false);
             restaurant.AppendiceRestaurants.ToList().ForEach(r => r.IsActive = false);
             restaurant.Dishs.ToList().ForEach(r => r.IsActive = false);
             restaurant.MealCategoryRestaurants.ToList().ForEach(r => r.IsActive = false);
@@ -62,6 +63,20 @@ namespace BookATable.Implementation.UseCases.Commands.Restaurants
                 {
                     System.IO.File.Delete(oldImagePath);
                 }
+            }
+
+            List<int> allowedCasesForUser = new List<int>
+            {
+                19, 21, 20, 46, 48, 47, 51, 53, 52, 41, 43, 42, 58, 57, 75, 77, 76, 66, 67, 88, 89, 62, 37, 35, 80, 82, 81, 92, 93
+            };
+
+            List<UserUseCase> userUseCases = allowedCasesForUser
+                                            .Select(useCaseId => new UserUseCase { UserId = restaurant.User.Id, UseCaseId = useCaseId })
+                                            .ToList();
+
+            if (restaurant.User.Restaurants.Where(x => x.IsActivated && x.IsActive).Count() == 0)
+            {
+                Context.UserUseCases.RemoveRange(userUseCases);
             }
 
             Context.SaveChanges();

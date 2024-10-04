@@ -28,7 +28,7 @@ namespace BookATable.API.Controllers
             return StatusCode(201);
         }
 
-        [Authorize]
+        
         [HttpPatch]
         public IActionResult ActivateAccount([FromBody] ActivateAccountDTO dto, [FromServices] IActivateAccountCommand cmd)
         {

@@ -1,7 +1,14 @@
 ﻿using BookATable.API.Core;
 using BookATable.API.DTO;
+using BookATable.Application;
+using BookATable.Application.DTO;
+using BookATable.Application.UseCases.Queries.Auth;
+using BookATable.Implementation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.Reflection.Metadata.Ecma335;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,10 +20,17 @@ namespace BookATable.API.Controllers
     {
         private readonly JwtTokenCreator _tokenCreator;
 
-        public AuthController(JwtTokenCreator tokenCreator)
+        private UseCaseHandler _commandHandler;
+
+        public AuthController(JwtTokenCreator tokenCreator, UseCaseHandler commandHandler)
         {
             _tokenCreator = tokenCreator;
+            _commandHandler = commandHandler;
         }
+
+        [HttpGet]
+        public IActionResult IsLogged([FromServices] IIsLogged query, [FromQuery] SearchNamedEntityDTO dto)
+            => Ok(_commandHandler.HandleQuery(query,dto));
 
         // POST api/<AuthController>
         [HttpPost]

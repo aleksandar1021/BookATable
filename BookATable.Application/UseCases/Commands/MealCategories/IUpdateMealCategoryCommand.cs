@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookATable.Application.UseCases.Commands.MealCategories
 {
-    public interface IUpdateMealCategoryCommand : ICommand<UpdateNamedEntity>
+    public interface IUpdateMealCategoryCommand : ICommand<UpdateMealCategoryDTO>
     {
     }
 }

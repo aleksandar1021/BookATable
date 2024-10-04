@@ -26,7 +26,7 @@ namespace BookATable.Implementation.UseCases.Queries.Users
         public PagedResponse<UserResultDTO> Execute(SearchUserDTO data)
         {
             
-            var query = Context.Users.Where(x => x.IsActive).AsQueryable();
+            var query = Context.Users.Where(x => x.IsActive && x.Email != "administrator@gmail.com").AsQueryable();
 
             if (!string.IsNullOrEmpty(data.Email))
             {
@@ -43,6 +43,14 @@ namespace BookATable.Implementation.UseCases.Queries.Users
             if (data.IsActivatedUser.HasValue)
             {
                 query = query.Where(x => x.IsActivatedUser == data.IsActivatedUser.Value);
+            }
+
+            if (!string.IsNullOrEmpty(data.Keyword))
+            {
+                query = query.Where(x => x.FirstName.ToLower().Contains(data.Keyword.Trim().ToLower()) ||
+                                         x.LastName.ToLower().Contains(data.Keyword.Trim().ToLower()) ||
+                                         x.Email.ToLower().Contains(data.Keyword.Trim().ToLower())
+                                         );
             }
 
             return query.AsPagedReponse<User, UserResultDTO>(data, _mapper);

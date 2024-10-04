@@ -5,6 +5,7 @@ using BookATable.Domain.Tables;
 using BookATable.Implementation.Exceptions;
 using BookATable.Implementation.Validators;
 using FluentValidation;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,7 @@ namespace BookATable.Implementation.UseCases.Commands.MealCategories
 
         public string Name => "Update meal category";
 
-        public void Execute(UpdateNamedEntity data)
+        public void Execute(UpdateMealCategoryDTO data)
         {
             MealCategory mealCategory = Context.MealCategories.FirstOrDefault(x => x.Id == data.Id);
 
@@ -38,6 +39,27 @@ namespace BookATable.Implementation.UseCases.Commands.MealCategories
 
             mealCategory.Name = data.Name;
             mealCategory.UpdatedAt = DateTime.UtcNow;
+
+            
+
+            if (!data.Image.IsNullOrEmpty())
+            {
+                var tempImageName = Path.Combine("wwwroot", "temp", data.Image);
+                var destinationFileName = Path.Combine("wwwroot", "mealCategories", data.Image);
+                System.IO.File.Move(tempImageName, destinationFileName);
+
+
+                var oldImagePath = Path.Combine("wwwroot", "mealCategories", mealCategory.Image);
+                if (System.IO.File.Exists(oldImagePath))
+                {
+                    System.IO.File.Delete(oldImagePath);
+                }
+
+
+                mealCategory.Image = data.Image;
+            }
+
+           
 
             Context.SaveChanges();
 

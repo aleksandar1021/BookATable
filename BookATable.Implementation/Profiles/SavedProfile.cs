@@ -29,8 +29,13 @@ namespace BookATable.Implementation.Profiles
                   Id = u.Restaurant.Id,
                   Name = u.Restaurant.Name,
                   UserId = u.UserId,
-                  Description = u.Restaurant.Description
-              }));
+                  Description = u.Restaurant.Description,
+                  Image = u.Restaurant.RestaurantImages
+                                        .Where(x => x.IsPrimary == true)
+                                        .Select(x => x.Path)
+                                        .FirstOrDefault(),
+             
+        }));
         }
     }
 }

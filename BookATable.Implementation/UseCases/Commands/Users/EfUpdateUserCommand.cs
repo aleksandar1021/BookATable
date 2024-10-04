@@ -6,6 +6,7 @@ using BookATable.Domain.Tables;
 using BookATable.Implementation.Exceptions;
 using BookATable.Implementation.Validators;
 using FluentValidation;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +31,7 @@ namespace BookATable.Implementation.UseCases.Commands.Users
 
         public void Execute(UpdateUserDTO data)
         {
-            User user = Context.Users.FirstOrDefault(x => x.Id == data.Id);
+            User user = Context.Users.FirstOrDefault(x => x.Id == _actor.Id);
 
             if(user == null || !user.IsActive)
             {
@@ -41,21 +42,36 @@ namespace BookATable.Implementation.UseCases.Commands.Users
             {
                 throw new UnauthorizedAccessException();
             }
+            int i = 0;
+            if(data.Password.IsNullOrEmpty())
+            {
+                data.Password = user.Password;
+                i++;
+            }
 
             _validator.ValidateAndThrow(data);
 
-            user.Password = BCrypt.Net.BCrypt.HashPassword(data.Password);
+            if (i == 0)
+            {
+                user.Password = BCrypt.Net.BCrypt.HashPassword(data.Password);
+            }
+            else
+            {
+                user.Password = user.Password;
+            }
             user.Email = data.Email;
             user.FirstName = data.FirstName;
             user.LastName = data.LastName;
             user.UpdatedAt = DateTime.UtcNow;
-            user.Image = data.Image ?? "avatar.png";
+            
 
-            if (data.Image != null)
+            if (!data.Image.IsNullOrEmpty())
             {
                 var tempImageName = Path.Combine("wwwroot", "temp", data.Image);
                 var destinationFileName = Path.Combine("wwwroot", "userPhotos", data.Image);
                 System.IO.File.Move(tempImageName, destinationFileName);
+
+                user.Image = data.Image ;
             }
 
             Context.SaveChanges();

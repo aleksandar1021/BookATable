@@ -62,8 +62,7 @@ namespace BookATable.Implementation.Profiles
                     Note = x.Note,
                     ReservationCode = x.ReservationCode,
                     RestaurantId = x.RestaurantId,
-                    TimeHour = x.TimeHour,
-                    TimeMinute = x.TimeMinute,
+                    Time = x.Time,
                     UserId = x.UserId
                 })));
 

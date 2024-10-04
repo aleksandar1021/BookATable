@@ -6,6 +6,7 @@ using BookATable.Domain.Tables;
 using BookATable.Implementation.Exceptions;
 using BookATable.Implementation.Validators;
 using FluentValidation;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,7 +33,9 @@ namespace BookATable.Implementation.UseCases.Commands.Restaurants
 
         public void Execute(UpdateRestaurantDTO data)
         {
-            Restaurant restaurant = Context.Restaurants.FirstOrDefault(x => x.Id == data.Id);
+            Restaurant restaurant = Context.Restaurants
+                                            .Include(r => r.Address) 
+                                            .FirstOrDefault(x => x.Id == data.Id);
 
             if (restaurant == null || !restaurant.IsActive)
             {
@@ -51,60 +54,94 @@ namespace BookATable.Implementation.UseCases.Commands.Restaurants
             restaurant.WorkUntilHour = data.WorkUntilHour;
             restaurant.WorkFromMinute = data.WorkFromMinute;
             restaurant.WorkUntilMinute = data.WorkUntilMinute;
-            restaurant.AddressId = data.AddressId;
             restaurant.RestaurantTypeId = data.RestaurantTypeId;
             restaurant.Description = data.Description;
             restaurant.MaxNumberOfGuests = data.MaxNumberOfGuests;
             restaurant.TimeInterval = data.TimeInterval;
-            restaurant.UserId = data.UserId;
+            restaurant.UserId = _actor.Id;
             restaurant.UpdatedAt = DateTime.UtcNow;
 
-            var oldImages = restaurant.RestaurantImages.Select(i => i.Path).ToList();
-
-
-            Context.RestaurantImages.RemoveRange(restaurant.RestaurantImages);
-
-
-
-            restaurant.RestaurantImages = data.Images.Select(i => new RestaurantImage
+            if (restaurant.Address != null)
             {
-                Restaurant = restaurant,
-                Path = i
-            }).ToList();
-
-
-            foreach (var image in data.Images)
-            {
-                var tempImageName = Path.Combine("wwwroot", "temp", image);
-                var destinationFileName = Path.Combine("wwwroot", "restaurantPhotos", image);
-                System.IO.File.Move(tempImageName, destinationFileName);
+                restaurant.Address.CityId = data.AddressInput.CityId;
+                restaurant.Address.AddressOfPlace = data.AddressInput.Address;
+                restaurant.Address.Place = data.AddressInput.Place;
+                restaurant.Address.Number = data.AddressInput.Number;
+                restaurant.Address.Floor = data.AddressInput.Floor;
+                restaurant.Address.Description = data.AddressInput.Description;
             }
 
-
-
-
-            foreach (var oldImage in oldImages)
+            if (data.Images.Count() > 0)
             {
-                var oldImagePath = Path.Combine("wwwroot", "restaurantPhotos", oldImage);
-                if (System.IO.File.Exists(oldImagePath))
+                var oldImages = restaurant.RestaurantImages.Select(i => i.Path).ToList();
+                Context.RestaurantImages.RemoveRange(restaurant.RestaurantImages);
+
+                restaurant.RestaurantImages = data.Images.Select(i => new RestaurantImage
                 {
-                    System.IO.File.Delete(oldImagePath);
+                    Restaurant = restaurant,
+                    Path = i
+                }).ToList();
+
+
+                foreach (var image in data.Images)
+                {
+                    var tempImageName = Path.Combine("wwwroot", "temp", image);
+                    var destinationFileName = Path.Combine("wwwroot", "restaurantPhotos", image);
+                    System.IO.File.Move(tempImageName, destinationFileName);
+                }
+
+
+
+
+                foreach (var oldImage in oldImages)
+                {
+                    var oldImagePath = Path.Combine("wwwroot", "restaurantPhotos", oldImage);
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
+
+                restaurant.RestaurantImages = data.Images.Select(i => new RestaurantImage
+                {
+                    Restaurant = restaurant,
+                    Path = i
+                }).ToList();
+
+                foreach (var image in restaurant.RestaurantImages)
+                {
+                    if (image.Path == data.PrimaryImagePath)
+                    {
+                        image.IsPrimary = true;
+                    }
                 }
             }
 
-            restaurant.RestaurantImages = data.Images.Select(i => new RestaurantImage
+            var oldClosedDays = restaurant.RegularClosedDays;
+            Context.RegularClosedDays.RemoveRange(oldClosedDays);
+            restaurant.RegularClosedDays = data.RegularClosedDays.Select(x => new Domain.Tables.RegularClosedDays
             {
                 Restaurant = restaurant,
-                Path = i
+                DayOfWeek = (Domain.Tables.DayOfWeek)x
             }).ToList();
 
-            foreach (var image in restaurant.RestaurantImages)
+            var oldAppendices = restaurant.AppendiceRestaurants;
+            Context.AppendiceRestaurants.RemoveRange(oldAppendices);
+            restaurant.AppendiceRestaurants = data.Appendices.Select(x => new AppendiceRestaurant
             {
-                if (image.Path == data.PrimaryImagePath)
-                {
-                    image.IsPrimary = true;
-                }
-            }
+                Restaurant = restaurant,
+                AppendiceId = x.AppendiceId
+            }).ToList();
+
+            var oldMealCategories = restaurant.MealCategoryRestaurants;
+            Context.MealCategoryRestaurants.RemoveRange(oldMealCategories);
+            restaurant.MealCategoryRestaurants = data.MealCategoriesRestaurants.Select(x => new MealCategoryRestaurant
+            {
+                Restaurant = restaurant,
+                MealCategoryId = x.MealCategoryId
+            }).ToList();
+
+            
 
             Context.SaveChanges();
 

@@ -201,18 +201,23 @@ namespace BookATable.DataAccess.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
                         .HasDefaultValue(true);
 
-                    b.Property<string>("Message")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("LastName")
                         .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Subject")
                         .IsRequired()
@@ -307,6 +312,9 @@ namespace BookATable.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GETDATE()");
 
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
@@ -357,9 +365,9 @@ namespace BookATable.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MealCategoryId");
-
                     b.HasIndex("RestaurantId");
+
+                    b.HasIndex("MealCategoryId", "RestaurantId");
 
                     b.ToTable("MealCategoryRestaurants");
                 });
@@ -478,11 +486,9 @@ namespace BookATable.DataAccess.Migrations
                     b.Property<int>("RestaurantId")
                         .HasColumnType("int");
 
-                    b.Property<byte>("TimeHour")
-                        .HasColumnType("tinyint");
-
-                    b.Property<byte>("TimeMinute")
-                        .HasColumnType("tinyint");
+                    b.Property<string>("Time")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");

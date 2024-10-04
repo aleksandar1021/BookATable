@@ -24,7 +24,7 @@ namespace BookATable.Implementation.UseCases.Queries.Restaurants
 
         public string Name => "Search restaurants";
 
-        public PagedResponse<ResponseRestaurantDTO> Execute(SearchRestaurantDTO data)
+        public PagedResponse<ResponseRestaurantDTOAdmin> Execute(SearchRestaurantDTO data)
         {
             var query = Context.Restaurants.Where(x => x.IsActive).AsQueryable();
 
@@ -93,7 +93,12 @@ namespace BookATable.Implementation.UseCases.Queries.Restaurants
                 query = query.Where(x => x.IsActivated == data.IsActivated.Value);
             }
 
-            return query.AsPagedReponse<Restaurant, ResponseRestaurantDTO>(data, _mapper);
+            if (!string.IsNullOrEmpty(data.Keyword))
+            {
+                query = query.Where(x => x.Name.ToLower().Contains(data.Keyword.ToLower()) || x.User.Email.ToLower().Contains(data.Keyword.ToLower()));
+            }
+
+            return query.AsPagedReponse<Restaurant, ResponseRestaurantDTOAdmin>(data, _mapper);
         }
     }
 }

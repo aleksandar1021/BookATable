@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BookATable.Implementation.UseCases.Queries.MealCategories
 {
-    public class EfGetMealCategoryQuery : EfFindUseCase<ResponseNamedEntityDTO, MealCategory>, IGetMealCategoryQuery
+    public class EfGetMealCategoryQuery : EfFindUseCase<ResponseMealCategoryDTO, MealCategory>, IGetMealCategoryQuery
     {
         public EfGetMealCategoryQuery(Context context, IMapper mapper) : base(context, mapper)
         {

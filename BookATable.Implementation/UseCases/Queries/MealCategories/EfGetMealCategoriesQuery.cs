@@ -25,7 +25,7 @@ namespace BookATable.Implementation.UseCases.Queries.MealCategories
 
         public string Name => "Search meal categories";
 
-        public PagedResponse<ResponseNamedEntityDTO> Execute(SearchNamedEntityDTO data)
+        public PagedResponse<ResponseMealCategoryDTO> Execute(SearchNamedEntityDTO data)
         {
             var query = Context.MealCategories.Where(x => x.IsActive).AsQueryable();
 
@@ -39,7 +39,7 @@ namespace BookATable.Implementation.UseCases.Queries.MealCategories
                 query = query.Where(x => x.Name.Contains(data.Name));
             }
 
-            return query.AsPagedReponse<MealCategory, ResponseNamedEntityDTO>(data, _mapper);
+            return query.AsPagedReponse<MealCategory, ResponseMealCategoryDTO>(data, _mapper);
         }
     }
 }

@@ -28,8 +28,13 @@ namespace BookATable.Implementation.Validators
                                    .Must(x => x.Length >= 3)
                                    .WithMessage("Minimum length is 3 characters.");
 
-            RuleFor(x => x.Name).NotEmpty()
+            RuleFor(x => x.FirstName).NotEmpty()
                                    .WithMessage("Name is required.")
+                                   .Must(x => x.Length >= 3)
+                                   .WithMessage("Minimum length is 3 characters.");
+
+            RuleFor(x => x.LastName).NotEmpty()
+                                   .WithMessage("Lastname is required.")
                                    .Must(x => x.Length >= 3)
                                    .WithMessage("Minimum length is 3 characters.");
         }

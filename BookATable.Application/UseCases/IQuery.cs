@@ -11,4 +11,5 @@ namespace BookATable.Application.UseCases
     {
         TResult Execute(TSearch data);
     }
+
 }

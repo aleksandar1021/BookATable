@@ -16,7 +16,8 @@ namespace BookATable.Implementation.Profiles
             CreateMap<Contact, ResponseContactDTO>()
                .ForMember(x => x.Id, y => y.MapFrom(u => u.Id))
                .ForMember(x => x.Email, y => y.MapFrom(u => u.Email))
-               .ForMember(x => x.Name, y => y.MapFrom(u => u.Name))
+               .ForMember(x => x.FirstName, y => y.MapFrom(u => u.FirstName))
+               .ForMember(x => x.LastName, y => y.MapFrom(u => u.LastName))
                .ForMember(x => x.Subject, y => y.MapFrom(u => u.Subject))
                .ForMember(x => x.Message, y => y.MapFrom(u => u.Message));
         }

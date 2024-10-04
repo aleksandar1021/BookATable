@@ -19,6 +19,6 @@ namespace BookATable.Implementation
 
         public string LastName => "unauthorized";
 
-        public IEnumerable<int> AllowedUseCases => new List<int> { 1, 2, 7, 8, 12, 13, 17, 18, 22, 23, 27, 28, 32, 33, 39, 40, 44, 45, 49, 50, 54, 55, 59, 60, 64, 65, 68, 69, 83, 84, 85};
+        public IEnumerable<int> AllowedUseCases => new List<int> { 1, 2, 7, 8, 12, 13, 17, 18, 22, 23, 27, 28, 32, 33, 39, 40, 44, 45, 49, 50, 54, 55, 59, 60, 64, 65, 68, 69, 83, 84, 85, 73, 74 , 95, 96};
     }
 }

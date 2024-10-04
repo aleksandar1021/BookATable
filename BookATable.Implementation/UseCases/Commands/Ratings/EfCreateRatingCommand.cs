@@ -1,4 +1,5 @@
-﻿using BookATable.Application.DTO;
+﻿using BookATable.Application;
+using BookATable.Application.DTO;
 using BookATable.Application.UseCases.Commands.Ratings;
 using BookATable.DataAccess;
 using BookATable.Domain.Tables;
@@ -15,9 +16,11 @@ namespace BookATable.Implementation.UseCases.Commands.Ratings
     public class EfCreateRatingCommand : EfUseCase, ICreateRatingCommand
     {
         private CreateRatingValidator _validator;
-        public EfCreateRatingCommand(Context context, CreateRatingValidator validator) : base(context)
+        private IApplicationActor _actor;
+        public EfCreateRatingCommand(Context context, CreateRatingValidator validator, IApplicationActor actor) : base(context)
         {
             _validator = validator;
+            _actor = actor;
         }
 
         public int Id => 56;
@@ -26,6 +29,7 @@ namespace BookATable.Implementation.UseCases.Commands.Ratings
 
         public void Execute(CreateRatingDTO data)
         {
+            data.UserId = _actor.Id;
             _validator.ValidateAndThrow(data);
 
             Rating rating = new Rating

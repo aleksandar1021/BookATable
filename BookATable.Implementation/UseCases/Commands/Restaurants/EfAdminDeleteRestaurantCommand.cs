@@ -1,4 +1,6 @@
-﻿using BookATable.Application.UseCases.Commands.Restaurants;
+﻿using BookATable.Application.DTO;
+using BookATable.Application.Email;
+using BookATable.Application.UseCases.Commands.Restaurants;
 using BookATable.DataAccess;
 using BookATable.Domain.Tables;
 using BookATable.Implementation.Exceptions;
@@ -14,8 +16,11 @@ namespace BookATable.Implementation.UseCases.Commands.Restaurants
 {
     public class EfAdminDeleteRestaurantCommand : EfUseCase, IAdminDeleteRestaurantCommand
     {
-        public EfAdminDeleteRestaurantCommand(Context context) : base(context)
+        private IEmailSender _emailSender;
+
+        public EfAdminDeleteRestaurantCommand(Context context, IEmailSender emailSender) : base(context)
         {
+            _emailSender = emailSender;
         }
 
         public int Id => 38;
@@ -57,7 +62,32 @@ namespace BookATable.Implementation.UseCases.Commands.Restaurants
                 }
             }
 
+            List<int> allowedCasesForUser = new List<int>
+            {
+                19, 21, 20, 46, 48, 47, 51, 53, 52, 41, 43, 42, 58, 57, 75, 77, 76, 66, 67, 88, 89, 62, 37, 35, 80, 82, 81, 92, 93
+            };
+
+            List<UserUseCase> userUseCases = allowedCasesForUser
+                                            .Select(useCaseId => new UserUseCase { UserId = restaurant.User.Id, UseCaseId = useCaseId })
+                                            .ToList();
+
+            if (restaurant.User.Restaurants.Where(x => x.IsActivated && x.IsActive).Count() == 0)
+            {
+                Context.UserUseCases.RemoveRange(userUseCases);
+            }
+
+
             Context.SaveChanges();
+
+
+            EmailDTO dto = new EmailDTO
+            {
+                SendTo = restaurant.User.Email,
+                Subject = "Your restaurant has been deleted",
+                Body = $"Your restaurant has been deleted by the administrator, contact support for more information"
+            };
+
+            _emailSender.SendEmail(dto);
         }
     }
 }

@@ -36,8 +36,8 @@ namespace BookATable.Implementation.Validators
                    .WithMessage("Maximum length is 10.");
 
             RuleFor(x => x.Floor)
-                   .Must(x => x > 0 && x < 101)
-                   .WithMessage("Floor must bi in range 1-100.");
+                    .Must(x => x > 0 && x < 101)  
+                    .WithMessage("Floor must be in range 1-100.");
 
         }
     }

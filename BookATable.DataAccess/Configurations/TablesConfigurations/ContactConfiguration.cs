@@ -13,7 +13,11 @@ namespace BookATable.DataAccess.Configurations.TablesConfigurations
     {
         protected override void ConfigureEntity(EntityTypeBuilder<Contact> builder)
         {
-            builder.Property(x => x.Name)
+            builder.Property(x => x.FirstName)
+                   .IsRequired()
+                   .HasMaxLength(30);
+
+            builder.Property(x => x.LastName)
                    .IsRequired()
                    .HasMaxLength(30);
 
@@ -25,7 +29,10 @@ namespace BookATable.DataAccess.Configurations.TablesConfigurations
                    .IsRequired()
                    .HasMaxLength(100);
 
-            builder.Property(x => x.Name)
+            builder.Property(x => x.FirstName)
+                   .IsRequired();
+
+            builder.Property(x => x.LastName)
                    .IsRequired();
 
             //builder.HasIndex(x => new { x.Email, x.Name });

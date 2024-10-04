@@ -27,7 +27,7 @@ namespace BookATable.Implementation.UseCases.Commands.Users
             User user = Context.Users.Include(x => x.Reservations)
                                      .Include(x => x.Ratings)
                                      .Include(x => x.Restaurants)
-                                     .FirstOrDefault(x => x.Id == data);
+                                     .FirstOrDefault(x => x.Id == data && x.Email != "administrator@gmail.com");
 
 
             if (user == null || !user.IsActive)

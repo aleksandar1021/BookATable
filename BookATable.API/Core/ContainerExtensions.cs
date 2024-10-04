@@ -77,6 +77,8 @@ using BookATable.Application.UseCases.Queries.Contact;
 using BookATable.Implementation.UseCases.Queries.Contact;
 using BookATable.Application.UseCases.Queries.SpecificClosedDays;
 using BookATable.Implementation.UseCases.Queries.SpecificClosedDays;
+using BookATable.Application.UseCases.Queries.Auth;
+using BookATable.Implementation.UseCases.Queries.Auth;
 
 namespace BookATable.API.Core
 {
@@ -148,6 +150,7 @@ namespace BookATable.API.Core
             services.AddTransient<IGetRestaurantTypesQuery, EfGetRestaurantTypesQuery>();
             services.AddTransient<ICreateAppendiceCommand, EfCreateAppendiceCommand>();
             services.AddTransient<IUpdateAppendiceCommand, EfUpdateAppendiceCommand>();
+            services.AddTransient<IUserGetRestourants, EfUserGetRestaurantsQuery>();
 
 
             services.AddTransient<Func<Context, DbSet<Appendice>>>(provider => context => context.Set<Appendice>());
@@ -222,6 +225,11 @@ namespace BookATable.API.Core
             services.AddTransient<IDeleteContactCommand, EfDeleteContactCommand>();
             services.AddTransient<IAccepteReservationCommand, EfAccepteReservationCommand>();
             services.AddTransient<IRealiseReservationCommand, EfRealiseReservationCommand>();
+            services.AddTransient<IAcceptRestaurantCommand, EfAcceptRestaurantCommand>();
+            services.AddTransient<IGetReservationsForRestaurantQuery, EfGetReservationsForRestaurantQuery>();
+            services.AddTransient<IUserDeleteReservation, EfUserDeleteReservationCommand>();
+            services.AddTransient<IIsLogged, EfIsLogged>();
+            services.AddTransient<IGetTop3Restaurants, EfGetTop3RestaurantsQuery>();
 
 
 

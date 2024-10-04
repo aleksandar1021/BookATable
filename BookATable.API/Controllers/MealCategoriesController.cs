@@ -38,7 +38,7 @@ namespace BookATable.API.Controllers
         // POST api/<MealCategoriesCOntroller>
         [Authorize]
         [HttpPost]
-        public IActionResult Post([FromBody] CreateNamedEntity dto, [FromServices] ICreateMealCategoryCommand cmd)
+        public IActionResult Post([FromBody] CreateMealCategoryDTO dto, [FromServices] ICreateMealCategoryCommand cmd)
         {
             _commandHandler.HandleCommand(cmd, dto);
             return StatusCode(201);
@@ -48,7 +48,7 @@ namespace BookATable.API.Controllers
         // PUT api/<MealCategoriesCOntroller>/5
         [Authorize]
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] UpdateNamedEntity dto, [FromServices] IUpdateMealCategoryCommand cmd)
+        public IActionResult Put(int id, [FromBody] UpdateMealCategoryDTO dto, [FromServices] IUpdateMealCategoryCommand cmd)
         {
             dto.Id = id;
             _commandHandler.HandleCommand(cmd, dto);

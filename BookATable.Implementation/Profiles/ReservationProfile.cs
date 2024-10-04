@@ -18,12 +18,12 @@ namespace BookATable.Implementation.Profiles
                 .ForMember(x => x.UserId, y => y.MapFrom(u => u.UserId))
                 .ForMember(x => x.RestaurantId, y => y.MapFrom(u => u.RestaurantId))
                 .ForMember(x => x.NumberOfGuests, y => y.MapFrom(u => u.NumberOfGuests))
-                .ForMember(x => x.TimeHour, y => y.MapFrom(u => u.TimeHour))
-                .ForMember(x => x.TimeMinute, y => y.MapFrom(u => u.TimeMinute))
+                .ForMember(x => x.Time, y => y.MapFrom(u => u.Time))
                 .ForMember(x => x.Note, y => y.MapFrom(u => u.Note))
                 .ForMember(x => x.Date, y => y.MapFrom(u => u.Date))
                 .ForMember(x => x.IsAccepted, y => y.MapFrom(u => u.IsAccepted))
                 .ForMember(x => x.IsRealised, y => y.MapFrom(u => u.IsRealised))
+                .ForMember(x => x.Code, y => y.MapFrom(u => u.ReservationCode))
 
                 .ForMember(x => x.User, y => y.MapFrom(u => new ResponseBaseUser
                 {
@@ -32,13 +32,24 @@ namespace BookATable.Implementation.Profiles
                     LastName = u.User.LastName,
                     Email = u.User.Email
                 }))
+                .ForMember(x => x.Appendices, y => y.MapFrom(p => p.ReservationAppendices
+                                                 .Where(r => r.IsActive)
+                                                 .Select(x => new ResponseNamedEntityDTO
+                                                 {
+                                                     Id = x.Appendice.Id,
+                                                     Name = x.Appendice.Name
+                                                 })))
                 .ForMember(x => x.Restaurant, y => y.MapFrom(u => new BaseResponseRestaurantDTO
                 {
                     Id = u.Restaurant.Id,
                     Name = u.Restaurant.Name,
                     UserId = u.Restaurant.UserId,
-                    Description = u.Restaurant.Description
-                }));
+                    Description = u.Restaurant.Description,
+                    Image = u.Restaurant.RestaurantImages
+                                        .Where(x => x.IsPrimary == true) 
+                                        .Select(x => x.Path)
+                                        .FirstOrDefault(),
+                                        }));
         }
     }
 }

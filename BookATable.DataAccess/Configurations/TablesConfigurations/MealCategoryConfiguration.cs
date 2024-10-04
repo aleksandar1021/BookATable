@@ -12,6 +12,7 @@ namespace BookATable.DataAccess.Configurations.TablesConfigurations
     {
         protected override void ConfigureEntity(EntityTypeBuilder<MealCategory> builder)
         {
+
         }
     }
 }

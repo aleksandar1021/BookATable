@@ -24,14 +24,22 @@ namespace BookATable.Implementation.UseCases.Commands.MealCategories
 
         public string Name => "Create meal category";
 
-        public void Execute(CreateNamedEntity data)
+        public void Execute(CreateMealCategoryDTO data)
         {
             _validator.ValidateAndThrow(data);
 
             MealCategory mealCategory = new MealCategory
             {
-                Name = data.Name
+                Name = data.Name,
+                Image = data.Image
             };
+
+            if (data.Image != null)
+            {
+                var tempImageName = Path.Combine("wwwroot", "temp", data.Image);
+                var destinationFileName = Path.Combine("wwwroot", "mealCategories", data.Image);
+                System.IO.File.Move(tempImageName, destinationFileName);
+            }
 
             Context.MealCategories.Add(mealCategory);   
             Context.SaveChanges();

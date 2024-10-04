@@ -1,5 +1,6 @@
 ﻿using BookATable.Application.DTO;
 using BookATable.DataAccess;
+using BookATable.Domain.Tables;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
@@ -15,14 +16,18 @@ namespace BookATable.Implementation.Validators
         {
             CascadeMode = CascadeMode.StopOnFirstFailure;
 
-            RuleFor(x => x.TimeHour)
-                .InclusiveBetween(0, 23)
-                .WithMessage("Time hour must be between 0 and 23.");
+            //RuleFor(x => x.TimeHour)
+            //    .InclusiveBetween(0, 23)
+            //    .WithMessage("Time hour must be between 0 and 23.");
 
 
-            RuleFor(x => x.TimeMinute)
-                .InclusiveBetween(0, 59)
-                .WithMessage("Time minute must be between 0 and 59.");
+            //RuleFor(x => x.TimeMinute)
+            //    .InclusiveBetween(0, 59)
+            //    .WithMessage("Time minute must be between 0 and 59.");
+
+            RuleFor(x => x.Time)
+                .NotEmpty()
+                .WithMessage("Time is required.");
 
 
             RuleFor(x => x.UserId)
@@ -52,7 +57,7 @@ namespace BookATable.Implementation.Validators
             RuleFor(x => x.Date)
                 .NotEmpty()
                 .WithMessage("Dates is required")
-                .Must(x => x > DateOnly.FromDateTime(DateTime.Now))
+                .Must(x => x >= DateOnly.FromDateTime(DateTime.Now))
                 .WithMessage("Date must be in future.");
 
      

@@ -34,6 +34,10 @@ namespace BookATable.Implementation.UseCases.Queries.Restaurants
                 throw new NotFoundException(nameof(Restaurant), data);
             }
 
+            if (_actor.Id != r.UserId)
+            {
+                throw new UnauthorizedAccessException();
+            }
 
             return new ResponseRestaurantForUserDTO
             {
@@ -50,7 +54,26 @@ namespace BookATable.Implementation.UseCases.Queries.Restaurants
                 MaxNumberOfGuests = r.MaxNumberOfGuests,
                 TimeInterval = r.TimeInterval,
                 IsActivated = r.IsActivated,
-                Images = r.RestaurantImages.Select(img => img.Path),
+                RestaurantType = r.RestaurantType.Name,
+                Address = new ResponseAddressDTO
+                {
+                    Address = r.Address.AddressOfPlace,
+                    Description = r.Address.Description,
+                    Place = r.Address.Place,
+                    Latitude = r.Address.Latitude,
+                    City = new ResponseCityDTO
+                    {
+                        Id = r.Address.City.Id,
+                        Name = r.Address.City.Name,
+                        ZipCode = r.Address.City.ZipCode
+                    },
+                    CityId = r.Address.City.Id,
+                    Floor = r.Address.Floor,
+                    Longitude = r.Address.Longitude,
+                    Id = r.Address.Id,
+                    Number = r.Address.Number
+                },
+                Images = r.RestaurantImages.Where(x => x.IsActive).Select(img => img.Path).ToList(),
                 Reservations = r.Reservations
                         .Where(r => r.IsActive)
                         .Select(r => new ReservationDTO
@@ -62,8 +85,7 @@ namespace BookATable.Implementation.UseCases.Queries.Restaurants
                             Note = r.Note,
                             ReservationCode = r.ReservationCode,
                             RestaurantId = r.RestaurantId,
-                            TimeHour = r.TimeHour,
-                            TimeMinute = r.TimeMinute,
+                            Time = r.Time,
                             UserId = r.UserId
                         }),
                 Ratings = r.Ratings
@@ -73,13 +95,22 @@ namespace BookATable.Implementation.UseCases.Queries.Restaurants
                             Id = r.Id,
                             Rate = r.Rate,
                             RestaurantId = r.RestaurantId,
-                            UserId = r.UserId
+                            UserId = r.UserId,
+                            Message = r.Message,
+                            User = new ResponseBaseUser
+                            {
+                                Id = r.User.Id,
+                                Email = r.User.Email,
+                                FirstName = r.User.FirstName,
+                                LastName = r.User.LastName,
+                                Image = r.User.Image
+                            }
                         }),
                 MealCategories = r.MealCategoryRestaurants
                         .Where(m => m.IsActive)
                         .Select(m => new ResponseMealCategoryForRestaurant
                         {
-                            Id = m.Id,
+                            Id = m.MealCategory.Id,
                             Name = m.MealCategory.Name
                         }),
                 RestaurantImages = r.RestaurantImages
@@ -99,19 +130,21 @@ namespace BookATable.Implementation.UseCases.Queries.Restaurants
                             Name = d.Name,
                             RestaurantId = d.RestaurantId,
                             Description = d.Description,
-                            Price = d.Price
+                            Price = d.Price,
+                            Image = d.Image
                         }),
                 AppendiceRestaurants = r.AppendiceRestaurants
                         .Where(a => a.IsActive)
                         .Select(a => new ResponseAppendiceRestaurantForRestaurant
                         {
-                            Id = a.Id,
+                            Id = a.Appendice.Id,
                             Name = a.Appendice.Name
                         }),
                 IsSaved = r.Saved.Any(s => s.RestaurantId == r.Id && _actor.Id == s.UserId && s.IsActive),
                 Rate = r.Ratings.Where(r => r.IsActive).Average(r => (decimal?)r.Rate) ?? 0,
                 NumberOfRates = r.Ratings.Count(r => r.IsActive),
-                RegularColsedDays = r.RegularClosedDays.Select(x => x.DayOfWeek.ToString()),
+                RegularColsedDays = r.RegularClosedDays.Select(x => (int)x.DayOfWeek),
+                RegularClosedDaysInt = r.RegularClosedDays.Select(x => (int)x.DayOfWeek).ToList(),
                 SpecificColsedDays = r.SpecificClosedDays.Where(sc => sc.ClosedFrom > DateOnly.FromDateTime(DateTime.Now))
                                                          .Select(sc => new SpeceificClosedDays
                 {

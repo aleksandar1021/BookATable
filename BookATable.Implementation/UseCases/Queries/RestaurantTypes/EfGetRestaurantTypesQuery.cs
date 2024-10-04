@@ -24,7 +24,7 @@ namespace BookATable.Implementation.UseCases.Queries.RestaurantTypes
 
         public string Name => "Search restaurant types";
 
-        public PagedResponse<ResponseNamedEntityDTO> Execute(SearchNamedEntityDTO data)
+        public PagedResponse<ResponseRestaurantTypesDTO> Execute(SearchNamedEntityDTO data)
         {
             var query = Context.RestaurantTypes.Where(x => x.IsActive).AsQueryable();
 
@@ -39,7 +39,7 @@ namespace BookATable.Implementation.UseCases.Queries.RestaurantTypes
             }
 
             
-            return query.AsPagedReponse<RestaurantType, ResponseNamedEntityDTO>(data, _mapper);
+            return query.AsPagedReponse<RestaurantType, ResponseRestaurantTypesDTO>(data, _mapper);
         }
     }
 }

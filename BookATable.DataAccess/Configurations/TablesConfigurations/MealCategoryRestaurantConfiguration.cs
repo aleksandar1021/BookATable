@@ -22,6 +22,9 @@ namespace BookATable.DataAccess.Configurations.TablesConfigurations
                    .WithMany(x => x.MealCategoryRestaurants)
                    .HasForeignKey(x => x.RestaurantId)
                    .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasIndex(x => new { x.MealCategoryId, x.RestaurantId});
+
         }
     }
 }

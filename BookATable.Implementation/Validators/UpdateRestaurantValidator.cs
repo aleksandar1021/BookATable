@@ -14,10 +14,10 @@ namespace BookATable.Implementation.Validators
     {
         public UpdateRestaurantValidator(Context ctx, IApplicationActor actor) : base(ctx)
         {
-            RuleFor(x => x.UserId).NotEmpty()
-                                  .WithMessage("User is required.")
-                                  .Must((dto, x) => ctx.Restaurants.Where(r => r.Id == x).Select(x => x.UserId).FirstOrDefault() == actor.Id)
-                                  .WithMessage("You do not have the right to perform this action.");
+            //RuleFor(x => x.UserId).NotEmpty()
+            //                      .WithMessage("User is required.")
+            //                      .Must((dto, x) => ctx.Restaurants.Where(r => r.Id == x).Select(x => x.UserId).FirstOrDefault() == actor.Id)
+            //                      .WithMessage("You do not have the right to perform this action.");
         }
     }
 }

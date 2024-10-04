@@ -42,6 +42,7 @@ namespace BookATable.Implementation.UseCases.Commands.Users
 
             if(user.ActivationCode != data.ActivationCode)
             {
+                
                 throw new ConflictException("Incorrect activation code.");
             }
 

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BookATable.Application;
 using BookATable.Application.DTO;
 using BookATable.Application.UseCases.Queries.Reservations;
 using BookATable.DataAccess;
@@ -14,9 +15,11 @@ namespace BookATable.Implementation.UseCases.Queries.Reservations
     public class EfGetReservationsQuery : EfUseCase, IGetReservationsQuery
     {
         private readonly IMapper _mapper;
-        public EfGetReservationsQuery(Context context, IMapper mapper) : base(context)
+        private IApplicationActor _actor;
+        public EfGetReservationsQuery(Context context, IMapper mapper, IApplicationActor actor) : base(context)
         {
             _mapper = mapper;
+            _actor = actor;
         }
 
         public int Id => 65;
@@ -26,6 +29,13 @@ namespace BookATable.Implementation.UseCases.Queries.Reservations
         public PagedResponse<ResponseReservationDTO> Execute(SearchReservationDTO data)
         {
             var query = Context.Reservations.Where(x => x.IsActive).AsQueryable();
+
+            data.UserId = data.UserId == null ? 0 : data.UserId;
+
+            if(_actor.Id != data.UserId)
+            {
+                throw new UnauthorizedAccessException();
+            }
 
             if (data.Id.HasValue)
             {
@@ -47,15 +57,7 @@ namespace BookATable.Implementation.UseCases.Queries.Reservations
                 query = query.Where(x => x.NumberOfGuests <= data.NumberOfGuests);
             }
 
-            if (data.TimeHour.HasValue)
-            {
-                query = query.Where(x => x.TimeHour == data.TimeHour);
-            }
-
-            if (data.TimeMinute.HasValue)
-            {
-                query = query.Where(x => x.TimeMinute == data.TimeMinute);
-            }
+            
 
             if (data.DateFrom.HasValue)
             {
@@ -90,6 +92,18 @@ namespace BookATable.Implementation.UseCases.Queries.Reservations
             if (!string.IsNullOrEmpty(data.UserLastName))
             {
                 query = query.Where(x => x.User.LastName.Contains(data.UserLastName));
+            }
+
+            if (data.Sorts.Any(x => x.SortProperty == "createdAt"))
+            {
+                if (data.Sorts.FirstOrDefault(x => x.SortProperty == "createdAt").Direction == SortDirection.Asc)
+                {
+                    query = query.OrderBy(x => x.CreatedAt);
+                }
+                else
+                {
+                    query = query.OrderByDescending(x => x.CreatedAt);
+                }
             }
 
             return query.AsPagedReponse<Reservation, ResponseReservationDTO>(data, _mapper);

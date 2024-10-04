@@ -8,6 +8,7 @@ namespace BookATable.Domain.Tables
 {
     public class MealCategory : NamedEntity
     {
+        public string Image { get; set; }
         public virtual ICollection<MealCategoryRestaurant> MealCategoryRestaurants { get; set; } = new HashSet<MealCategoryRestaurant>();
     }
 }

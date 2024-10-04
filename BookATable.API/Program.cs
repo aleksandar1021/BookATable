@@ -112,6 +112,13 @@ builder.Services.AddAuthentication(options =>
 
 var app = builder.Build();
 
+app.UseCors(x =>
+{
+    x.AllowAnyOrigin();
+    x.AllowAnyMethod();
+    x.AllowAnyHeader();
+});
+
 app.UseMiddleware<GlobalExcenpionMiddlewareHandling>();
 
 
@@ -120,6 +127,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseStaticFiles();
 
 app.UseAuthorization();
 

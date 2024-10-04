@@ -22,7 +22,7 @@ namespace BookATable.DataAccess
 
         public Context()
         {
-            _connectionString = "Data Source=LAPTOP-GI6JHEKS;Initial Catalog=BookTable;TrustServerCertificate=true;Integrated security = true";
+            _connectionString = "Data Source=LAPTOP-GI6JHEKS;Initial Catalog=BookATable;TrustServerCertificate=true;Integrated security = true";
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

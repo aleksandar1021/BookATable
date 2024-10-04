@@ -28,6 +28,11 @@ namespace BookATable.API.Controllers
         public IActionResult Find([FromQuery] SearchReservationDTO dto, [FromServices] IGetReservationsQuery query)
             => Ok(_commandHandler.HandleQuery(query, dto));
 
+        [Authorize]
+        [HttpGet("Restaurant")]
+        public IActionResult FindReservations([FromQuery] SearchReservationDTO dto, [FromServices] IGetReservationsForRestaurantQuery query)
+            => Ok(_commandHandler.HandleQuery(query, dto));
+
         // GET api/<ReservationsController>/5
         [Authorize]
         [HttpGet("{id}")]
@@ -44,7 +49,7 @@ namespace BookATable.API.Controllers
         }
 
         [Authorize]
-        [HttpPut("{id}/Accept")]
+        [HttpPatch("{id}/Accept")]
         public IActionResult Accept(int id, [FromServices] IAccepteReservationCommand cmd)
         {
             _commandHandler.HandleCommand(cmd, id);
@@ -52,7 +57,7 @@ namespace BookATable.API.Controllers
         }
 
         [Authorize]
-        [HttpPut("{id}/Realise")]
+        [HttpPatch("{id}/Realise")]
         public IActionResult Realise(int id, [FromServices] IRealiseReservationCommand cmd)
         {
             _commandHandler.HandleCommand(cmd, id);
@@ -73,6 +78,14 @@ namespace BookATable.API.Controllers
         [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id, [FromServices] IDeleteReservationCommand cmd)
+        {
+            _commandHandler.HandleCommand(cmd, id);
+            return NoContent();
+        }
+
+        [Authorize]
+        [HttpDelete("{id}/User")]
+        public IActionResult DeleteUser(int id, [FromServices] IUserDeleteReservation cmd)
         {
             _commandHandler.HandleCommand(cmd, id);
             return NoContent();

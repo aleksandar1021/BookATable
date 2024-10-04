@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookATable.Application.UseCases.Queries.MealCategories
 {
-    public interface IGetMealCategoriesQuery : IQuery<PagedResponse<ResponseNamedEntityDTO>, SearchNamedEntityDTO>
+    public interface IGetMealCategoriesQuery : IQuery<PagedResponse<ResponseMealCategoryDTO>, SearchNamedEntityDTO>
     {
     }
 }

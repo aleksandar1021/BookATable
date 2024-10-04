@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookATable.Application.UseCases.Queries.Restaurants
 {
-    public interface IGetRestaurantsQuery : IQuery<PagedResponse<ResponseRestaurantDTO>, SearchRestaurantDTO>
+    public interface IGetRestaurantsQuery : IQuery<PagedResponse<ResponseRestaurantDTOAdmin>, SearchRestaurantDTO>
     {
     }
 }

@@ -1,4 +1,7 @@
-﻿using BookATable.Application.UseCases.Commands.Reservations;
+﻿using BookATable.Application;
+using BookATable.Application.DTO;
+using BookATable.Application.Email;
+using BookATable.Application.UseCases.Commands.Reservations;
 using BookATable.DataAccess;
 using BookATable.Domain.Tables;
 using BookATable.Implementation.Exceptions;
@@ -12,8 +15,13 @@ namespace BookATable.Implementation.UseCases.Commands.Reservations
 {
     public class EfDeleteReservationCommand : EfUseCase, IDeleteReservationCommand
     {
-        public EfDeleteReservationCommand(Context context) : base(context)
+        private IEmailSender _emailSender;
+
+        private IApplicationActor _actor;
+        public EfDeleteReservationCommand(Context context, IApplicationActor actor, IEmailSender emailSender) : base(context)
         {
+            _actor = actor;
+            _emailSender = emailSender;
         }
 
         public int Id => 63;
@@ -29,10 +37,25 @@ namespace BookATable.Implementation.UseCases.Commands.Reservations
                 throw new NotFoundException(nameof(Reservation), data);
             }
 
+            if(_actor.Id != reservation.Restaurant.UserId)
+            {
+                throw new UnauthorizedAccessException();
+            }
+
+
             reservation.IsActive = false;
             reservation.ReservationAppendices.ToList().ForEach(r => r.IsActive = false);
 
             Context.SaveChanges();
+
+            EmailDTO dto = new EmailDTO
+            {
+                SendTo = reservation.User.Email,
+                Subject = "Your reservation has been deleted",
+                Body = $"Your reservation has been deleted by the restaurant, with code: {reservation.ReservationCode}"
+            };
+
+            _emailSender.SendEmail(dto);
         }
     }
 }

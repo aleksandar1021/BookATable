@@ -33,7 +33,8 @@ namespace BookATable.Implementation.UseCases.Commands.Contact
 
             Domain.Tables.Contact message = new Domain.Tables.Contact
             {
-                Name = data.Name,
+                FirstName = data.FirstName,
+                LastName = data.LastName,
                 Email = data.Email,
                 Subject = data.Subject,
                 Message = data.Message
@@ -42,7 +43,7 @@ namespace BookATable.Implementation.UseCases.Commands.Contact
             Context.Contacts.Add(message);
             Context.SaveChanges();
 
-            string body = "<b>" + data.Name + "</b><br>" + data.Message;
+            string body = "<b>" + data.FirstName + "</b><br>" + data.Message;
 
 
 

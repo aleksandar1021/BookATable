@@ -17,7 +17,7 @@ namespace BookATable.Implementation.Validators
 
             RuleFor(x => x.Name)
             .NotEmpty()
-            .Matches("^[A-Z][a-zA-Z1-9\\s]{2,69}$")
+            .Matches("^[A-ZŠĐČĆŽ][a-zšđčćžA-ZŠĐČĆŽ1-9\\s]{2,69}$")
             .WithMessage("The name must start with a capital letter and contain a minimum of 3 characters and a maximum of 70.");
 
             RuleFor(x => x.WorkFromHour)
@@ -37,18 +37,18 @@ namespace BookATable.Implementation.Validators
                 .WithMessage("Work until minute must be between 0 and 59.");
 
 
-            RuleFor(x => x.AddressId)
-                   .NotEmpty()
-                   .WithMessage("Address is required.")
-                   .Must(x => ctx.Addresses.Any(a => a.Id == x && a.IsActive))
-                   .WithMessage("Address does not exists.");
+            //RuleFor(x => x.AddressId)
+            //       .NotEmpty()
+            //       .WithMessage("Address is required.")
+            //       .Must(x => ctx.Addresses.Any(a => a.Id == x && a.IsActive))
+            //       .WithMessage("Address does not exists.");
 
 
-            RuleFor(x => x.UserId)
-                   .NotEmpty()
-                   .WithMessage("User is required.")
-                   .Must(x => ctx.Users.Any(a => a.Id == x && a.IsActive))
-                   .WithMessage("User does not exists.");
+            //RuleFor(x => x.UserId)
+            //       .NotEmpty()
+            //       .WithMessage("User is required.")
+            //       .Must(x => ctx.Users.Any(a => a.Id == x && a.IsActive))
+            //       .WithMessage("User does not exists.");
 
             RuleFor(x => x.RestaurantTypeId)
                    .NotEmpty()
@@ -70,19 +70,23 @@ namespace BookATable.Implementation.Validators
                 .InclusiveBetween(0, 60)
                 .WithMessage("Time interval must be between 0 and 60.");
 
-            RuleFor(x => x.Images).NotEmpty()
-                    .WithMessage("Minimum one image is required.")
-                    .DependentRules(() =>
-                    {
-                        RuleForEach(x => x.Images).Must((x, fileName) =>
-                        {
-                            var path = Path.Combine("wwwroot", "temp", fileName);
+            //RuleFor(x => x.Images).NotEmpty()
+            //        .WithMessage("Minimum one image is required.")
+            //        .DependentRules(() =>
+            //        {
+            //            RuleForEach(x => x.Images).Must((x, fileName) =>
+            //            {
+            //                var path = Path.Combine("wwwroot", "temp", fileName);
 
-                            var exists = Path.Exists(path);
+            //                var exists = Path.Exists(path);
 
-                            return exists;
-                        }).WithMessage("File not exist.");
-                    });
+            //                return exists;
+            //            }).WithMessage("File not exist.");
+            //        });
+
+           
+
+
         }
     }
 }

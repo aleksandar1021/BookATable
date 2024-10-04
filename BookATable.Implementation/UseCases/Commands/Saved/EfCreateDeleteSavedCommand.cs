@@ -1,4 +1,5 @@
-﻿using BookATable.Application.DTO;
+﻿using BookATable.Application;
+using BookATable.Application.DTO;
 using BookATable.Application.UseCases.Commands.Saved;
 using BookATable.DataAccess;
 using BookATable.Domain.Tables;
@@ -15,9 +16,12 @@ namespace BookATable.Implementation.UseCases.Commands.Saved
     public class EfCreateDeleteSavedCommand : EfUseCase, ICreateDeleteSavedCommand
     {
         private SavedValidator _validator;
-        public EfCreateDeleteSavedCommand(Context context, SavedValidator validator) : base(context)
+        private IApplicationActor _actor;
+
+        public EfCreateDeleteSavedCommand(Context context, SavedValidator validator, IApplicationActor actor) : base(context)
         {
             _validator = validator;
+            _actor = actor;
         }
 
         public int Id => 70;
@@ -28,7 +32,7 @@ namespace BookATable.Implementation.UseCases.Commands.Saved
         {
             _validator.ValidateAndThrow(data);
             int restaurantId = data.RestaurantId;
-            int userId = data.UserId;
+            int userId = _actor.Id;
 
             Domain.Tables.Saved saved = Context.Saved.Where(x => x.UserId == userId && x.RestaurantId == restaurantId).FirstOrDefault();
 

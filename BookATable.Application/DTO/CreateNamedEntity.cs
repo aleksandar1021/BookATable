@@ -26,4 +26,25 @@ namespace BookATable.Application.DTO
         public int? Id { get; set; }
         public string Name { get; set; }
     }
+
+    public class CreateMealCategoryDTO : CreateNamedEntity
+    {
+        public string Image { get; set; }
+    }
+
+    public class UpdateMealCategoryDTO : CreateMealCategoryDTO
+    {
+        public int Id { get; set; }
+    }
+
+    public class ResponseMealCategoryDTO : UpdateMealCategoryDTO
+    {
+        
+    }
+
+    public class ResponseRestaurantTypesDTO
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
 }

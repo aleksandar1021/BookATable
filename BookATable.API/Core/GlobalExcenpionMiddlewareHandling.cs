@@ -52,6 +52,12 @@ namespace BookATable.API.Core
                     await httpContext.Response.WriteAsJsonAsync(new { Message = exception.Message });
                     return;
                 }
+                if (exception is AccountNotActiveException)
+                {
+                    httpContext.Response.StatusCode = 403;
+                    await httpContext.Response.WriteAsJsonAsync(new { Message = exception.Message });
+                    return;
+                }
                 var errorId = _logger.Log(exception, _actor);
 
                 httpContext.Response.StatusCode = 500;

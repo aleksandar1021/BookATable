@@ -1,4 +1,5 @@
 ﻿using BCrypt.Net;
+using BookATable.Application;
 using BookATable.Application.DTO;
 using BookATable.Application.Email;
 using BookATable.Application.UseCases.Commands.Reservations;
@@ -19,11 +20,13 @@ namespace BookATable.Implementation.UseCases.Commands.Reservations
     public class EfCreateReservationCommand : EfUseCase, ICreateReservationCommand
     {
         private IEmailSender _emailSender;
+        private IApplicationActor _actor;
         private CreateReservationValidator _validator;
-        public EfCreateReservationCommand(Context context, CreateReservationValidator validator, IEmailSender emailSender) : base(context)
+        public EfCreateReservationCommand(Context context, CreateReservationValidator validator, IEmailSender emailSender, IApplicationActor actor) : base(context)
         {
             _validator = validator;
             _emailSender = emailSender;
+            _actor = actor;
         }
 
         public int Id => 61;
@@ -32,16 +35,20 @@ namespace BookATable.Implementation.UseCases.Commands.Reservations
 
         public void Execute(CreateReservationDTO data)
         {
+            data.UserId = _actor.Id;
             _validator.ValidateAndThrow(data);
-
+            if(data.UserId !=_actor.Id)
+            {
+                throw new UnauthorizedAccessException("You do not have privileges for this action.");
+            }
             string code = Functions.GenerateRandomCode(8);
 
             Restaurant targetRestaurant = Context.Restaurants.FirstOrDefault(x => x.Id == data.RestaurantId);
 
-            if(data.TimeHour < targetRestaurant.WorkFromHour || data.TimeHour >= targetRestaurant.WorkUntilHour)
-            {
-                throw new ConflictException("The restaurant is not open at that time.");
-            }
+            //if(data.TimeHour < targetRestaurant.WorkFromHour || data.TimeHour >= targetRestaurant.WorkUntilHour)
+            //{
+            //    throw new ConflictException("The restaurant is not open at that time.");
+            //}
 
             DateOnly targetDate = data.Date;
 
@@ -63,7 +70,7 @@ namespace BookATable.Implementation.UseCases.Commands.Reservations
                 {
                     message = day.DayOfWeek.ToString();
                 }
-                else if(targetRestaurant.RegularClosedDays.Count() == i)
+                else if(targetRestaurant.RegularClosedDays.Count() == i+1)
                 {
                     message += day.DayOfWeek.ToString();
                 }
@@ -73,6 +80,8 @@ namespace BookATable.Implementation.UseCases.Commands.Reservations
                 }
                 i++;
             }
+
+
 
             foreach (var day in targetRestaurant.RegularClosedDays)
             {
@@ -87,16 +96,19 @@ namespace BookATable.Implementation.UseCases.Commands.Reservations
                 UserId = data.UserId,
                 RestaurantId = data.RestaurantId,
                 NumberOfGuests = data.NumberOfGuests,
-                TimeHour = data.TimeHour,
-                TimeMinute = data.TimeMinute,
+                Time = data.Time,
                 Note = data.Note,
                 Date = data.Date,
-                ReservationCode = BCrypt.Net.BCrypt.HashPassword(code),
-                IsRealised = false
+                ReservationCode = code,
+                IsRealised = false,
+                ReservationAppendices = data.Appendices?.Select(x => new ReservationAppendice
+                {
+                    AppendiceId = x.AppendiceId
+                }).ToList()
             };
 
-
-            var body = "Save this email and show it to a restaurant employee when you go to a restaurant. Use reservation code below for identification";
+            // Save this email and show it to a restaurant employee when you go to a restaurant. Use reservation code below for identification
+            var body = "Congratulations, your reservation has been successfully created, you will receive an email when the reservation is approved. In the appendices there is information about the reservation";
             body += $"<br><br>Reservation code: {code}";
             body += $"<br><br>Restaurant: {targetRestaurant.Name}";
             body += $"<br><br>Restaurant city: {targetRestaurant.Address.City.Name}";
@@ -119,7 +131,7 @@ namespace BookATable.Implementation.UseCases.Commands.Reservations
             }
             body += $"<br><br>Numbers of guests: {data.NumberOfGuests}";
             body += $"<br><br>Date: {data.Date}";
-            body += $"<br><br>Time: {data.TimeHour}:{data.TimeMinute} h";
+            body += $"<br><br>Time: {data.Time} h";
             body += $"<br><br>Note : {data.Note}";
 
            
@@ -133,7 +145,7 @@ namespace BookATable.Implementation.UseCases.Commands.Reservations
             {
                 SendTo = targetUserEmail,
                 Body = body,
-                Subject = $"Successful booking with code: {code}"
+                Subject = $"Successful create booking with code: {code}"
             };
 
             _emailSender.SendEmail(dto);

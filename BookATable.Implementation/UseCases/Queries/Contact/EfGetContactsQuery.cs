@@ -33,7 +33,7 @@ namespace BookATable.Implementation.UseCases.Queries.Contact
 
             if (!string.IsNullOrEmpty(data.Keyword))
             {
-                query = query.Where(x => x.Email.ToLower().Contains(data.Keyword.ToLower()) || x.Name.ToLower().Contains(data.Keyword.ToLower()) || x.Subject.ToLower().Contains(data.Keyword.ToLower()));
+                query = query.Where(x => x.Email.ToLower().Contains(data.Keyword.ToLower()) || x.FirstName.ToLower().Contains(data.Keyword.ToLower()) || x.LastName.ToLower().Contains(data.Keyword.ToLower()) || x.Subject.ToLower().Contains(data.Keyword.ToLower()));
             }
 
             

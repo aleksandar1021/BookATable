@@ -24,7 +24,7 @@ namespace BookATable.Implementation.UseCases.Commands.RestaurantTypes
         public void Execute(int data)
         {
             RestaurantType rt = Context.RestaurantTypes.Include(x => x.Restaurants)
-                                                       .FirstOrDefault(x => x.IsActive);
+                                                       .FirstOrDefault(x => x.IsActive && x.Id == data);
 
             if (rt == null || !rt.IsActive)
             {
@@ -37,6 +37,7 @@ namespace BookATable.Implementation.UseCases.Commands.RestaurantTypes
             }
 
             rt.IsActive = false;
+            Context.RestaurantTypes.Remove(rt);
             Context.SaveChanges();
         }
     }

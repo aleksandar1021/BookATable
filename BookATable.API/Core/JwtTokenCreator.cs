@@ -1,4 +1,6 @@
 ﻿using BookATable.DataAccess;
+using BookATable.Implementation.Exceptions;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
@@ -29,15 +31,23 @@ namespace BookATable.API.Core
                 x.FirstName,
                 x.LastName,
                 x.Id,
-                UseCaseIds = x.UserUseCases.Select(x => x.UseCaseId)
+                UseCaseIds = x.UserUseCases.Select(x => x.UseCaseId),
+                x.IsActivatedUser
             }).FirstOrDefault();
 
-            if (user == null)
+            if(user == null)
             {
                 throw new UnauthorizedAccessException();
             }
 
-            if (!BCrypt.Net.BCrypt.Verify(password, user.Password))
+            if (!user.IsActivatedUser)
+            {
+                throw new AccountNotActiveException("Your account is not active.");
+            }
+
+            
+
+            if (!BCrypt.Net.BCrypt.Verify(password, user.Password) )
             {
                 throw new UnauthorizedAccessException();
             }

@@ -28,12 +28,12 @@ namespace BookATable.Implementation.Validators
 
             RuleFor(x => x.FirstName)
                    .NotEmpty()
-                   .Matches("^[A-Z][a-zA-Z]{2,29}$")
+                   .Matches("^[A-ZŠĐČĆŽ][a-zšđčćžA-Zšđčćž]{2,29}$")
                    .WithMessage("The name must start with a capital letter and contain a minimum of 3 characters and a maximum of 30.");
 
             RuleFor(x => x.LastName)
                    .NotEmpty()
-                   .Matches("^[A-Z][a-zA-Z]{2,29}$")
+                   .Matches("^[A-ZŠĐČĆŽ][a-zšđčćžA-Zšđčćž]{2,29}$")
                    .WithMessage("The lastname must start with a capital letter and contain a minimum of 3 characters and a maximum of 30.");
 
             RuleFor(x => x.Password)
@@ -41,7 +41,7 @@ namespace BookATable.Implementation.Validators
                   .Matches("^(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}$")
                   .WithMessage("The password must contain at least 8 characters and must contain at least one capital letter, one number and one special character.");
 
-            
+
 
             RuleFor(x => x.Image).Must((x, fileName) =>
             {
